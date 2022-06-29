@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 // import u from './img/question/スクリーンショット 2022-06-24 .png'
 
-import heartLoop from './img/answer/heartLoop.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
