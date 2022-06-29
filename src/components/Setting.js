@@ -164,7 +164,14 @@ export const Setting = ({
           </Button>
         </Flex>
 
-        <Image src={titleImg} alt="TitleImage" m={0} p="0" mb={-14} />
+        <Image
+          src={titleImg}
+          alt="TitleImage"
+          m={0}
+          p="1"
+          mb={-14}
+          borderRadius="lg"
+        />
         <Flex ml={4} mr="4">
           {checkMsg === '条件を満たした質問が存在しません' ? (
             <Button
