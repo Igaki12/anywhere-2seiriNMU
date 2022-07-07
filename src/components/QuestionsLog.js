@@ -33,7 +33,7 @@ export const QuestionsLog = ({
   const toastGoodJob = () => {
     if (history[history.length - 1].remainingQuestionList.length === 0) {
       toast({
-        position: 'top',
+        position: 'top-right',
         title: 'Good Job!',
         description: '全ての問題が終わりました！',
         status: 'success',
@@ -177,7 +177,7 @@ export const QuestionsLog = ({
                             reviewQuestion(index)
                             toast({
                               title: 'この質問はもう一度出題されます',
-                              position: 'top',
+                              position: 'top-right',
                               // description: "We've created your account for you.",
                               status: 'info',
                               duration: 9000,
@@ -362,7 +362,7 @@ export const QuestionsLog = ({
 
                           toast({
                             title: 'この質問はもう一度出題されます',
-                            position: 'top',
+                            position: 'top-right',
                             // description: "We've created your account for you.",
                             status: 'info',
                             duration: 9000,

@@ -7,11 +7,14 @@ import { useQuestionList } from './useQuestionList'
 import { useSetting } from './hooks/useSetting'
 import { useHistory } from './hooks/useHistory'
 import { ChoicePanel } from './components/ChoicePanel'
+import { useTechnicalTerm } from './useTechnicalTerm'
 import jsCookie from 'js-cookie'
 
 function App() {
   const { showQuestionList } = useQuestionList()
   const questionList = showQuestionList()
+  const { showTechnicalTerm } = useTechnicalTerm()
+  const technicalTerm = showTechnicalTerm()
   const {
     showSettingDetail,
     updateQuestionOrder,
