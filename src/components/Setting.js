@@ -145,7 +145,13 @@ export const Setting = ({
   }
   return (
     <>
-      <Box boxSize="sm" transitionDelay="3s" className="Headline1" mb={6}>
+      <Box
+        maxW="sm"
+        minH={'150px'}
+        transitionDelay="3s"
+        className="Headline1"
+        mb={6}
+      >
         <Flex pr={4}>
           <Spacer />
           <Button
@@ -343,6 +349,7 @@ export const Setting = ({
         defaultValue={settingDetail.questionRange}
       >
         <Stack
+          w={'sm'}
           spacing={[2, 4]}
           direction={['column']}
           bg="blackAlpha.100"

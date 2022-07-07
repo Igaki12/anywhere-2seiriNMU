@@ -12,7 +12,7 @@ import {
   Collapse,
   Tooltip,
 } from '@chakra-ui/react'
-import { ArrowDownIcon, RepeatIcon } from '@chakra-ui/icons'
+import { ArrowDownIcon, RepeatIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { ResultBar } from './ResultBar'
 import '../App.css'
 import { useState } from 'react'
@@ -242,7 +242,41 @@ export const QuestionsLog = ({
               </Box>
 
               <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
-                {history[history.length - 1].askingQuestion.questionSentence}
+                {history[history.length - 1].askingQuestion.questionSentence
+                  .split('associated')
+                  .map((sentence, index) => (
+                    <>
+                      <span>{sentence}</span>
+                      {index + 1 <
+                      history[
+                        history.length - 1
+                      ].askingQuestion.questionSentence.split('associated')
+                        .length ? (
+                        <Button
+                          color={'black'}
+                          variant="link"
+                          fontWeight={'bold'}
+                          onClick={() =>
+                            toast({
+                              title: '関係している',
+                              description:
+                                "associated(with)/joint/　よくわかる解説",
+                              status: 'info',
+                              variant: "left-accent",
+                              duration: 30000,
+                              isClosable: true,
+                              position: 'top-right',
+                            })
+                          }
+                        >
+                          associated
+                          {/* <ExternalLinkIcon /> */}
+                        </Button>
+                      ) : (
+                        <></>
+                      )}
+                    </>
+                  ))}
                 {history[history.length - 1].askingQuestion
                   .randomizedChoices ? (
                   history[
