@@ -344,7 +344,7 @@ export const Setting = ({
       >
         <Stack
           spacing={[2, 4]}
-          direction={['column', 'row']}
+          direction={['column']}
           bg="blackAlpha.100"
           p={2}
           mb="5"

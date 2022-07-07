@@ -101,6 +101,31 @@ export const useQuestionList = () => {
         // },
       ],
     },
+    {
+      groupTag: '過去問記述集',
+      groupContents: [
+        {
+          detailInfo: '2020追試験G(3)',
+          questionImg: [],
+          questionSentence:
+            '溶血性黄疸および閉塞性黄疸において、血中間接ビリルビン値、血中直接ビリルビン値、尿中ビリルビン値、尿中ウロビリノーゲン値がどのように変化するか、理由とともに説明せよ（ただし、変化が見られない検査項目については、「変化なし」と記載し、その理由についても述べよ。',
+          choices: [],
+          answerImg: [],
+          answer:
+            '赤血球が破壊されるとヘモグロビンが鉄とビリルビンに分解され、',
+          commentary: '',
+        },
+        // {
+        //   detailInfo: '6/24確認問題',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   choices: [],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+      ],
+    },
   ])
   const showQuestionList = () => {
     return questionList
