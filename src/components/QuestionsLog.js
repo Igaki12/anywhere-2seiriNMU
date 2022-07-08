@@ -253,7 +253,7 @@ export const QuestionsLog = ({
                       ].askingQuestion.questionSentence.split('associated')
                         .length ? (
                         <Button
-                          color={'blue.800'}
+                          colorScheme={'blue'}
                           variant="link"
                           fontWeight={'bold'}
                           onClick={() =>
