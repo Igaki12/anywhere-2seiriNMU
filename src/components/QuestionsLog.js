@@ -253,16 +253,16 @@ export const QuestionsLog = ({
                       ].askingQuestion.questionSentence.split('associated')
                         .length ? (
                         <Button
-                          color={'black'}
+                          color={'blue.800'}
                           variant="link"
                           fontWeight={'bold'}
                           onClick={() =>
                             toast({
                               title: '関係している',
                               description:
-                                "associated(with)/joint/　よくわかる解説",
+                                'associated(with)/joint/　よくわかる解説',
                               status: 'info',
-                              variant: "left-accent",
+                              variant: 'left-accent',
                               duration: 30000,
                               isClosable: true,
                               position: 'top-right',
