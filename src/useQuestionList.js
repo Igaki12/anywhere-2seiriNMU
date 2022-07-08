@@ -90,8 +90,58 @@ export const useQuestionList = () => {
             '1 Liter of pure water',
           ],
         },
+        {
+          detailInfo: 'レジュメ質問',
+          questionImg: [],
+          questionSentence:
+            'ヒスタミンの作用を述べよ。好塩基球以外に、ヒスタミンを分泌する細胞はなにか？',
+          choices: [],
+          answerImg: [],
+          answer:
+            'ヒスタミンは血管を拡張する作用がある。好塩基球以外に肥満細胞がヒスタミンを分泌する。',
+          commentary: '',
+        },
+        {
+          detailInfo: 'レジュメ質問',
+          questionImg: [],
+          questionSentence: 'アルカローシスになる理由を化学反応式で説明せよ。',
+          choices: [],
+          answerImg: [],
+          answer:
+            '過呼吸により二酸化炭素が肺から排出されるため、炭酸イオンの平衡が移動し、血中の水素イオン濃度が低下する。',
+          commentary:
+            'CO2 + H20 <=> H2CO3 <=> H + HCO3　この平衡式がCO2濃度低下により左に遷移し、血液pH濃度が上昇する',
+        },
+        {
+          detailInfo: 'レジュメ質問',
+          questionImg: [],
+          questionSentence:
+            '過呼吸以外の理由で、血液のpHが変化する病態を挙げよ。',
+          choices: [],
+          answerImg: [],
+          answer: '腎不全',
+          commentary: '',
+        },
+        {
+          detailInfo: 'レジュメ質問',
+          questionImg: [],
+          questionSentence: '血液のCO2やpHの変化は、どのように感知されるか？',
+          choices: [],
+          answerImg: [],
+          answer: '延髄中枢などの化学受容器で',
+          commentary: '',
+        },
         // {
-        //   detailInfo: '6/24確認問題',
+        //   detailInfo: 'レジュメ質問',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   choices: [],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: 'レジュメ質問',
         //   questionImg: [],
         //   questionSentence: '',
         //   choices: [],

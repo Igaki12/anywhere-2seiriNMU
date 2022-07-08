@@ -59,4 +59,7 @@ export const useTechnicalTerm = () => {
       (value) => value.term && value.term !== [] && value.term !== [''],
     )
   }
+  return {
+    showTechnicalTerm,
+  }
 }
