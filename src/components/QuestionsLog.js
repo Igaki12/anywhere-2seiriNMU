@@ -1,3 +1,5 @@
+// history[history.length - 1].askingQuestion.questionSentence
+//   .split(new RegExp('(associated)', 'g'))
 import {
   Image,
   Box,
@@ -27,9 +29,11 @@ export const QuestionsLog = ({
   reviewQuestion,
   reviewAskingQuestion,
   saveHistory,
+  technicalTerm,
 }) => {
   const [isOpen, setIsOpen] = useState(true)
   const toast = useToast()
+
   const toastGoodJob = () => {
     if (history[history.length - 1].remainingQuestionList.length === 0) {
       toast({
@@ -44,6 +48,18 @@ export const QuestionsLog = ({
   }
   let history = showHistory()
   let settingDetail = showSettingDetail()
+  const splitSentence = (sentence) => {
+    let newSentence = ''
+    technicalTerm.forEach((item, itemIndex) => {
+      item.forEach((term, termNum) => {
+        if (sentence.indexOf(term) === -1) {
+          return
+        }
+        sentence.split(new RegExp(term, 'g'))
+        // ここから加筆予定
+      })
+    })
+  }
   console.log(history[history.length - 1].askedQuestionList)
   // const scrollToTheBottom = () => {
   //   let element = document.documentElement
@@ -242,23 +258,44 @@ export const QuestionsLog = ({
               </Box>
 
               <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
-                {history[history.length - 1].askingQuestion.questionSentence
-                  .split('associated')
+                {/* ここがまだうまくいっていない */}
+                {technicalTerm
+                  .reduce(
+                    (prev, currentTerms) => {
+                      return currentTerms.term.reduce((previousArray, term) => {
+                        console.log(previousArray)
+                        return previousArray.reduce(
+                          (previousStr, currentStr) => {
+                            console.log(currentStr)
+                            console.log(
+                              currentStr.split(new RegExp(`(${term})`)),
+                            )
+                            return [
+                              ...previousStr,
+                              ...currentStr.split(new RegExp(`(${term})`)),
+                            ]
+                          },
+                          '',
+                        )
+                      }, prev)
+                    },
+                    [
+                      history[history.length - 1].askingQuestion
+                        .questionSentence,
+                    ],
+                  )
                   .map((sentence, index) => (
                     <>
-                      <span>{sentence}</span>
-                      {index + 1 <
-                      history[
-                        history.length - 1
-                      ].askingQuestion.questionSentence.split('associated')
-                        .length ? (
+                      {technicalTerm.find((terms) => {
+                        return terms.term.indexOf(sentence) !== -1
+                      }) ? (
                         <Button
                           colorScheme={'blue'}
                           variant="link"
                           fontWeight={'bold'}
-                          onClick={() =>
+                          onClick={(terms) =>
                             toast({
-                              title: '関係している',
+                              title: 'タイトル',
                               description:
                                 'associated(with)/joint/　よくわかる解説',
                               status: 'info',
@@ -269,11 +306,10 @@ export const QuestionsLog = ({
                             })
                           }
                         >
-                          associated
-                          {/* <ExternalLinkIcon /> */}
+                          {sentence}
                         </Button>
                       ) : (
-                        <></>
+                        <span>{sentence}</span>
                       )}
                     </>
                   ))}

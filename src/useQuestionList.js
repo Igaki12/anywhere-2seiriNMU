@@ -11,6 +11,15 @@ export const useQuestionList = () => {
         {
           detailInfo: '(1)',
           questionImg: [],
+          questionSentence: 'テストのサンプルMCHCを翻訳',
+          answerImg: [],
+          answer: '3L',
+          commentary: '',
+          choices: ['36 L', '24 L', '12 L', 'O 9L', '3 L'],
+        },
+        {
+          detailInfo: '(1)',
+          questionImg: [],
           questionSentence:
             ' (Eng-1) How much fluid would be associated with plasma volume (PV) in a 60-kg person?',
           answerImg: [],

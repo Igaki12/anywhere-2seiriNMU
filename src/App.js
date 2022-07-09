@@ -105,6 +105,7 @@ function App() {
             reviewQuestion={reviewQuestion}
             reviewAskingQuestion={reviewAskingQuestion}
             saveHistory={saveHistory}
+            technicalTerm={technicalTerm}
           />
           {settingDetail.mode === 'practice' &&
           history[history.length - 1].askingQuestion.choices.length > 1 ? (
