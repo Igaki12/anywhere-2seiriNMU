@@ -291,13 +291,27 @@ export const QuestionsLog = ({
                       }) ? (
                         <Button
                           colorScheme={'blue'}
+                          key={index}
                           variant="link"
                           fontWeight={'bold'}
-                          onClick={(terms) =>
+                          onClick={() =>
                             toast({
-                              title: 'タイトル',
-                              description:
-                                'associated(with)/joint/　よくわかる解説',
+                              title: `${
+                                technicalTerm.find(
+                                  (terms) =>
+                                    terms.term.indexOf(sentence) !== -1,
+                                ).term[0]
+                              }`,
+                              description: `${
+                                technicalTerm.find((terms) => {
+                                  return terms.term.indexOf(sentence) !== -1
+                                }).explanation
+                              }。　#${technicalTerm
+                                .find((terms) => {
+                                  return terms.term.indexOf(sentence) !== -1
+                                })
+                                .term.slice(1)
+                                .join(' #')}`,
                               status: 'info',
                               variant: 'left-accent',
                               duration: 30000,
@@ -309,7 +323,7 @@ export const QuestionsLog = ({
                           {sentence}
                         </Button>
                       ) : (
-                        <span>{sentence}</span>
+                        <span key={index}>{sentence}</span>
                       )}
                     </>
                   ))}

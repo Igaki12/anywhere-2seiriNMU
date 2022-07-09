@@ -11,7 +11,7 @@ export const useQuestionList = () => {
         {
           detailInfo: '(1)',
           questionImg: [],
-          questionSentence: 'テストのサンプルMCHCを翻訳',
+          questionSentence: 'テストのサンプルMCHCから血液抗凝固剤までを翻訳',
           answerImg: [],
           answer: '3L',
           commentary: '',
