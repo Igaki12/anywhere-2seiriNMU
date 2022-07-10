@@ -13,8 +13,8 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence: 'テストのサンプルMCHCから血液抗凝固剤までを翻訳',
           answerImg: [],
-          answer: '3L',
-          commentary: '',
+          answer: '血液抗凝固剤が作用するため高飽和性低色素性貧血を...',
+          commentary: 'EDTAが必要',
           choices: ['36 L', '24 L', '12 L', 'O 9L', '3 L'],
         },
         {

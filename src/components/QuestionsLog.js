@@ -258,7 +258,7 @@ export const QuestionsLog = ({
               </Box>
 
               <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
-                {/* ここがまだうまくいっていない */}
+                {/* ここから辞書のための分の分割＆判定 */}
                 {technicalTerm
                   .reduce(
                     (prev, currentTerms) => {
@@ -306,7 +306,7 @@ export const QuestionsLog = ({
                                 technicalTerm.find((terms) => {
                                   return terms.term.indexOf(sentence) !== -1
                                 }).explanation
-                              }。　#${technicalTerm
+                              }　#${technicalTerm
                                 .find((terms) => {
                                   return terms.term.indexOf(sentence) !== -1
                                 })
@@ -327,6 +327,7 @@ export const QuestionsLog = ({
                       )}
                     </>
                   ))}
+                {/* ここまでが辞書のための文の分割＆判定 */}
                 {history[history.length - 1].askingQuestion
                   .randomizedChoices ? (
                   history[
@@ -374,18 +375,156 @@ export const QuestionsLog = ({
                       textTransform="uppercase"
                       ml="2"
                     >
-                      {history[history.length - 1].askingQuestion.answer
-                        ? history[history.length - 1].askingQuestion.answer
-                        : '解答準備中'}
+                      {technicalTerm
+                        .reduce(
+                          (prev, currentTerms) => {
+                            return currentTerms.term.reduce(
+                              (previousArray, term) => {
+                                console.log(previousArray)
+                                return previousArray.reduce(
+                                  (previousStr, currentStr) => {
+                                    console.log(currentStr)
+                                    console.log(
+                                      currentStr.split(new RegExp(`(${term})`)),
+                                    )
+                                    return [
+                                      ...previousStr,
+                                      ...currentStr.split(
+                                        new RegExp(`(${term})`),
+                                      ),
+                                    ]
+                                  },
+                                  '',
+                                )
+                              },
+                              prev,
+                            )
+                          },
+                          [history[history.length - 1].askingQuestion.answer],
+                        )
+                        .map((sentence, index) => (
+                          <>
+                            {technicalTerm.find((terms) => {
+                              return terms.term.indexOf(sentence) !== -1
+                            }) ? (
+                              <Button
+                                colorScheme={'blue'}
+                                key={index}
+                                variant="link"
+                                fontWeight={'bold'}
+                                onClick={() =>
+                                  toast({
+                                    title: `${
+                                      technicalTerm.find(
+                                        (terms) =>
+                                          terms.term.indexOf(sentence) !== -1,
+                                      ).term[0]
+                                    }`,
+                                    description: `${
+                                      technicalTerm.find((terms) => {
+                                        return (
+                                          terms.term.indexOf(sentence) !== -1
+                                        )
+                                      }).explanation
+                                    }　#${technicalTerm
+                                      .find((terms) => {
+                                        return (
+                                          terms.term.indexOf(sentence) !== -1
+                                        )
+                                      })
+                                      .term.slice(1)
+                                      .join(' #')}`,
+                                    status: 'info',
+                                    variant: 'left-accent',
+                                    duration: 30000,
+                                    isClosable: true,
+                                    position: 'top-right',
+                                  })
+                                }
+                              >
+                                {sentence}
+                              </Button>
+                            ) : (
+                              <span key={index}>{sentence}</span>
+                            )}
+                          </>
+                        ))}
                     </Box>
                   </Box>
                   <Badge variant="solid" colorScheme="red">
                     解説
                   </Badge>
                   <Box mt="1" as="h4" lineHeight="tight">
-                    {history[history.length - 1].askingQuestion.commentary
-                      ? history[history.length - 1].askingQuestion.commentary
-                      : ''}
+                    {technicalTerm
+                      .reduce(
+                        (prev, currentTerms) => {
+                          return currentTerms.term.reduce(
+                            (previousArray, term) => {
+                              console.log(previousArray)
+                              return previousArray.reduce(
+                                (previousStr, currentStr) => {
+                                  console.log(currentStr)
+                                  console.log(
+                                    currentStr.split(new RegExp(`(${term})`)),
+                                  )
+                                  return [
+                                    ...previousStr,
+                                    ...currentStr.split(
+                                      new RegExp(`(${term})`),
+                                    ),
+                                  ]
+                                },
+                                '',
+                              )
+                            },
+                            prev,
+                          )
+                        },
+                        [history[history.length - 1].askingQuestion.commentary],
+                      )
+                      .map((sentence, index) => (
+                        <>
+                          {technicalTerm.find((terms) => {
+                            return terms.term.indexOf(sentence) !== -1
+                          }) ? (
+                            <Button
+                              colorScheme={'blue'}
+                              key={index}
+                              variant="link"
+                              fontWeight={'bold'}
+                              onClick={() =>
+                                toast({
+                                  title: `${
+                                    technicalTerm.find(
+                                      (terms) =>
+                                        terms.term.indexOf(sentence) !== -1,
+                                    ).term[0]
+                                  }`,
+                                  description: `${
+                                    technicalTerm.find((terms) => {
+                                      return terms.term.indexOf(sentence) !== -1
+                                    }).explanation
+                                  }　#${technicalTerm
+                                    .find((terms) => {
+                                      return terms.term.indexOf(sentence) !== -1
+                                    })
+                                    .term.slice(1)
+                                    .join(' #')}`,
+                                  status: 'info',
+                                  variant: 'left-accent',
+                                  duration: 30000,
+                                  isClosable: true,
+                                  position: 'top-right',
+                                })
+                              }
+                            >
+                              {sentence}
+                            </Button>
+                          ) : (
+                            <span key={index}>{sentence}</span>
+                          )}
+                        </>
+                      ))}
                   </Box>
                 </Box>
                 {history[history.length - 1].askingQuestion.id.indexOf('r') ===
