@@ -313,6 +313,7 @@ export const QuestionsLog = ({
                                 .term.slice(1)
                                 .join(' #')}`,
                               status: 'info',
+                              size: 'sm',
                               variant: 'left-accent',
                               duration: 30000,
                               isClosable: true,
@@ -435,6 +436,7 @@ export const QuestionsLog = ({
                                       .term.slice(1)
                                       .join(' #')}`,
                                     status: 'info',
+                                    size: 'sm',
                                     variant: 'left-accent',
                                     duration: 30000,
                                     isClosable: true,
@@ -511,6 +513,7 @@ export const QuestionsLog = ({
                                     .term.slice(1)
                                     .join(' #')}`,
                                   status: 'info',
+                                  size: 'sm',
                                   variant: 'left-accent',
                                   duration: 30000,
                                   isClosable: true,

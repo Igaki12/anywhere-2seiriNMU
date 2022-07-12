@@ -160,13 +160,43 @@ export const useQuestionList = () => {
           answer: 'クラッシュ症候群、塩化カリウム製剤投与',
           commentary: '',
         },
+        {
+          detailInfo: 'レジュメ質問7/11',
+          questionImg: [],
+          questionSentence:
+            '心拡張期は大動脈弁が閉鎖しているのに、なぜ、血圧が維持されるのか？',
+          choices: [],
+          answerImg: [],
+          answer:
+            '弾性動脈である大動脈は伸展性に富むため、収縮期に心臓から送り出された血液の一部は大動脈に貯留し、拡張期に縮みながら血液を末梢に送ることで血圧をある程度維持する。',
+          commentary:
+            '動脈硬化が進行すると最高血圧は高くなり、拡張期血圧は逆に低くなる。',
+        },
         // {
         //   detailInfo: 'レジュメ質問7/11',
         //   questionImg: [],
-        //   questionSentence: '高カリウム血症は、なぜ致死的な不整脈を招くのか？',
+        //   questionSentence: '心拡張期は大動脈弁が閉鎖しているのに、なぜ、血圧が維持されるのか？',
         //   choices: [],
         //   answerImg: [],
-        //   answer: 'カリウムイオンの濃度が細胞外液で高くなると、内向き整流性Kイオンチャネルなどが作用しなくなり、静止膜電位が高くなるとナトリウムチャネルが不活化されパルスが発生しなくなるから。',
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: 'レジュメ質問7/11',
+        //   questionImg: [],
+        //   questionSentence: '心拡張期は大動脈弁が閉鎖しているのに、なぜ、血圧が維持されるのか？',
+        //   choices: [],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: 'レジュメ質問7/11',
+        //   questionImg: [],
+        //   questionSentence: '心拡張期は大動脈弁が閉鎖しているのに、なぜ、血圧が維持されるのか？',
+        //   choices: [],
+        //   answerImg: [],
+        //   answer: '',
         //   commentary: '',
         // },
         // {
