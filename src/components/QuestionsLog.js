@@ -46,20 +46,35 @@ export const QuestionsLog = ({
       })
     }
   }
-  let history = showHistory()
-  let settingDetail = showSettingDetail()
-  const splitSentence = (sentence) => {
-    let newSentence = ''
-    technicalTerm.forEach((item, itemIndex) => {
-      item.forEach((term, termNum) => {
-        if (sentence.indexOf(term) === -1) {
-          return
-        }
-        sentence.split(new RegExp(term, 'g'))
-        // ここから加筆予定
-      })
+  const toastDictionary = (sentence) => {
+    toast({
+      title: `${
+        technicalTerm.find((terms) => terms.term.indexOf(sentence) !== -1)
+          .term[0]
+      }`,
+      description: `${
+        technicalTerm.find((terms) => {
+          return terms.term.indexOf(sentence) !== -1
+        }).explanation
+      }　#${technicalTerm
+        .find((terms) => {
+          return terms.term.indexOf(sentence) !== -1
+        })
+        .term.slice(1)
+        .join(' #')}`,
+      status: 'info',
+      containerStyle: {
+        maxWidth: 'sm',
+      },
+      variant: 'left-accent',
+      duration: 30000,
+      isClosable: true,
+      position: 'top-right',
     })
   }
+  let history = showHistory()
+  let settingDetail = showSettingDetail()
+
   console.log(history[history.length - 1].askedQuestionList)
   // const scrollToTheBottom = () => {
   //   let element = document.documentElement
@@ -161,7 +176,6 @@ export const QuestionsLog = ({
                         fontWeight="semibold"
                         letterSpacing="wide"
                         fontSize=""
-                        textTransform="uppercase"
                         ml="2"
                         key={index + 'AnswerBox2'}
                       >
@@ -263,16 +277,16 @@ export const QuestionsLog = ({
                   .reduce(
                     (prev, currentTerms) => {
                       return currentTerms.term.reduce((previousArray, term) => {
-                        console.log(previousArray)
+                        // console.log(previousArray)
                         return previousArray.reduce(
                           (previousStr, currentStr) => {
-                            console.log(currentStr)
-                            console.log(
-                              currentStr.split(new RegExp(`(${term})`)),
-                            )
+                            // console.log(currentStr)
+                            // console.log(
+                            //   currentStr.split(new RegExp(`(${term})`, 'g')),
+                            // )
                             return [
                               ...previousStr,
-                              ...currentStr.split(new RegExp(`(${term})`)),
+                              ...currentStr.split(new RegExp(`(${term})`, 'g')),
                             ]
                           },
                           '',
@@ -291,40 +305,15 @@ export const QuestionsLog = ({
                       }) ? (
                         <Button
                           colorScheme={'blue'}
-                          key={index}
+                          key={index + 'b1'}
                           variant="link"
                           fontWeight={'bold'}
-                          onClick={() =>
-                            toast({
-                              title: `${
-                                technicalTerm.find(
-                                  (terms) =>
-                                    terms.term.indexOf(sentence) !== -1,
-                                ).term[0]
-                              }`,
-                              description: `${
-                                technicalTerm.find((terms) => {
-                                  return terms.term.indexOf(sentence) !== -1
-                                }).explanation
-                              }　#${technicalTerm
-                                .find((terms) => {
-                                  return terms.term.indexOf(sentence) !== -1
-                                })
-                                .term.slice(1)
-                                .join(' #')}`,
-                              status: 'info',
-                              size: 'sm',
-                              variant: 'left-accent',
-                              duration: 30000,
-                              isClosable: true,
-                              position: 'top-right',
-                            })
-                          }
+                          onClick={() => toastDictionary(sentence)}
                         >
                           {sentence}
                         </Button>
                       ) : (
-                        <span key={index}>{sentence}</span>
+                        <span key={index + 'n1'}>{sentence}</span>
                       )}
                     </>
                   ))}
@@ -373,7 +362,6 @@ export const QuestionsLog = ({
                       fontWeight="semibold"
                       letterSpacing="wide"
                       fontSize=""
-                      textTransform="uppercase"
                       ml="2"
                     >
                       {technicalTerm
@@ -381,19 +369,28 @@ export const QuestionsLog = ({
                           (prev, currentTerms) => {
                             return currentTerms.term.reduce(
                               (previousArray, term) => {
-                                console.log(previousArray)
+                                // console.log(previousArray)
                                 return previousArray.reduce(
                                   (previousStr, currentStr) => {
-                                    console.log(currentStr)
-                                    console.log(
-                                      currentStr.split(new RegExp(`(${term})`)),
-                                    )
-                                    return [
-                                      ...previousStr,
-                                      ...currentStr.split(
-                                        new RegExp(`(${term})`),
-                                      ),
-                                    ]
+                                    // console.log(currentStr)
+                                    // console.log(
+                                    //   currentStr.split(
+                                    //     new RegExp(`(${term})`, 'g'),
+                                    //   ),
+                                    // )
+                                    let newStr = []
+                                    if (
+                                      currentStr.match(
+                                        new RegExp(`(${term})`, 'g'),
+                                      )
+                                    ) {
+                                      newStr = currentStr.split(
+                                        new RegExp(`(${term})`, 'g'),
+                                      )
+                                    } else {
+                                      newStr = currentStr.split(/(_d.)/g)
+                                    }
+                                    return [...previousStr, ...newStr]
                                   },
                                   '',
                                 )
@@ -410,44 +407,15 @@ export const QuestionsLog = ({
                             }) ? (
                               <Button
                                 colorScheme={'blue'}
-                                key={index}
+                                key={index + 'b'}
                                 variant="link"
                                 fontWeight={'bold'}
-                                onClick={() =>
-                                  toast({
-                                    title: `${
-                                      technicalTerm.find(
-                                        (terms) =>
-                                          terms.term.indexOf(sentence) !== -1,
-                                      ).term[0]
-                                    }`,
-                                    description: `${
-                                      technicalTerm.find((terms) => {
-                                        return (
-                                          terms.term.indexOf(sentence) !== -1
-                                        )
-                                      }).explanation
-                                    }　#${technicalTerm
-                                      .find((terms) => {
-                                        return (
-                                          terms.term.indexOf(sentence) !== -1
-                                        )
-                                      })
-                                      .term.slice(1)
-                                      .join(' #')}`,
-                                    status: 'info',
-                                    size: 'sm',
-                                    variant: 'left-accent',
-                                    duration: 30000,
-                                    isClosable: true,
-                                    position: 'top-right',
-                                  })
-                                }
+                                onClick={() => toastDictionary(sentence)}
                               >
                                 {sentence}
                               </Button>
                             ) : (
-                              <span key={index}>{sentence}</span>
+                              <span key={index + 'n'}>{sentence}</span>
                             )}
                           </>
                         ))}
@@ -462,17 +430,19 @@ export const QuestionsLog = ({
                         (prev, currentTerms) => {
                           return currentTerms.term.reduce(
                             (previousArray, term) => {
-                              console.log(previousArray)
+                              // console.log(previousArray)
                               return previousArray.reduce(
                                 (previousStr, currentStr) => {
-                                  console.log(currentStr)
-                                  console.log(
-                                    currentStr.split(new RegExp(`(${term})`)),
-                                  )
+                                  // console.log(currentStr)
+                                  // console.log(
+                                  //   currentStr.split(
+                                  //     new RegExp(`(${term})`, 'g'),
+                                  //   ),
+                                  // )
                                   return [
                                     ...previousStr,
                                     ...currentStr.split(
-                                      new RegExp(`(${term})`),
+                                      new RegExp(`(${term})`, 'g'),
                                     ),
                                   ]
                                 },
@@ -491,40 +461,15 @@ export const QuestionsLog = ({
                           }) ? (
                             <Button
                               colorScheme={'blue'}
-                              key={index}
+                              key={index + 'b3'}
                               variant="link"
                               fontWeight={'bold'}
-                              onClick={() =>
-                                toast({
-                                  title: `${
-                                    technicalTerm.find(
-                                      (terms) =>
-                                        terms.term.indexOf(sentence) !== -1,
-                                    ).term[0]
-                                  }`,
-                                  description: `${
-                                    technicalTerm.find((terms) => {
-                                      return terms.term.indexOf(sentence) !== -1
-                                    }).explanation
-                                  }　#${technicalTerm
-                                    .find((terms) => {
-                                      return terms.term.indexOf(sentence) !== -1
-                                    })
-                                    .term.slice(1)
-                                    .join(' #')}`,
-                                  status: 'info',
-                                  size: 'sm',
-                                  variant: 'left-accent',
-                                  duration: 30000,
-                                  isClosable: true,
-                                  position: 'top-right',
-                                })
-                              }
+                              onClick={() => toastDictionary(sentence)}
                             >
                               {sentence}
                             </Button>
                           ) : (
-                            <span key={index}>{sentence}</span>
+                            <span key={index + 'n3'}>{sentence}</span>
                           )}
                         </>
                       ))}

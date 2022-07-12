@@ -20,10 +20,9 @@ export const useQuestionList = () => {
         {
           detailInfo: '(1)',
           questionImg: [],
-          questionSentence:
-            ' (Eng-1) How much fluid would be associated with plasma volume (PV) in a 60-kg person?',
+          questionSentence: '下付き文字・上付き文字のテスト',
           answerImg: [],
-          answer: '3L',
+          answer: 'H_d2O,K_d+,Ca_d2_d+,C_d6H_d1_d8O',
           commentary: '',
           choices: ['36 L', '24 L', '12 L', 'O 9L', '3 L'],
         },
