@@ -287,13 +287,13 @@ export const useQuestionList = () => {
       ],
     },
     {
-      groupTag: '2020中間(一問一答)',
+      groupTag: '2020中間(記述以外)',
       groupContents: [
         {
           detailInfo: 'A(1)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             'プルキンエ線維の伝達速度は、心室筋の伝達速度よりも速い',
             '房室結節の伝達速度は、心房筋の伝達速度よりも速い',
@@ -309,7 +309,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(2)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             'カテコールアミンは、チロシンから合成される',
             'ノルアドレナリンは、アドレナリンから合成される',
@@ -325,7 +325,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(3)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             '最低血圧が高くなると、前負荷が増大する',
             '心室の拡張終期容量は、後負荷の指標になる',
@@ -339,7 +339,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(4)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             '1音は、房室弁が開放する際に聴取される',
             '2音は、動脈弁の閉鎖時に聴取される',
@@ -353,7 +353,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(5)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             'α1アドレナリン受容体の刺激は、末梢血管平滑筋を収縮させ、その結果拡張期血圧を上昇させる',
             'β1アドレナリン受容体の刺激は、心拍出量を増加させる',
@@ -367,7 +367,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(6)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             'Na-Kイオンポンプは、3個のNaイオンを排出して2個のKイオンを取り込む',
             'Na-Kイオンポンプは、強心配糖体により活性化される',
@@ -381,7 +381,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(7)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             'P波は洞房結節の脱分極を反映する',
             'QRS波は心室の脱分極を反映する',
@@ -395,7 +395,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(8)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             '心筋梗塞では、発症後30分から2時間程度経過した時点で、ST上昇を認める',
             '心筋梗塞では、胸痛が消失した後も、異常Q波が残る',
@@ -409,7 +409,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(9)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             'Ⅱ誘導では、左手と左足の電位差を計測する',
             'aVR誘導では、右手と左脚の電位差を計測する',
@@ -423,7 +423,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(10)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             '胎児では、右心室の血液は卵円孔を通過して左心室へ流入する',
             '胎児では、肺動脈の血液が動脈管を通過して大動脈へ流入する',
@@ -437,7 +437,7 @@ export const useQuestionList = () => {
           detailInfo: 'A(1)',
           questionImg: [],
           questionSentence:
-            '正しい選択肢を選べ（複数選択可/全て正解・全て誤りの場合もある）',
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: ['', '', ''],
           answerImg: [],
           answer: '',
