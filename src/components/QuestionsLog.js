@@ -277,17 +277,24 @@ export const QuestionsLog = ({
                   .reduce(
                     (prev, currentTerms) => {
                       return currentTerms.term.reduce((previousArray, term) => {
-                        // console.log(previousArray)
+                        console.log(previousArray)
                         return previousArray.reduce(
                           (previousStr, currentStr) => {
-                            // console.log(currentStr)
-                            // console.log(
-                            //   currentStr.split(new RegExp(`(${term})`, 'g')),
-                            // )
-                            return [
-                              ...previousStr,
-                              ...currentStr.split(new RegExp(`(${term})`, 'g')),
-                            ]
+                            console.log(currentStr)
+                            console.log(
+                              currentStr.split(new RegExp(`(${term})`, 'g')),
+                            )
+                            let newStr = []
+                            if (
+                              currentStr.match(new RegExp(`(${term})`, 'g'))
+                            ) {
+                              newStr = currentStr.split(
+                                new RegExp(`(${term})`, 'g'),
+                              )
+                            } else {
+                              newStr = currentStr.split(/(_d.)/g)
+                            }
+                            return [...previousStr, ...newStr]
                           },
                           '',
                         )

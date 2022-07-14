@@ -3,6 +3,7 @@ import { useState } from 'react'
 // import u from './img/question/スクリーンショット 2022-06-24 .png'
 import cardiacNerves from './img/answer/cardiacNerves.png'
 import synthesizeCatecholamine from './img/answer/synthesizeCatecholamine.png'
+import C2020m from './img/question/C2020m.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -185,15 +186,18 @@ export const useQuestionList = () => {
           commentary:
             '皮膚の血管を収縮させるのはα受容体、心拍出量が増えるのはβ1受容体。',
         },
-        // {
-        //   detailInfo: 'レジュメ質問7/13',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: 'レジュメ質問7/14',
+          questionImg: [],
+          questionSentence:
+            '立ち眩みの際に、目の前が暗くなり、しばらくすると胸がドキドキするのはなぜか？',
+          choices: [],
+          answerImg: [],
+          answer:
+            '心臓からの拍出量が減り、脳へ行く血液量が減った後、脳への血流量低下を感知して心機能亢進が起こるから。',
+          commentary:
+            '血圧低下は頚動脈洞などに存在する高圧受容器が感知して、舌咽神経→交感神経を介して心筋へ作用する',
+        },
         // {
         //   detailInfo: 'レジュメ質問7/13',
         //   questionImg: [],
@@ -521,10 +525,9 @@ export const useQuestionList = () => {
       groupTag: '過去問記述集',
       groupContents: [
         {
-          detailInfo: '2020追試験G(3)',
-          questionImg: [],
-          questionSentence:
-            '溶血性黄疸および閉塞性黄疸において、血中間接ビリルビン値、血中直接ビリルビン値、尿中ビリルビン値、尿中ウロビリノーゲン値がどのように変化するか、理由とともに説明せよ（ただし、変化が見られない検査項目については、「変化なし」と記載し、その理由についても述べよ。',
+          detailInfo: '2020中間C(1)',
+          questionImg: [C2020m],
+          questionSentence: '以下の心電図の診断名と判定根拠を記述せよ',
           choices: [],
           answerImg: [],
           answer:
