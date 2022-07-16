@@ -25,7 +25,7 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence: '下付き文字・上付き文字のテスト',
           answerImg: [],
-          answer: 'H_d2O,K_d+,Ca_d2_d+,C_d6H_d1_d8O',
+          answer: 'H₂O,K⁺,Ca²⁺',
           commentary: '',
           choices: ['36 L', '24 L', '12 L', 'O 9L', '3 L'],
         },
@@ -336,8 +336,10 @@ export const useQuestionList = () => {
             'Frank-Starlingの法則によると、前負荷が増加すれば、一回拍出量も増加する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            'Frank-Starlingの法則によると、前負荷が増加すれば、一回拍出量も増加する',
+          commentary:
+            '最低血圧は拍出時の負担に関係する（後負荷）。拡張終期容量は収縮する直前にかかる負荷（前負荷）',
         },
         {
           detailInfo: 'A(4)',
@@ -350,8 +352,8 @@ export const useQuestionList = () => {
             '下半身のリンパ管は胸管に合流して、右静脈角で静脈に合流する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '2音は、動脈弁の閉鎖時に聴取される',
+          commentary: '1音は閉鎖音、下半身のリンパ管は左静脈角で合流する',
         },
         {
           detailInfo: 'A(5)',
@@ -438,24 +440,565 @@ export const useQuestionList = () => {
           commentary: '',
         },
         {
-          detailInfo: 'A(1)',
+          detailInfo: 'A(11)',
           questionImg: [],
           questionSentence:
             '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
-          choices: ['', '', ''],
+          choices: [
+            '心臓から拍出された血液のうち、約5%が肝動脈へ流れる',
+            '心臓から拍出された血液のうち、約20%が腎臓へ流れる',
+            '心臓から拍出された血液のうち、約15%が脳へ流れる',
+          ],
           answerImg: [],
           answer: '',
           commentary: '',
         },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: 'A(12)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '運動時に内臓への血流量が低下するのは、内臓の毛細血管が収縮するからである',
+            '腎臓は、ビタミンAを活性化させる作用を有す',
+            '大静脈が右心房へ入る部分の圧を中心静脈圧という',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(13)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '左冠動脈の血流量は、心臓の収縮期よりも拡張期の方で多い。',
+            '冠動脈の血流量は、局所の酸素濃度の低下や、水素イオン・乳酸・アデノシンなどの上昇によって増加する',
+            '静脈の血液量は、動脈の血液量よりも多い。',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(14)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '通常の血圧測定（例：上腕動脈）では、平均血圧=(最高血圧+最低血圧)÷2が成り立つ',
+            '動脈硬化では、脈波の伝播速度が低下する',
+            '最高血圧と最低血圧の圧差を、脈圧という。',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(15)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'ヒスタミンは毛細血管の細胞間隙を広げることにより、血管透過性を亢進させる',
+            '腎糸球体の毛細血管は、連続型である',
+            '肝臓の毛細血管は有窓型である',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(16)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '心不全では、心拍出量の低下のために肺にうっ血が生じ、肺水腫による呼吸困難が生じる',
+            '起坐呼吸は、心不全患者に認める所見である',
+            'ネフローゼ症候群では、蛋白尿と浮腫を認める',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(17)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'アンギオテンシン2、バソプレシンは、いずれも血管平滑筋を収縮させる',
+            'ホスホリパーゼC(PLC)が活性化されると、細胞膜からイノシトール三リン酸IP3とジアシルグリセロールDGが産生される',
+            'IP3は筋小胞体のIP3受容体へ結合して、Caイオンの放出を促す',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(18)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'アセチルコリン・ブラジキニンは、いずれも血管内皮細胞の受容体へ統合して内皮細胞でのNOの産生を誘発する',
+            'NOSとは、NOの合成酵素を意味する',
+            '血管平滑筋のCキナーゼが活性化すると、血管平滑筋は弛緩する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(19)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '心房性ナトリウム利尿ペプチドは、血管収縮作用を有している',
+            '頚動脈洞と大動脈弓には、動脈壁の伸展により興奮する圧受容器が存在し、各々舌咽神経・迷走神経を介して延髄の孤束核へ情報を伝達する',
+            '静脈還流量が増加すると、血管運動中枢が興奮して心収縮力が増強する。この現象をペインブリッジ反射という。',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(20)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '尿崩症とは、レニンの分泌低下による尿量の顕著な増加を意味する',
+            '血流速度が増大すると、内皮細胞へのずり応力が生じ、内皮細胞から分泌される物質の作用により血管平滑筋が収縮する',
+            '肺血管には、低酸素により収縮するという特徴がある',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(21)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '肺の換気血流比は、肺尖部よりも肺底部の方が高い。',
+            '脾腫、腹水、食道静脈瘤、 痔核は、いずれも門脈圧亢進症で認める所見である。',
+            '二酸化炭素分圧の上昇により、脳血管は拡張する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(22)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '皮膚血管には動静脈吻合が存在し、この吻合の開閉によって皮膚の血流量が調節されている',
+            '脳組織の主たるエネルギー源は脂質である',
+            '門脈とは、2つの毛細血管網に挟まれた血管のことである。',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(23)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '採血時に抗凝固剤を加えて遠沈した上清を血清という',
+            'EDTAは、血液凝固に必要なカルシウムを取り除くことにより、抗凝固作用を発揮する',
+            'ヘパリンは、トロンビンに直接結合することにより、抗凝固作用を発揮する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(24)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'Crush症候群では、組織の挫滅のために細胞内のカリウムが急激に血中に放出され、致命的な不整脈をきたす',
+            '血液のpHの正常値は、7.0±0.05である',
+            '血漿タンパクは負に帯電しているため、電気泳動により陽極側に移動する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(25)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '過換気症候群では、血中のカルシウムイオンとアルブミンの結合が低下する',
+            '赤血球の寿命は120日である',
+            '溶血性貧血では、末梢血中の網状赤血球が増加する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(26)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '巨赤芽球性貧血は、葉酸やビタミンB12の不足が原因である',
+            '悪性貧血では、内因子の欠乏のために、消化管でのビタミンB12の吸収が阻害される',
+            '内因子は胃の壁細胞から分泌される',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(27)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '胎児期には肝臓や脾臓で造血が行われている',
+            'HbAはHbFより酸素結合能が高い',
+            '鎌状赤血球症の保因者がマラリアに罹患すると、重篤化しやすい',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(28)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '鉄欠乏性貧血では、血清フェリチン値が上昇する',
+            '体内の鉄の1/4はヘモグロビン中に存在している',
+            'トランスフェリンは、鉄の運搬を担う血清蛋白である',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(29)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '好中球は白血球の中で最も数が多い',
+            '好酸球は寄生虫疾患で低値を示す',
+            '好塩基球はヒスタミンを放出してⅠ型アレルギーに関与する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(30)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '好中球の表面には、Fc受容体とC3b受容体が存在し、オプソニン作用に寄与する',
+            '好中球は、活性酸素種を産生して、貪食した微生物を殺菌する',
+            'C5aは、好中球の走化性を促す',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(31)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'IgGの補体活性化能は、IgMの補体活性化能よりも高い',
+            'IgAは、涙や母乳中に分泌される',
+            'IgMは5量体を形成する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(32)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '抗体の多様性は、V(D)J recombinationにより生み出される',
+            '補体活性化の古典経路は、抗原抗体複合体とC1の結合により誘発される',
+            'C3bとC5bは、アナフィラトキシンと呼ばれる',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(33)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '血管壁が損傷してコラーゲンが露出すると、フィブリノゲンがコラーゲンと血小板を架橋し、血小板の血管壁への粘着が促進される',
+            'トロンボキサンA2とプロスタサイクリンは、ともに血小板凝集を促進する',
+            'プラスミンは、フィブリンの分解を阻害する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(34)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '誤嚥性肺炎は左肺で起きやすい',
+            '外肋間筋は、呼息時に収縮する',
+            '胸膜の表面は内皮で覆われている',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(35)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '肺活量は、スパイロメーターで計測可能である',
+            '残気量は、スパイロメーターで計測可能である',
+            '予備呼気量は、スパイロメーターで計測可能である',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(36)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '肺でのガス交換において、二酸化炭素の拡散能は、酸素の拡散能よりも高い',
+            'pHの低下は、酸素解離曲線を右方へ移動させる',
+            '2,3-DPGの低下は、酸素解離曲線を右方へ移動させる',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(37)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '末梢化学受容器の一つである頚動脈小体は、主に酸素分圧の低下を感知する',
+            '頚動脈小体で感知された情報は、迷走神経を介して延髄の孤束核へ伝達される',
+            '延髄腹側の中枢化学受容器は、二酸化炭素分圧の上昇を感知する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(38)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'Kussmaul呼吸では、過呼吸と無呼吸が繰り返される',
+            'Cheyne-Strokes呼吸は、ゆっくりとした深く規則的な呼吸で,糖尿病ケトアシドーシスで特徴的に認められる',
+            'Hering-Breuer反射は、肺の伸展受容器を介する呼吸調節反射である',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(39)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'ホールデン効果によると、酸素分圧が上昇するほど、血中の二酸化炭素の運搬量が増加する',
+            'ヘモグロビンに対する一酸化炭素の親和性は、酸素の200倍以上高い',
+            'ミオグロビンの酸素親和性は、ヘモグロビンよりも高い',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(40)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'ハプトグロビンは、ヘモグロビンを運搬する血漿タンパクである',
+            '一次免疫応答では、IgMの分泌量がIgGよりも多いのに対して、二次免疫応答では逆転する',
+            '免疫グロブリンのクラススイッチは、ゲノムの組み換えによって生ずる',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(41)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '成人女性の方が成人男性より、体内水分量が多い',
+            '細胞外液の主な陰イオンは、ClイオンとHPO4イオンである',
+            '血漿浸透圧が上昇すると、体内の恒常性を維持するために高張尿が生成される',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(42)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'ネフロンは尿を生成する構造的な単位で、糸球体から遠位尿細管まで、枝分かれの内一本道である',
+            '腎臓の皮質迷路には糸球体、近位尿細管曲部、遠位尿細管曲部および集合管の一部がふくまれる',
+            '近位尿細管上皮細胞の内腔側には冊子縁が存在する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(43)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '輸入細動脈と輸出細動脈の間にはメサンギウム細胞が存在する',
+            '糸球体基底膜のプロテオグリカンはへパラン硫酸を主成分とし、陽性の電荷を帯びている',
+            '糸球体足細胞の足突起の間にはスリット膜が存在し、その構成因子のひとつであるネフリンに異常があると、フィンランド型先天性ネフローゼ症候群を引き起こす',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(44)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '糸球体で赤血球はろ過されないが、血小板はろ過される',
+            '分子量11,500のβ2-ミクログロブリンは糸球体でろ過される',
+            '糸球体の足細胞はニューロンと同様に細胞分裂をすることがない細胞で、障害を受けると糸球体から脱落する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(45)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'アデノシンが輸入細動脈のA1受容体に結合すると、輸入細動脈は弛緩し、糸球体濾過量は上昇',
+            'アンギオテンシン2の働きにより、輸入細動脈が収縮し糸球体濾過量は減少する',
+            '糸球体濾過量が増加すると、輸入細動脈の顆粒細胞からのレニンの分泌は抑制される',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(46)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '健常人に2g/日の食塩制限を行うと、レニンの濃度は上昇する',
+            '健常人に2g/日の食塩制限を行うと、アンギオテンシン2の濃度は上昇する',
+            '健常人に2g/日の食塩制限を行うと、心房性ナトリウム利尿ペプチドの濃度は上昇する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(47)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '低カリウム血症の際にアルカローシスが連動する',
+            '体内でＫイオンが不足しているとき、皮質集合管のβ間在細胞で、Ｋイオンが再吸収される',
+            'アルドステロンの分泌が不足すると、低カリウム血症が引き起こされる',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(48)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            'サイアザイド系利尿剤は近位尿細管におけるNaイオンの再吸収を阻害する',
+            'ループ利尿薬により低カリウム血症が引き起こされる',
+            'トリアムテレンにより低カリウム血症が引き起こされる',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(49)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '腎臓で副甲状腺ホルモンPTHの働きにより無機リンの再吸収は促進される',
+            '腎臓で副甲状腺ホルモンPTHの働きによりカルシウムの再吸収は促進される',
+            '腎臓で副甲状腺ホルモンPTHの働きによりマグネシウムの再吸収は促進される',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A(50)',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
+          choices: [
+            '不揮発性酸由来の水素イオンを排泄するため、近位尿細管においてグルタミンからアンモニアが産生される',
+            '不揮発性酸由来の水素イオンを排泄するため、集合管においてHCO₃⁻が産生される',
+            'ケトン体や乳酸の蓄積するアシドーシスではアニオンギャップは増加する',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
         // {
         //   detailInfo: 'A(1)',
         //   questionImg: [],
@@ -527,7 +1070,7 @@ export const useQuestionList = () => {
         {
           detailInfo: '2020中間C(1)',
           questionImg: [C2020m],
-          questionSentence: '以下の心電図の診断名と判定根拠を記述せよ',
+          questionSentence: '心電図の診断名と判定根拠を記述せよ',
           choices: [],
           answerImg: [],
           answer:
