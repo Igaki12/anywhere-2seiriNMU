@@ -4,6 +4,10 @@ import { useState } from 'react'
 import cardiacNerves from './img/answer/cardiacNerves.png'
 import synthesizeCatecholamine from './img/answer/synthesizeCatecholamine.png'
 import C2020m from './img/question/C2020m.png'
+import cardiacIonChannel from './img/answer/cardiacIonChannel.png'
+import coronalPlane from './img/answer/coronalPlane.png'
+import measureBloodPressure from './img/answer/MeasureBloodPressure.png'
+import myocardialInfarction from './img/answer/myocardialInfarction.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -366,8 +370,10 @@ export const useQuestionList = () => {
             'β2アドレナリン受容体の刺激は、気管支平滑筋を収縮させる',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            'α1アドレナリン受容体の刺激は、末梢血管平滑筋を収縮させ、その結果拡張期血圧を上昇させる/β1アドレナリン受容体の刺激は、心拍出量を増加させる',
+          commentary:
+            'β2アドレナリン受容体の刺激は、気管支平滑筋を弛緩させる（気管支を収縮させるのは副交感神経系）',
         },
         {
           detailInfo: 'A(6)',
@@ -379,9 +385,10 @@ export const useQuestionList = () => {
             'Na-Kイオンポンプは、強心配糖体により活性化される',
             'Na-Caイオン交換系では、3個のNaイオンと1個のCaイオンが交換される',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [cardiacIonChannel],
+          answer:
+            'Na-Kイオンポンプは、3個のNaイオンを排出して2個のKイオンを取り込む/Na-Caイオン交換系では、3個のNaイオンと1個のCaイオンが交換される',
+          commentary: '強心配糖体はNa-Kイオンポンプの阻害剤。',
         },
         {
           detailInfo: 'A(7)',
@@ -394,8 +401,9 @@ export const useQuestionList = () => {
             '洞房結節の自動能が低下すると、PQ間隔が延長する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'QRS波は心室の脱分極を反映する',
+          commentary:
+            'P波は心房筋の脱分極（洞房結節の脱分極はさらに速度が遅いため心電図に映らない）。またPQ間隔が長くなるのは房室ブロックなど、心房→心室への伝導路に異常が見られるとき。',
         },
         {
           detailInfo: 'A(8)',
@@ -407,9 +415,10 @@ export const useQuestionList = () => {
             '心筋梗塞では、胸痛が消失した後も、異常Q波が残る',
             'V1,V2,V3,V4で異常Q波を認めた際は、前壁中隔梗塞が疑われる',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [myocardialInfarction],
+          answer: 'すべて正しい',
+          commentary:
+            '異常Q波は壊死した心筋が興奮伝導を止めることによって発生する、負に大きなQ波の観測',
         },
         {
           detailInfo: 'A(9)',
@@ -419,11 +428,12 @@ export const useQuestionList = () => {
           choices: [
             'Ⅱ誘導では、左手と左足の電位差を計測する',
             'aVR誘導では、右手と左脚の電位差を計測する',
-            'V1の電極は、第5肋間胸骨右縁に装着する',
+            'V₁の電極は、第5肋間胸骨右縁に装着する',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [coronalPlane],
+          answer: '全て誤り',
+          commentary:
+            'Ⅱ誘導は右手→左脚、Ⅲ誘導は左手→左脚。aVR,aVL,aVFは増幅単極肢誘導と呼ばれる。',
         },
         {
           detailInfo: 'A(10)',
@@ -436,8 +446,9 @@ export const useQuestionList = () => {
             '卵円孔は、生後六ヶ月程度で閉鎖して卵円窩となる',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '胎児では、肺動脈の血液が動脈管を通過して大動脈へ流入する',
+          commentary:
+            '卵円孔は心房中隔のシャントで、右心房から左心房への流れ。卵円孔が封鎖するのは出生直後（個人差あり）',
         },
         {
           detailInfo: 'A(11)',
@@ -445,13 +456,14 @@ export const useQuestionList = () => {
           questionSentence:
             '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
-            '心臓から拍出された血液のうち、約5%が肝動脈へ流れる',
+            '心臓から拍出された血液のうち、約5%が冠動脈へ流れる',
             '心臓から拍出された血液のうち、約20%が腎臓へ流れる',
             '心臓から拍出された血液のうち、約15%が脳へ流れる',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'すべて正しい',
+          commentary:
+            '安静時は5%が冠動脈へ、20%が腎臓へ、15%が脳へ、30%が内臓へ、15%が筋へ、10%が皮膚へ',
         },
         {
           detailInfo: 'A(12)',
@@ -464,8 +476,9 @@ export const useQuestionList = () => {
             '大静脈が右心房へ入る部分の圧を中心静脈圧という',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '大静脈が右心房へ入る部分の圧を中心静脈圧という',
+          commentary:
+            '毛細血管は平滑筋を持たず、血流調節を行っているのは主に細動脈。腎臓が活性化するのはビタミンD',
         },
         {
           detailInfo: 'A(13)',
@@ -478,7 +491,7 @@ export const useQuestionList = () => {
             '静脈の血液量は、動脈の血液量よりも多い。',
           ],
           answerImg: [],
-          answer: '',
+          answer: 'すべて正しい',
           commentary: '',
         },
         {
@@ -491,9 +504,10 @@ export const useQuestionList = () => {
             '動脈硬化では、脈波の伝播速度が低下する',
             '最高血圧と最低血圧の圧差を、脈圧という。',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [measureBloodPressure],
+          answer: '最高血圧と最低血圧の圧差を、脈圧という。',
+          commentary:
+            '平均血圧は上腕動脈では最低血圧+脈圧/3。動脈硬化では伝達速度が上昇する',
         },
         {
           detailInfo: 'A(15)',
@@ -506,8 +520,10 @@ export const useQuestionList = () => {
             '肝臓の毛細血管は有窓型である',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            'ヒスタミンは毛細血管の細胞間隙を広げることにより、血管透過性を亢進させる',
+          commentary:
+            '腎糸球体の毛細血管は有窓型（隔膜なし/洞様毛細血管ではない）。一方肝臓の毛細血管は不連続型（類洞/洞様毛細血管）',
         },
         {
           detailInfo: 'A(16)',
@@ -520,8 +536,8 @@ export const useQuestionList = () => {
             'ネフローゼ症候群では、蛋白尿と浮腫を認める',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'すべて正しい',
+          commentary: '起坐呼吸　ネフローゼ症候群',
         },
         {
           detailInfo: 'A(17)',
