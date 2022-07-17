@@ -283,6 +283,7 @@ export const Setting = ({
             </List>
             <Divider orientation="horizontal" mt={3} mb="1" />
             <Text>アップデート履歴</Text>
+            <Text fontSize={'sm'}>07-10_Ver0.9-辞書機能を試験実装</Text>
             <Text fontSize={'sm'}>06-01_Ver0.8-重くなりすぎないように改善</Text>
             <Text fontSize={'sm'}>05-25_Ver0.7-”続きから再開”機能を仮実装</Text>
             <Text fontSize={'sm'}>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.a250b93d.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.91011417.js",
     "static/media/titleImg.png": "/anywhere-2seiriNMU/static/media/titleImg.f97b1afc288809b23ff0.png",
     "static/media/cardiacNerves.png": "/anywhere-2seiriNMU/static/media/cardiacNerves.0ab67348085ed1ab4c4a.png",
     "static/media/coronalPlane.png": "/anywhere-2seiriNMU/static/media/coronalPlane.df8eb38fa7bd996c8b60.png",
@@ -12,10 +12,10 @@
     "static/media/myocardialInfarction.png": "/anywhere-2seiriNMU/static/media/myocardialInfarction.2eae61de55ad257e122f.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.a250b93d.js.map": "/anywhere-2seiriNMU/static/js/main.a250b93d.js.map"
+    "main.91011417.js.map": "/anywhere-2seiriNMU/static/js/main.91011417.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.a250b93d.js"
+    "static/js/main.91011417.js"
   ]
 }
