@@ -8,6 +8,10 @@ import cardiacIonChannel from './img/answer/cardiacIonChannel.png'
 import coronalPlane from './img/answer/coronalPlane.png'
 import measureBloodPressure from './img/answer/MeasureBloodPressure.png'
 import myocardialInfarction from './img/answer/myocardialInfarction.png'
+import hyperventilation from './img/answer/hyperVentilation.png'
+import vasoconstriction from './img/answer/vasoconstriction.png'
+import vasorelaxation from './img/answer/vasorelaxation.png'
+import ventilationPerfusionRatio from './img/answer/ventilationPerfusionRatio.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -545,13 +549,14 @@ export const useQuestionList = () => {
           questionSentence:
             '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
-            'アンギオテンシン2、バソプレシンは、いずれも血管平滑筋を収縮させる',
-            'ホスホリパーゼC(PLC)が活性化されると、細胞膜からイノシトール三リン酸IP3とジアシルグリセロールDGが産生される',
+            'アンギオテンシンⅡ、バソプレシンは、いずれも血管平滑筋を収縮させる',
+            'ホスホリパーゼC(PLC)が活性化されると、細胞膜からイノシトール三リン酸IP₃とジアシルグリセロールDGが産生される',
             'IP3は筋小胞体のIP3受容体へ結合して、Caイオンの放出を促す',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [vasoconstriction],
+          answer: 'すべて正しい',
+          commentary:
+            'レニン-アンギオテンシン系は、全身の血圧を維持するシステムである。PLCによってPIP₂→IP₃+DGが産生されるとそれぞれがCa²⁺を細胞内に呼び込み血管平滑筋を収縮させる',
         },
         {
           detailInfo: 'A(18)',
@@ -563,9 +568,11 @@ export const useQuestionList = () => {
             'NOSとは、NOの合成酵素を意味する',
             '血管平滑筋のCキナーゼが活性化すると、血管平滑筋は弛緩する',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [vasorelaxation],
+          answer:
+            'アセチルコリン・ブラジキニンは、いずれも血管内皮細胞の受容体へ統合して内皮細胞でのNOの産生を誘発する/NOSとは、NOの合成酵素を意味する',
+          commentary:
+            'NOS=NO Synthase。血管弛緩機構は最初に血管内皮細胞でNOやプロスタサイクリンなどの物質を産生するところから始まる。最終的にAキナーゼ・GキナーゼがホスホランバンやCa²⁺ATPaseに作用して平滑筋が弛緩する。CキナーゼはDGで活性化されCa²⁺チャネルを活性化させる血管収縮機構に関与する物質',
         },
         {
           detailInfo: 'A(19)',
@@ -578,8 +585,10 @@ export const useQuestionList = () => {
             '静脈還流量が増加すると、血管運動中枢が興奮して心収縮力が増強する。この現象をペインブリッジ反射という。',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '頚動脈洞と大動脈弓には、動脈壁の伸展により興奮する圧受容器が存在し、各々舌咽神経・迷走神経を介して延髄の孤束核へ情報を伝達する/静脈還流量が増加すると、血管運動中枢が興奮して心収縮力が増強する。この現象をペインブリッジ反射という。',
+          commentary:
+            '心房性ナトリウム利尿ペプチドANPは、血圧を下げ心臓の負担を下げるはたらきがある。',
         },
         {
           detailInfo: 'A(20)',
@@ -592,8 +601,9 @@ export const useQuestionList = () => {
             '肺血管には、低酸素により収縮するという特徴がある',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '肺血管には、低酸素により収縮するという特徴がある',
+          commentary:
+            '尿崩症はバソプレシン欠乏によって起こる。ずり応力は内皮細胞を刺激し、NOやPGI₂などを放出して平滑筋を弛緩させ血管を拡張させる（でないとさらに血流が早くなってしまう）',
         },
         {
           detailInfo: 'A(21)',
@@ -605,9 +615,11 @@ export const useQuestionList = () => {
             '脾腫、腹水、食道静脈瘤、 痔核は、いずれも門脈圧亢進症で認める所見である。',
             '二酸化炭素分圧の上昇により、脳血管は拡張する',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [ventilationPerfusionRatio],
+          answer:
+            '脾腫、腹水、食道静脈瘤、 痔核は、いずれも門脈圧亢進症で認める所見である。/二酸化炭素分圧の上昇により、脳血管は拡張する',
+          commentary:
+            '換気血流比=VA(換気量)/Q(血流量)は血流量の極端な偏りのため肺尖部のほうが高い。',
         },
         {
           detailInfo: 'A(22)',
@@ -620,8 +632,9 @@ export const useQuestionList = () => {
             '門脈とは、2つの毛細血管網に挟まれた血管のことである。',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '皮膚血管には動静脈吻合が存在し、この吻合の開閉によって皮膚の血流量が調節されている/門脈とは、2つの毛細血管網に挟まれた血管のことである。',
+          commentary: '脂質→ぶどう糖',
         },
         {
           detailInfo: 'A(23)',
@@ -634,8 +647,10 @@ export const useQuestionList = () => {
             'ヘパリンは、トロンビンに直接結合することにより、抗凝固作用を発揮する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '採血時に抗凝固剤を加えて遠沈した上清を血清という/ヘパリンは、トロンビンに直接結合することにより、抗凝固作用を発揮する',
+          commentary:
+            '血清→血漿、抗凝固剤を加えないで放置した上清を血清という。ヘパリンが作用するのはアンチトロンビン（これのトロンビン不活化作用を調節）',
         },
         {
           detailInfo: 'A(24)',
@@ -648,8 +663,10 @@ export const useQuestionList = () => {
             '血漿タンパクは負に帯電しているため、電気泳動により陽極側に移動する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            'Crush症候群では、組織の挫滅のために細胞内のカリウムが急激に血中に放出され、致命的な不整脈をきたす/血漿タンパクは負に帯電しているため、電気泳動により陽極側に移動する',
+          commentary:
+            '血漿のpHの正常値は7.4前後で、酸性物質を多く腎臓や肺から放出するため弱アルカリ性。',
         },
         {
           detailInfo: 'A(25)',
@@ -661,9 +678,11 @@ export const useQuestionList = () => {
             '赤血球の寿命は120日である',
             '溶血性貧血では、末梢血中の網状赤血球が増加する',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [hyperventilation],
+          answer:
+            '赤血球の寿命は120日である/溶血性貧血では、末梢血中の網状赤血球が増加する',
+          commentary:
+            '過換気症候群ではCO₂濃度低下によるH⁺不足（アルカローシス）をアルブミンから補うため、代わりにアルブミンはCa²⁺と結合してfree Ca²⁺が減少しテタニー症状を引き起こす。溶血性貧血では血液が過度に破壊されるため、それを補う造血が活発に行われる',
         },
         {
           detailInfo: 'A(26)',
