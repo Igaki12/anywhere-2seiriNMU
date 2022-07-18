@@ -12,6 +12,52 @@ import hyperventilation from './img/answer/hyperVentilation.png'
 import vasoconstriction from './img/answer/vasoconstriction.png'
 import vasorelaxation from './img/answer/vasorelaxation.png'
 import ventilationPerfusionRatio from './img/answer/ventilationPerfusionRatio.png'
+import ecg1 from './img/question/ecg1.png'
+import ecg2 from './img/question/ecg2.png'
+import ecg3 from './img/question/ecg3.png'
+import ecg4 from './img/question/ecg4.png'
+import ecg5 from './img/question/ecg5.png'
+import ecg6 from './img/question/ecg6.png'
+import ecg7 from './img/question/ecg7.png'
+import ecg8 from './img/question/ecg8.png'
+import ecg9 from './img/question/ecg9.png'
+import ecg10 from './img/question/ecg10.png'
+import ecg11 from './img/question/ecg11.png'
+import ecg12 from './img/question/ecg12.png'
+import ecg13 from './img/question/ecg13.png'
+import ecg14 from './img/question/ecg14.png'
+import ecg15 from './img/question/ecg15.png'
+import ecg16 from './img/question/ecg16.png'
+import ecg17 from './img/question/ecg17.png'
+import ecg18 from './img/question/ecg18.png'
+import ecg19 from './img/question/ecg19.png'
+import ecg20 from './img/question/ecg20.png'
+import ecg21 from './img/question/ecg21.png'
+import ecg22 from './img/question/ecg22.png'
+import ecg23 from './img/question/ecg23.png'
+import ecg24 from './img/question/ecg24.png'
+import ecg25 from './img/question/ecg25.png'
+import ecg26 from './img/question/ecg26.png'
+import ecg27 from './img/question/ecg27.png'
+import ecg28 from './img/question/ecg28.png'
+import ecg29 from './img/question/ecg29.png'
+import ecg30 from './img/question/ecg30.png'
+import ecg31 from './img/question/ecg31.png'
+import ecg32 from './img/question/ecg32.png'
+import ecg33 from './img/question/ecg33.png'
+import ecg34 from './img/question/ecg34.png'
+import ecg35 from './img/question/ecg35.png'
+import ecg36 from './img/question/ecg36.png'
+import ecg37 from './img/question/ecg37.png'
+import ecg38 from './img/question/ecg38.png'
+import ecg39 from './img/question/ecg39.png'
+import ecg40 from './img/question/ecg40.png'
+import ecg41 from './img/question/ecg41.png'
+import ecg42 from './img/question/ecg42.png'
+import ecg43 from './img/question/ecg43.png'
+import ecg44 from './img/question/ecg44.png'
+import ecg45 from './img/question/ecg45.png'
+import ecg46 from './img/question/ecg46.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -1093,6 +1139,444 @@ export const useQuestionList = () => {
         //   questionImg: [],
         //   questionSentence: '',
         //   choices: ['','',''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+      ],
+    },
+    {
+      groupTag: '心電図',
+      groupContents: [
+        {
+          detailInfo: '',
+          questionImg: [ecg1],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'Wenckebach型',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg2],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '第1度房室ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg3],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全房室ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg4],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'MobitzⅡ型',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg5],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心房細動',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg6],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室細動',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg7],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室期外収縮',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg8],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室頻拍',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg9],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '発作性上室性頻拍',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg10],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心房粗動',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg11],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全右脚ブロック',
+          commentary: '',
+        },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [ecg12],
+        //   questionSentence: 'この心電図が示す疾患を答えよ',
+        //   answerImg: [],
+        //   answer: '完全左脚ブロック',
+        //   commentary: '',
+        // },
+        {
+          detailInfo: '',
+          questionImg: [ecg12],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '上室期外収縮',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg13],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'WPW症候群',
+          commentary: '',
+        },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [ecg15],
+        //   questionSentence: 'この心電図が示す疾患を答えよ',
+        //   answerImg: [],
+        //   answer: '急性期心筋梗塞',
+        //   commentary: '',
+        // },
+        {
+          detailInfo: '',
+          questionImg: [ecg14],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'Wenckebach型',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg15],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'MobitzⅡ型',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg16],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全房室ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg17],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '洞不全症候群',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg18],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室頻拍',
+          commentary: '',
+        },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [ecg19],
+        //   questionSentence: 'この心電図が示す疾患を答えよ',
+        //   answerImg: [],
+        //   answer: '発作性上室性頻拍',
+        //   commentary: '',
+        // },
+        {
+          detailInfo: '',
+          questionImg: [ecg19],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心房細動',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg20],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '労作時狭心症',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg21],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全左脚ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg22],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室期外収縮',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg23],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全右脚ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg24],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '高カリウム血症',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg25],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'WPW症候群',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg26],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '第1度房室ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg27],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'lateralの心筋梗塞',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg28],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全左脚ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg29],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心房粗動',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg30],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '労作時狭心症',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg31],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '第1度房室ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg32],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '前壁と心室中隔と側壁の梗塞          ',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg33],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '洞不全症候群',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg34],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室期外収縮',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg35],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全右脚ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg36],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'WPW症候群',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg37],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'Wenckebach型',
+          commentary: '',
+        },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [ecg41],
+        //   questionSentence: 'この心電図が示す疾患を答えよ',
+        //   answerImg: [],
+        //   answer: 'Wenckebach型',
+        //   commentary: '',
+        // },
+        {
+          detailInfo: '',
+          questionImg: [ecg38],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室頻拍',
+          commentary: '',
+        },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [ecg43],
+        //   questionSentence: 'この心電図が示す疾患を答えよ',
+        //   answerImg: [],
+        //   answer: 'MobitzⅡ型',
+        //   commentary: '',
+        // },
+        {
+          detailInfo: '',
+          questionImg: [ecg39],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全右脚ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg40],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心房細動',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg41],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: 'Wenckebach型',
+          commentary:
+            '予定のところにPやQRSが入らない 正常P波の規則的な出現 PQ間隔変動',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg42],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室頻拍',
+          commentary: '心拍数に問題あり 頻脈 規則的 QRS幅が広い          ',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg43],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '心室細動',
+          commentary: '頻脈　不規則',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg44],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全右脚ブロック',
+          commentary: 'QRS幅が広い rsR or rSR (Tは陰性 (V1))',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg45],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '上室期外収縮',
+          commentary: '予定より早くP、QRSが入る 通常のQRS幅',
+        },
+        {
+          detailInfo: '',
+          questionImg: [ecg46],
+          questionSentence: 'この心電図が示す疾患を答えよ',
+          answerImg: [],
+          answer: '完全左脚ブロック',
+          commentary: 'QRS幅が広い Sが深い Tが陽性で増高 (V1) ',
+        },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [ecg],
+        //   questionSentence: 'この心電図が示す疾患を答えよ',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [ecg],
+        //   questionSentence: 'この心電図が示す疾患を答えよ',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [ecg],
+        //   questionSentence: 'この心電図が示す疾患を答えよ',
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
