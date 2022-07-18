@@ -70,6 +70,11 @@ import supraventricularTachycardia from './img/answer/supraventricularTachycardi
 import SVPrematureContraction from './img/answer/SVprematureContraction.png'
 import ventricularFibrillation from './img/answer/ventricularFibrillation.png'
 import ventricularTachycardia from './img/answer/ventricularTachycardia.png'
+import angina from './img/answer/angina.png'
+import hyperkalemia from './img/answer/hyperkalemia.png'
+import LBundleBranchBlock from './img/answer/LBundleBranchBlock.png'
+import sickSinusSyndrome from './img/answer/sickSinusSyndrome.png'
+import WPW from './img/answer/WPW.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -1264,15 +1269,15 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [SVPrematureContraction],
           answer: '上室期外収縮',
-          commentary: '',
+          commentary: '予定より早くP、QRS波が入る。通常のQRS幅',
         },
         {
           detailInfo: '',
           questionImg: [ecg13],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [WPW],
           answer: 'WPW症候群',
-          commentary: '',
+          commentary: 'PQ間隔が異常に短い',
         },
         // {
         //   detailInfo: '',
@@ -1286,41 +1291,44 @@ export const useQuestionList = () => {
           detailInfo: '',
           questionImg: [ecg14],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [wenckebach],
           answer: 'Wenckebach型',
-          commentary: '',
+          commentary:
+            '予定の所にQRS波が入らない。正常P波の規則的な出現。PQ間隔変動',
         },
         {
           detailInfo: '',
           questionImg: [ecg15],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [mobitz],
           answer: 'MobitzⅡ型',
-          commentary: '',
+          commentary:
+            '予定のところにQRS波が入らない。正常P波の規則的な出現。PQ間隔一定',
         },
         {
           detailInfo: '',
           questionImg: [ecg16],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [avBlock3],
           answer: '完全房室ブロック',
-          commentary: '',
+          commentary: '心拍数に問題あり。徐脈',
         },
         {
           detailInfo: '',
           questionImg: [ecg17],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [sickSinusSyndrome],
           answer: '洞不全症候群',
-          commentary: '',
+          commentary:
+            '予定の所にPもQRS波も入らない。正常P波を認めないQRS波の脱落',
         },
         {
           detailInfo: '',
           questionImg: [ecg18],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [ventricularTachycardia],
           answer: '心室頻拍',
-          commentary: '',
+          commentary: '心拍数に問題あり。頻脈。規則的。QRS幅が広い。',
         },
         // {
         //   detailInfo: '',
@@ -1334,73 +1342,74 @@ export const useQuestionList = () => {
           detailInfo: '',
           questionImg: [ecg19],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [atrialFibrillation],
           answer: '心房細動',
-          commentary: '',
+          commentary: 'P波がない。f波がある（V₁みやすい）。',
         },
         {
           detailInfo: '',
           questionImg: [ecg20],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [angina],
           answer: '労作時狭心症',
-          commentary: '',
+          commentary: 'ST下降',
         },
         {
           detailInfo: '',
           questionImg: [ecg21],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [LBundleBranchBlock],
           answer: '完全左脚ブロック',
-          commentary: '',
+          commentary: 'QRS幅が広い　Sが深い Tが陽性で増高 (V₁)',
         },
         {
           detailInfo: '',
           questionImg: [ecg22],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [prematureVcontraction],
           answer: '心室期外収縮',
-          commentary: '',
+          commentary: '予定より速くQRSが入る。QRS波の幅が広い。',
         },
         {
           detailInfo: '',
           questionImg: [ecg23],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [RBundleBrunchBlock],
           answer: '完全右脚ブロック',
-          commentary: '',
+          commentary: 'QRS幅が広い rsR or rSR Tは陰性 (V1)',
         },
         {
           detailInfo: '',
           questionImg: [ecg24],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [hyperkalemia],
           answer: '高カリウム血症',
-          commentary: '',
+          commentary: 'T波の増高　テント状T波',
         },
         {
           detailInfo: '',
           questionImg: [ecg25],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [WPW],
           answer: 'WPW症候群',
-          commentary: '',
+          commentary: 'PQ間隔が異常に短い。デルタ波',
         },
         {
           detailInfo: '',
           questionImg: [ecg26],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [avBlock1],
           answer: '第1度房室ブロック',
-          commentary: '',
+          commentary: 'PQ間隔が異常に長いがQRSが消えるほどではない',
         },
         {
           detailInfo: '',
           questionImg: [ecg27],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [myocardialInfarction],
           answer: 'lateralの心筋梗塞',
-          commentary: '',
+          commentary:
+            'STに異常→上昇→急性期心筋梗塞 1 aVL V4 V6で上昇が見られる(2 3 aVF aVR)で下降(reciprocal change)→lateral',
         },
         {
           detailInfo: '',
