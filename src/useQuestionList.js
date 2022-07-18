@@ -62,6 +62,14 @@ import avBlock1 from './img/answer/avBlock1.png'
 import avBlock3 from './img/answer/avBlock3.png'
 import mobitz from './img/answer/mobitz.png'
 import wenckebach from './img/answer/wenckebach.png'
+import atrialFibrillation from './img/answer/atrialFibrillation.png'
+import atrialFlutter from './img/answer/atrialFlutter.png'
+import prematureVcontraction from './img/answer/prematureVcontraction.png'
+import RBundleBrunchBlock from './img/answer/RBundleBranchBlock.png'
+import supraventricularTachycardia from './img/answer/supraventricularTachycardia.png'
+import SVPrematureContraction from './img/answer/SVprematureContraction.png'
+import ventricularFibrillation from './img/answer/ventricularFibrillation.png'
+import ventricularTachycardia from './img/answer/ventricularTachycardia.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -1190,57 +1198,57 @@ export const useQuestionList = () => {
           detailInfo: '',
           questionImg: [ecg5],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [atrialFibrillation],
           answer: '心房細動',
-          commentary: '',
+          commentary: 'P波がない。f波がある（V₁だと見やすい）',
         },
         {
           detailInfo: '',
           questionImg: [ecg6],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [ventricularFibrillation],
           answer: '心室細動',
-          commentary: '',
+          commentary: '心拍数に問題あり。頻脈。不規則',
         },
         {
           detailInfo: '',
           questionImg: [ecg7],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [prematureVcontraction],
           answer: '心室期外収縮',
-          commentary: '',
+          commentary: '予定より早くP波、QRS波が入る。QRS波の幅が広い',
         },
         {
           detailInfo: '',
           questionImg: [ecg8],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [ventricularTachycardia],
           answer: '心室頻拍',
-          commentary: '',
+          commentary: '心拍数に問題あり。頻脈。規則的でQRS波の幅が広い',
         },
         {
           detailInfo: '',
           questionImg: [ecg9],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [supraventricularTachycardia],
           answer: '発作性上室性頻拍',
-          commentary: '',
+          commentary: '心拍数に問題あり。頻脈。規則的。QRS波が狭い',
         },
         {
           detailInfo: '',
           questionImg: [ecg10],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [atrialFlutter],
           answer: '心房粗動',
-          commentary: '',
+          commentary: 'P波がない　F波がある　今回は4対1伝導',
         },
         {
           detailInfo: '',
           questionImg: [ecg11],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [RBundleBrunchBlock],
           answer: '完全右脚ブロック',
-          commentary: '',
+          commentary: 'QRS波幅が広い　rsR/rSR Tは陰性（V₁）',
         },
         // {
         //   detailInfo: '',
@@ -1254,7 +1262,7 @@ export const useQuestionList = () => {
           detailInfo: '',
           questionImg: [ecg12],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [SVPrematureContraction],
           answer: '上室期外収縮',
           commentary: '',
         },
