@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.f5a02529.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.c0f4a90f.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -53,19 +53,23 @@
     "static/media/ecg14.png": "/anywhere-2seiriNMU/static/media/ecg14.4c25acd0ecb28ac29e25.png",
     "static/media/ecg34.png": "/anywhere-2seiriNMU/static/media/ecg34.0501a67eedd51203606d.png",
     "static/media/synthesizeCatecholamine.png": "/anywhere-2seiriNMU/static/media/synthesizeCatecholamine.3dfa41b552934320dc8b.png",
+    "static/media/wenckebach.png": "/anywhere-2seiriNMU/static/media/wenckebach.0093fe4cecc29cd4d879.png",
     "static/media/ecg43.png": "/anywhere-2seiriNMU/static/media/ecg43.72e0bda6fdf9ca649525.png",
+    "static/media/mobitz.png": "/anywhere-2seiriNMU/static/media/mobitz.3b94a585cd1159dab0a6.png",
     "static/media/ecg33.png": "/anywhere-2seiriNMU/static/media/ecg33.48267d0378b4365aa7fa.png",
     "static/media/ecg16.png": "/anywhere-2seiriNMU/static/media/ecg16.c2dfedea96476d650637.png",
     "static/media/ecg8.png": "/anywhere-2seiriNMU/static/media/ecg8.89fff2bf1aa4dd3b5063.png",
+    "static/media/avBlock3.png": "/anywhere-2seiriNMU/static/media/avBlock3.a796c9e99366082cae7a.png",
     "static/media/ecg22.png": "/anywhere-2seiriNMU/static/media/ecg22.b4f85b702d5788a14638.png",
     "static/media/myocardialInfarction.png": "/anywhere-2seiriNMU/static/media/myocardialInfarction.2eae61de55ad257e122f.png",
     "static/media/ecg6.png": "/anywhere-2seiriNMU/static/media/ecg6.68142718f67c62304320.png",
+    "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.f5a02529.js.map": "/anywhere-2seiriNMU/static/js/main.f5a02529.js.map"
+    "main.c0f4a90f.js.map": "/anywhere-2seiriNMU/static/js/main.c0f4a90f.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.f5a02529.js"
+    "static/js/main.c0f4a90f.js"
   ]
 }

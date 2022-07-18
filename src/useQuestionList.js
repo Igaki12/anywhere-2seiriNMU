@@ -58,6 +58,10 @@ import ecg43 from './img/question/ecg43.png'
 import ecg44 from './img/question/ecg44.png'
 import ecg45 from './img/question/ecg45.png'
 import ecg46 from './img/question/ecg46.png'
+import avBlock1 from './img/answer/avBlock1.png'
+import avBlock3 from './img/answer/avBlock3.png'
+import mobitz from './img/answer/mobitz.png'
+import wenckebach from './img/answer/wenckebach.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -1152,33 +1156,35 @@ export const useQuestionList = () => {
           detailInfo: '',
           questionImg: [ecg1],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [wenckebach],
           answer: 'Wenckebach型',
-          commentary: '',
+          commentary:
+            '予定の所にP波やQRS波が入らない。正常P波の規則的な出現。PC間隔変動',
         },
         {
           detailInfo: '',
           questionImg: [ecg2],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [avBlock1],
           answer: '第1度房室ブロック',
-          commentary: '',
+          commentary: 'PQ間隔異常（長い）',
         },
         {
           detailInfo: '',
           questionImg: [ecg3],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [avBlock3],
           answer: '完全房室ブロック',
-          commentary: '',
+          commentary: 'P波は正常でQRS波が徐脈。心拍数に問題あり',
         },
         {
           detailInfo: '',
           questionImg: [ecg4],
           questionSentence: 'この心電図が示す疾患を答えよ',
-          answerImg: [],
+          answerImg: [mobitz],
           answer: 'MobitzⅡ型',
-          commentary: '',
+          commentary:
+            '予定の所にQRS波が入らない。正常P波の規則的な出現。PQ間隔は一定',
         },
         {
           detailInfo: '',
