@@ -1172,7 +1172,7 @@ export const useQuestionList = () => {
           answerImg: [wenckebach],
           answer: 'Wenckebach型',
           commentary:
-            '予定の所にP波やQRS波が入らない。正常P波の規則的な出現。PC間隔変動',
+            '予定の所にQRS波が入らない。正常P波の規則的な出現。PQ間隔変動(徐々に大きくなる)',
         },
         {
           detailInfo: '',
@@ -1180,7 +1180,8 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [avBlock1],
           answer: '第1度房室ブロック',
-          commentary: 'PQ間隔異常（長い）',
+          commentary:
+            'PQ間隔(P波のはじめ～Q波のはじめ)異常（5ミリより長い）リズムは一定',
         },
         {
           detailInfo: '',
@@ -1221,7 +1222,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [prematureVcontraction],
           answer: '心室期外収縮',
-          commentary: '予定より早くP波、QRS波が入る。QRS波の幅が広い',
+          commentary: '予定より早くQRS波が入る。QRS波の幅が広い',
         },
         {
           detailInfo: '',
@@ -1237,7 +1238,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [supraventricularTachycardia],
           answer: '発作性上室性頻拍',
-          commentary: '心拍数に問題あり。頻脈。規則的。QRS波が狭い',
+          commentary: '心拍数に問題あり（12.5目盛り＝100前後？）。頻脈。規則的でQRS波が狭い',
         },
         {
           detailInfo: '',
@@ -1269,7 +1270,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [SVPrematureContraction],
           answer: '上室期外収縮',
-          commentary: '予定より早くP、QRS波が入る。通常のQRS幅',
+          commentary: '予定より早くP＆QRS波が入る。通常のQRS幅',
         },
         {
           detailInfo: '',
@@ -1352,7 +1353,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [angina],
           answer: '労作時狭心症',
-          commentary: 'ST下降',
+          commentary: 'ST下降 運動負荷をかけた後に症状が出る事がヒント',
         },
         {
           detailInfo: '',
