@@ -76,6 +76,11 @@ import LBundleBranchBlock from './img/answer/LBundleBranchBlock.png'
 import sickSinusSyndrome from './img/answer/sickSinusSyndrome.png'
 import WPW from './img/answer/WPW.png'
 
+import aldosterone from './img/answer/aldosterone.png'
+import kidneyFloodControl from './img/answer/kidneyFloodControl.png'
+import vitaminB12 from'./img/answer/vitaminB12.png'
+
+
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
     // ここに問題のリストを記述(選択式の場合は[0]に正解択をいれた配列をつくる)
@@ -667,9 +672,9 @@ export const useQuestionList = () => {
             '悪性貧血では、内因子の欠乏のために、消化管でのビタミンB12の吸収が阻害される',
             '内因子は胃の壁細胞から分泌される',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [vitaminB12],
+          answer: 'すべて正しい',
+          commentary: '葉酸が不足する巨赤芽球性貧血は、悪性貧血とは呼ばない',
         },
         {
           detailInfo: 'A(27)',
@@ -682,8 +687,9 @@ export const useQuestionList = () => {
             '鎌状赤血球症の保因者がマラリアに罹患すると、重篤化しやすい',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '胎児期には肝臓や脾臓で造血が行われている',
+          commentary:
+            '胎児が持つHbFは成人のHbAより酸素結合能が高い。鎌状赤血球はマラリアに強い',
         },
         {
           detailInfo: 'A(28)',
@@ -696,8 +702,9 @@ export const useQuestionList = () => {
             'トランスフェリンは、鉄の運搬を担う血清蛋白である',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'トランスフェリンは、鉄の運搬を担う血清蛋白である',
+          commentary:
+            '鉄欠乏性貧血では鉄が不足しているためフェリチン値が下がる。体内の鉄の2/3がヘモグロビン中に存在する',
         },
         {
           detailInfo: 'A(29)',
@@ -710,8 +717,9 @@ export const useQuestionList = () => {
             '好塩基球はヒスタミンを放出してⅠ型アレルギーに関与する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '好中球は白血球の中で最も数が多い/好塩基球はヒスタミンを放出してⅠ型アレルギーに関与する',
+          commentary: '好酸球は寄生虫疾患で高値を示す',
         },
         {
           detailInfo: 'A(30)',
@@ -724,7 +732,7 @@ export const useQuestionList = () => {
             'C5aは、好中球の走化性を促す',
           ],
           answerImg: [],
-          answer: '',
+          answer: 'すべて正しい',
           commentary: '',
         },
         {
@@ -738,8 +746,8 @@ export const useQuestionList = () => {
             'IgMは5量体を形成する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'IgAは、涙や母乳中に分泌される/IgMは5量体を形成する',
+          commentary: 'IgMは激烈な免疫反応を示す',
         },
         {
           detailInfo: 'A(32)',
@@ -752,8 +760,9 @@ export const useQuestionList = () => {
             'C3bとC5bは、アナフィラトキシンと呼ばれる',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '抗体の多様性は、V(D)J recombinationにより生み出される/補体活性化の古典経路は、抗原抗体複合体とC1の結合により誘発される',
+          commentary: 'アナフィラトキシンと呼ばれるのはC3aとC5b',
         },
         {
           detailInfo: 'A(33)',
@@ -766,8 +775,9 @@ export const useQuestionList = () => {
             'プラスミンは、フィブリンの分解を阻害する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'すべて誤り',
+          commentary:
+            '血小板の血管壁への粘着を促進するのはフォン・ウィルブランド因子。トロンボキサンA₂とブロスタサイクリンは互いに作用が拮抗する。プラスミンはフィブリンの分解を促進する',
         },
         {
           detailInfo: 'A(34)',
@@ -780,8 +790,9 @@ export const useQuestionList = () => {
             '胸膜の表面は内皮で覆われている',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'すべて誤り',
+          commentary:
+            '右肺は気管支がまっすぐ降りていくため誤嚥性肺炎を起こしやすい。外肋間筋は吸息時。胸膜表面は中皮（中皮腫はアスベストなどが原因）',
         },
         {
           detailInfo: 'A(35)',
@@ -794,8 +805,9 @@ export const useQuestionList = () => {
             '予備呼気量は、スパイロメーターで計測可能である',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '肺活量は、スパイロメーターで計測可能である/予備呼気量は、スパイロメーターで計測可能である',
+          commentary: '残気量は計測不可能',
         },
         {
           detailInfo: 'A(36)',
@@ -805,11 +817,13 @@ export const useQuestionList = () => {
           choices: [
             '肺でのガス交換において、二酸化炭素の拡散能は、酸素の拡散能よりも高い',
             'pHの低下は、酸素解離曲線を右方へ移動させる',
-            '2,3-DPGの低下は、酸素解離曲線を右方へ移動させる',
+            '2,3-DPGの低下は、酸素解離曲線を右方へ移動させる。',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '肺でのガス交換において、二酸化炭素の拡散能は、酸素の拡散能よりも高い/pHの低下は、酸素解離曲線を右方へ移動させる',
+          commentary:
+            '2,3-DPGの上昇が酸素解離曲線を右方へ移動させる。pHが低下している場所=CO₂が多い場所では酸素が必要',
         },
         {
           detailInfo: 'A(37)',
@@ -822,8 +836,9 @@ export const useQuestionList = () => {
             '延髄腹側の中枢化学受容器は、二酸化炭素分圧の上昇を感知する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '末梢化学受容器の一つである頚動脈小体は、主に酸素分圧の低下を感知する/延髄腹側の中枢化学受容器は、二酸化炭素分圧の上昇を感知する',
+          commentary: '頚動脈小体→舌咽神経、大動脈小体→迷走神経',
         },
         {
           detailInfo: 'A(38)',
@@ -836,8 +851,10 @@ export const useQuestionList = () => {
             'Hering-Breuer反射は、肺の伸展受容器を介する呼吸調節反射である',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            'Hering-Breuer反射は、肺の伸展受容器を介する呼吸調節反射である',
+          commentary:
+            '過呼吸と無呼吸が繰り返されるのはCheyne-Strokes呼吸。ゆっくりとした深い呼吸がKussmaul呼吸',
         },
         {
           detailInfo: 'A(39)',
@@ -850,8 +867,10 @@ export const useQuestionList = () => {
             'ミオグロビンの酸素親和性は、ヘモグロビンよりも高い',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            'ヘモグロビンに対する一酸化炭素の親和性は、酸素の200倍以上高い/ミオグロビンの酸素親和性は、ヘモグロビンよりも高い',
+          commentary:
+            'ホールデン効果によると、酸素分圧が上昇するほど、血中の二酸化炭素の運搬量が低下する',
         },
         {
           detailInfo: 'A(40)',
@@ -864,7 +883,7 @@ export const useQuestionList = () => {
             '免疫グロブリンのクラススイッチは、ゲノムの組み換えによって生ずる',
           ],
           answerImg: [],
-          answer: '',
+          answer: 'すべて正しい',
           commentary: '',
         },
         {
@@ -874,12 +893,14 @@ export const useQuestionList = () => {
             '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             '成人女性の方が成人男性より、体内水分量が多い',
-            '細胞外液の主な陰イオンは、ClイオンとHPO4イオンである',
+            '細胞外液の主な陰イオンは、Cl⁻とHPO₄²⁻である',
             '血漿浸透圧が上昇すると、体内の恒常性を維持するために高張尿が生成される',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '血漿浸透圧が上昇すると、体内の恒常性を維持するために高張尿が生成される',
+          commentary:
+            '成人女性の方が成人男性より、体内水分量が少ない。細胞外液の主な陰イオンは、Cl⁻とHCO₃⁻である',
         },
         {
           detailInfo: 'A(42)',
@@ -887,12 +908,12 @@ export const useQuestionList = () => {
           questionSentence:
             '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
-            'ネフロンは尿を生成する構造的な単位で、糸球体から遠位尿細管まで、枝分かれの内一本道である',
+            'ネフロンは尿を生成する構造的な単位で、糸球体から遠位尿細管まで、枝分かれのない一本道である',
             '腎臓の皮質迷路には糸球体、近位尿細管曲部、遠位尿細管曲部および集合管の一部がふくまれる',
             '近位尿細管上皮細胞の内腔側には冊子縁が存在する',
           ],
           answerImg: [],
-          answer: '',
+          answer: 'すべて正しい',
           commentary: '',
         },
         {
@@ -906,8 +927,10 @@ export const useQuestionList = () => {
             '糸球体足細胞の足突起の間にはスリット膜が存在し、その構成因子のひとつであるネフリンに異常があると、フィンランド型先天性ネフローゼ症候群を引き起こす',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '輸入細動脈と輸出細動脈の間にはメサンギウム細胞が存在する/糸球体足細胞の足突起の間にはスリット膜が存在し、その構成因子のひとつであるネフリンに異常があると、フィンランド型先天性ネフローゼ症候群を引き起こす',
+          commentary:
+            '基底膜は陰性の電荷を帯びており、主にタンパク質を通さない役割をする。',
         },
         {
           detailInfo: 'A(44)',
@@ -920,8 +943,9 @@ export const useQuestionList = () => {
             '糸球体の足細胞はニューロンと同様に細胞分裂をすることがない細胞で、障害を受けると糸球体から脱落する',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer:
+            '分子量11,500のβ2-ミクログロブリンは糸球体でろ過される/糸球体の足細胞はニューロンと同様に細胞分裂をすることがない細胞で、障害を受けると糸球体から脱落する',
+          commentary: '血小板はろ過されない',
         },
         {
           detailInfo: 'A(45)',
@@ -929,13 +953,15 @@ export const useQuestionList = () => {
           questionSentence:
             '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
-            'アデノシンが輸入細動脈のA1受容体に結合すると、輸入細動脈は弛緩し、糸球体濾過量は上昇',
-            'アンギオテンシン2の働きにより、輸入細動脈が収縮し糸球体濾過量は減少する',
+            'アデノシンが輸入細動脈のA₁受容体に結合すると、輸入細動脈は弛緩し、糸球体濾過量は上昇',
+            'アンギオテンシンⅡの働きにより、輸入細動脈が収縮し糸球体濾過量は減少する',
             '糸球体濾過量が増加すると、輸入細動脈の顆粒細胞からのレニンの分泌は抑制される',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [kidneyFloodControl],
+          answer:
+            '糸球体濾過量が増加すると、輸入細動脈の顆粒細胞からのレニンの分泌は抑制される',
+          commentary:
+            'レニンは遠位尿細管の緻密班領域を流れる濾液量の低下により分泌促進され、主に糸球体濾過量を増やす方向（輸出細動脈の収縮など）に作用していく。',
         },
         {
           detailInfo: 'A(46)',
@@ -944,12 +970,14 @@ export const useQuestionList = () => {
             '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             '健常人に2g/日の食塩制限を行うと、レニンの濃度は上昇する',
-            '健常人に2g/日の食塩制限を行うと、アンギオテンシン2の濃度は上昇する',
+            '健常人に2g/日の食塩制限を行うと、アンギオテンシンⅡの濃度は上昇する',
             '健常人に2g/日の食塩制限を行うと、心房性ナトリウム利尿ペプチドの濃度は上昇する',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [kidneyFloodControl],
+          answer:
+            '健常人に2g/日の食塩制限を行うと、レニンの濃度は上昇する/健常人に2g/日の食塩制限を行うと、アンギオテンシン2の濃度は上昇する',
+          commentary:
+            '健常人に2g/日の食塩制限を行うと、心房性ナトリウム利尿ペプチドの濃度は減少する。他、濾液のCl⁻濃度が低下するので、レニン-アンジオテンシンⅡ系は活発化する',
         },
         {
           detailInfo: 'A(47)',
@@ -958,12 +986,12 @@ export const useQuestionList = () => {
             '正しい選択肢を選べ（複数選択可/全て正しい・全て誤りの場合もある）',
           choices: [
             '低カリウム血症の際にアルカローシスが連動する',
-            '体内でＫイオンが不足しているとき、皮質集合管のβ間在細胞で、Ｋイオンが再吸収される',
+            '体内でＫ⁺が不足しているとき、皮質集合管のβ間在細胞で、Ｋ⁺が再吸収される',
             'アルドステロンの分泌が不足すると、低カリウム血症が引き起こされる',
           ],
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [aldosterone],
+          answer: '低カリウム血症の際にアルカローシスが連動する',
+          commentary: 'K⁺不足時にK⁺が再吸収されるのは皮質集合管のα細胞。アルドステロンは腎臓集合管のNa⁺/K⁺ ATPaseを促進してK⁺を排出する',
         },
         {
           detailInfo: 'A(48)',
@@ -976,8 +1004,8 @@ export const useQuestionList = () => {
             'トリアムテレンにより低カリウム血症が引き起こされる',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'ループ利尿薬により低カリウム血症が引き起こされる',
+          commentary: 'サイアザイド系利尿剤は遠位尿細管におけるNaイオンの再吸収を阻害する。トリアムテレンにより高カリウム血症が引き起こされる',
         },
         {
           detailInfo: 'A(49)',
@@ -990,8 +1018,8 @@ export const useQuestionList = () => {
             '腎臓で副甲状腺ホルモンPTHの働きによりマグネシウムの再吸収は促進される',
           ],
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '腎臓で副甲状腺ホルモンPTHの働きによりカルシウムの再吸収は促進される',
+          commentary: 'PTHは無機リンのさあい吸収を抑制し、マグネシウム再吸収にはLi⁺が関係する',
         },
         {
           detailInfo: 'A(50)',
@@ -1004,7 +1032,7 @@ export const useQuestionList = () => {
             'ケトン体や乳酸の蓄積するアシドーシスではアニオンギャップは増加する',
           ],
           answerImg: [],
-          answer: '',
+          answer: 'すべて正しい',
           commentary: '',
         },
         // {

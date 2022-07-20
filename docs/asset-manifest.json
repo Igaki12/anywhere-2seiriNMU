@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.ec102710.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.5a42472d.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -24,6 +24,7 @@
     "static/media/ecg44.png": "/anywhere-2seiriNMU/static/media/ecg44.fae8d8806fead8dac265.png",
     "static/media/prematureVcontraction.png": "/anywhere-2seiriNMU/static/media/prematureVcontraction.db2c7296109ae51a64c3.png",
     "static/media/WPW.png": "/anywhere-2seiriNMU/static/media/WPW.47e463fd5088a66d76ae.png",
+    "static/media/vitaminB12.png": "/anywhere-2seiriNMU/static/media/vitaminB12.d850814317a532efce21.png",
     "static/media/RBundleBranchBlock.png": "/anywhere-2seiriNMU/static/media/RBundleBranchBlock.13e967393a3709a4825d.png",
     "static/media/SVprematureContraction.png": "/anywhere-2seiriNMU/static/media/SVprematureContraction.05c04803086e32dbbb09.png",
     "static/media/ventricularFibrillation.png": "/anywhere-2seiriNMU/static/media/ventricularFibrillation.88468ae09225ca742704.png",
@@ -41,6 +42,7 @@
     "static/media/ecg18.png": "/anywhere-2seiriNMU/static/media/ecg18.33ca0f94702f88cd0eb3.png",
     "static/media/coronalPlane.png": "/anywhere-2seiriNMU/static/media/coronalPlane.df8eb38fa7bd996c8b60.png",
     "static/media/ecg38.png": "/anywhere-2seiriNMU/static/media/ecg38.7d081b3e34643b5f77bf.png",
+    "static/media/kidneyFloodControl.png": "/anywhere-2seiriNMU/static/media/kidneyFloodControl.546f9380b1bcdd0512d2.png",
     "static/media/vasorelaxation.png": "/anywhere-2seiriNMU/static/media/vasorelaxation.c57cd85e4496f7eb1792.png",
     "static/media/ecg26.png": "/anywhere-2seiriNMU/static/media/ecg26.d5c85b45e90c0a5e93c2.png",
     "static/media/ecg10.png": "/anywhere-2seiriNMU/static/media/ecg10.aa599e8a14a558f16049.png",
@@ -61,6 +63,7 @@
     "static/media/ecg7.png": "/anywhere-2seiriNMU/static/media/ecg7.3bedae33a12abfaf598b.png",
     "static/media/ecg2.png": "/anywhere-2seiriNMU/static/media/ecg2.7aa1cbb2ab235f57242e.png",
     "static/media/ecg9.png": "/anywhere-2seiriNMU/static/media/ecg9.1fbddf5ab6028151f77f.png",
+    "static/media/aldosterone.png": "/anywhere-2seiriNMU/static/media/aldosterone.f3e23d8182c0bbd682c3.png",
     "static/media/ecg23.png": "/anywhere-2seiriNMU/static/media/ecg23.7c30b049ca1ad3c0e60a.png",
     "static/media/ecg40.png": "/anywhere-2seiriNMU/static/media/ecg40.b626ee9f303dc23cc627.png",
     "static/media/ecg14.png": "/anywhere-2seiriNMU/static/media/ecg14.4c25acd0ecb28ac29e25.png",
@@ -79,10 +82,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.ec102710.js.map": "/anywhere-2seiriNMU/static/js/main.ec102710.js.map"
+    "main.5a42472d.js.map": "/anywhere-2seiriNMU/static/js/main.5a42472d.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.ec102710.js"
+    "static/js/main.5a42472d.js"
   ]
 }
