@@ -78,8 +78,7 @@ import WPW from './img/answer/WPW.png'
 
 import aldosterone from './img/answer/aldosterone.png'
 import kidneyFloodControl from './img/answer/kidneyFloodControl.png'
-import vitaminB12 from'./img/answer/vitaminB12.png'
-
+import vitaminB12 from './img/answer/vitaminB12.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -991,7 +990,8 @@ export const useQuestionList = () => {
           ],
           answerImg: [aldosterone],
           answer: '低カリウム血症の際にアルカローシスが連動する',
-          commentary: 'K⁺不足時にK⁺が再吸収されるのは皮質集合管のα細胞。アルドステロンは腎臓集合管のNa⁺/K⁺ ATPaseを促進してK⁺を排出する',
+          commentary:
+            'K⁺不足時にK⁺が再吸収されるのは皮質集合管のα細胞。アルドステロンは腎臓集合管のNa⁺/K⁺ ATPaseを促進してK⁺を排出する',
         },
         {
           detailInfo: 'A(48)',
@@ -1005,7 +1005,8 @@ export const useQuestionList = () => {
           ],
           answerImg: [],
           answer: 'ループ利尿薬により低カリウム血症が引き起こされる',
-          commentary: 'サイアザイド系利尿剤は遠位尿細管におけるNaイオンの再吸収を阻害する。トリアムテレンにより高カリウム血症が引き起こされる',
+          commentary:
+            'サイアザイド系利尿剤は遠位尿細管におけるNaイオンの再吸収を阻害する。トリアムテレンにより高カリウム血症が引き起こされる',
         },
         {
           detailInfo: 'A(49)',
@@ -1018,8 +1019,10 @@ export const useQuestionList = () => {
             '腎臓で副甲状腺ホルモンPTHの働きによりマグネシウムの再吸収は促進される',
           ],
           answerImg: [],
-          answer: '腎臓で副甲状腺ホルモンPTHの働きによりカルシウムの再吸収は促進される',
-          commentary: 'PTHは無機リンのさあい吸収を抑制し、マグネシウム再吸収にはLi⁺が関係する',
+          answer:
+            '腎臓で副甲状腺ホルモンPTHの働きによりカルシウムの再吸収は促進される',
+          commentary:
+            'PTHは無機リンのさあい吸収を抑制し、マグネシウム再吸収にはLi⁺が関係する',
         },
         {
           detailInfo: 'A(50)',
@@ -1175,7 +1178,7 @@ export const useQuestionList = () => {
           questionImg: [ecg9],
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [supraventricularTachycardia],
-          answer: '発作性上室性頻拍',
+          answer: '発作性上室頻拍',
           commentary:
             '心拍数に問題あり（12.5目盛り＝100前後？）。頻脈。規則的でQRS波が狭い',
         },
@@ -1275,7 +1278,7 @@ export const useQuestionList = () => {
         //   questionImg: [ecg19],
         //   questionSentence: 'この心電図が示す疾患を答えよ',
         //   answerImg: [],
-        //   answer: '発作性上室性頻拍',
+        //   answer: '発作性上室頻拍',
         //   commentary: '',
         // },
         {
