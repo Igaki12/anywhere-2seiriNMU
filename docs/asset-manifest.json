@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.5a42472d.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.d4dd2754.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -14,6 +14,7 @@
     "static/media/titleImg.png": "/anywhere-2seiriNMU/static/media/titleImg.f97b1afc288809b23ff0.png",
     "static/media/supraventricularTachycardia.png": "/anywhere-2seiriNMU/static/media/supraventricularTachycardia.f80aac2d16c4385abcd7.png",
     "static/media/atrialFlutter.png": "/anywhere-2seiriNMU/static/media/atrialFlutter.52bae38d9bce1cf7aefd.png",
+    "static/media/bilirubin.png": "/anywhere-2seiriNMU/static/media/bilirubin.1b2254528937284bf564.png",
     "static/media/LBundleBranchBlock.png": "/anywhere-2seiriNMU/static/media/LBundleBranchBlock.b8757d52a3780a70ce35.png",
     "static/media/ecg27.png": "/anywhere-2seiriNMU/static/media/ecg27.38652552ed381697f95d.png",
     "static/media/ecg3.png": "/anywhere-2seiriNMU/static/media/ecg3.6e46f98e7808e9c5f443.png",
@@ -28,7 +29,9 @@
     "static/media/RBundleBranchBlock.png": "/anywhere-2seiriNMU/static/media/RBundleBranchBlock.13e967393a3709a4825d.png",
     "static/media/SVprematureContraction.png": "/anywhere-2seiriNMU/static/media/SVprematureContraction.05c04803086e32dbbb09.png",
     "static/media/ventricularFibrillation.png": "/anywhere-2seiriNMU/static/media/ventricularFibrillation.88468ae09225ca742704.png",
+    "static/media/haemoglobin.png": "/anywhere-2seiriNMU/static/media/haemoglobin.ba2069ccb45e0cdf26f2.png",
     "static/media/sickSinusSyndrome.png": "/anywhere-2seiriNMU/static/media/sickSinusSyndrome.a1bd9aa8089a76cabc79.png",
+    "static/media/coagulation.png": "/anywhere-2seiriNMU/static/media/coagulation.78db40e333afae14b97f.png",
     "static/media/ventilationPerfusionRatio.png": "/anywhere-2seiriNMU/static/media/ventilationPerfusionRatio.106981276f4a399d0d9c.png",
     "static/media/ecg42.png": "/anywhere-2seiriNMU/static/media/ecg42.17baee7cc752ee0c9ac3.png",
     "static/media/ecg35.png": "/anywhere-2seiriNMU/static/media/ecg35.9acc0ec16aecc00517f9.png",
@@ -43,6 +46,7 @@
     "static/media/coronalPlane.png": "/anywhere-2seiriNMU/static/media/coronalPlane.df8eb38fa7bd996c8b60.png",
     "static/media/ecg38.png": "/anywhere-2seiriNMU/static/media/ecg38.7d081b3e34643b5f77bf.png",
     "static/media/kidneyFloodControl.png": "/anywhere-2seiriNMU/static/media/kidneyFloodControl.546f9380b1bcdd0512d2.png",
+    "static/media/FEV1%.png": "/anywhere-2seiriNMU/static/media/FEV1%.e44fa163047424912291.png",
     "static/media/vasorelaxation.png": "/anywhere-2seiriNMU/static/media/vasorelaxation.c57cd85e4496f7eb1792.png",
     "static/media/ecg26.png": "/anywhere-2seiriNMU/static/media/ecg26.d5c85b45e90c0a5e93c2.png",
     "static/media/ecg10.png": "/anywhere-2seiriNMU/static/media/ecg10.aa599e8a14a558f16049.png",
@@ -62,13 +66,16 @@
     "static/media/ecg17.png": "/anywhere-2seiriNMU/static/media/ecg17.1da22d2bd6603e4ddb61.png",
     "static/media/ecg7.png": "/anywhere-2seiriNMU/static/media/ecg7.3bedae33a12abfaf598b.png",
     "static/media/ecg2.png": "/anywhere-2seiriNMU/static/media/ecg2.7aa1cbb2ab235f57242e.png",
+    "static/media/ODC.png": "/anywhere-2seiriNMU/static/media/ODC.aa458b9c195929a8df2e.png",
     "static/media/ecg9.png": "/anywhere-2seiriNMU/static/media/ecg9.1fbddf5ab6028151f77f.png",
     "static/media/aldosterone.png": "/anywhere-2seiriNMU/static/media/aldosterone.f3e23d8182c0bbd682c3.png",
     "static/media/ecg23.png": "/anywhere-2seiriNMU/static/media/ecg23.7c30b049ca1ad3c0e60a.png",
+    "static/media/CD4.png": "/anywhere-2seiriNMU/static/media/CD4.bdb59fd2a2c2e7f31ee3.png",
     "static/media/ecg40.png": "/anywhere-2seiriNMU/static/media/ecg40.b626ee9f303dc23cc627.png",
     "static/media/ecg14.png": "/anywhere-2seiriNMU/static/media/ecg14.4c25acd0ecb28ac29e25.png",
     "static/media/ecg34.png": "/anywhere-2seiriNMU/static/media/ecg34.0501a67eedd51203606d.png",
     "static/media/synthesizeCatecholamine.png": "/anywhere-2seiriNMU/static/media/synthesizeCatecholamine.3dfa41b552934320dc8b.png",
+    "static/media/ventilationDisorder.png": "/anywhere-2seiriNMU/static/media/ventilationDisorder.025a0eda3fa0bb31977a.png",
     "static/media/wenckebach.png": "/anywhere-2seiriNMU/static/media/wenckebach.0093fe4cecc29cd4d879.png",
     "static/media/ecg43.png": "/anywhere-2seiriNMU/static/media/ecg43.72e0bda6fdf9ca649525.png",
     "static/media/mobitz.png": "/anywhere-2seiriNMU/static/media/mobitz.3b94a585cd1159dab0a6.png",
@@ -82,10 +89,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.5a42472d.js.map": "/anywhere-2seiriNMU/static/js/main.5a42472d.js.map"
+    "main.d4dd2754.js.map": "/anywhere-2seiriNMU/static/js/main.d4dd2754.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.5a42472d.js"
+    "static/js/main.d4dd2754.js"
   ]
 }

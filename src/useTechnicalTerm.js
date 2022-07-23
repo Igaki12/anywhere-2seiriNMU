@@ -239,14 +239,16 @@ export const useTechnicalTerm = () => {
       explanation:
         'P波開始～Q波開始（Q波がなければR波）の間隔。正常値は0.12秒～0.20秒=3目盛り～5目盛り',
     },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
+    {
+      term: ['2,3-DPG', '2,3-diphosphoglycerate'],
+      explanation:
+        '赤血球中の解答過程で産生。ヘモグロビン酸素解離曲線を右方へ移動させる',
+    },
+    {
+      term: ['ポワズイユの法則', 'ポワズイユ', 'Poiseuille'],
+      explanation:
+        'ΔP =(8ηl/πr4)*Q (ri液体の粘性，r:管の半径，I:管の長さ，Qは血流量、ΔPは血圧差　）　これより、血管抵抗は、血管半径の4乗に反比例することがわかる。よって、細い血管では血管抵抗が大きく、血圧が大きく低下する',
+    },
     // {
     //   term:[''],
     //   explanation:'',

@@ -79,6 +79,13 @@ import WPW from './img/answer/WPW.png'
 import aldosterone from './img/answer/aldosterone.png'
 import kidneyFloodControl from './img/answer/kidneyFloodControl.png'
 import vitaminB12 from './img/answer/vitaminB12.png'
+import bilirubin from './img/answer/bilirubin.png'
+import CD4 from './img/answer/CD4.png'
+import coagulation from './img/answer/coagulation.png'
+import FEV1 from './img/answer/FEV1%.png'
+import haemoglobin from './img/answer/haemoglobin.png'
+import ODC from './img/answer/ODC.png'
+import ventilationDisorder from './img/answer/ventilationDisorder.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -1038,15 +1045,154 @@ export const useQuestionList = () => {
           answer: 'すべて正しい',
           commentary: '',
         },
+        {
+          detailInfo: 'B(1)',
+          questionImg: [],
+          questionSentence:
+            'ニトログリセリンは、体内で（　）に変換されて血管平滑筋を弛緩させる',
+          answerImg: [],
+          answer: 'NO',
+          commentary: '舌下投与',
+        },
+        {
+          detailInfo: 'B(2)',
+          questionImg: [],
+          questionSentence: 'テント状T波は、高（　）血症で認める。',
+          answerImg: [hyperkalemia],
+          answer: 'カリウム',
+          commentary: '致命的な不整脈が生じる',
+        },
+        {
+          detailInfo: 'B(3)',
+          questionImg: [],
+          questionSentence:
+            '狭心症の発作時には、心電図所見として（　）を認める',
+          answerImg: [angina],
+          answer: 'ST低下',
+          commentary: '労作性狭心症など',
+        },
+        {
+          detailInfo: 'B(4)',
+          questionImg: [],
+          questionSentence:
+            'WPW症候群の心電図では、副伝導路を介した心室筋の興奮が（　）波として検出される。',
+          answerImg: [WPW],
+          answer: 'デルタ',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(5)',
+          questionImg: [],
+          questionSentence:
+            '心筋細胞において、電位依存性Ca²⁺チャネルを介してCa²⁺が細胞内へ流入すると、リアノジン受容体が活性化されて開口し、Ca²⁺が筋小胞体から細胞質へ放出される。この現象を、（　）という。',
+          answerImg: [],
+          answer: 'Ca²⁺-induced Ca²⁺release',
+          commentary: 'CICRと略される。骨格筋ではT細管側のDHP受容体の立体構造が変化することが隣接する筋小胞体のリアノジン受容体開口のトリガーとなる点で異なる（骨格筋の方が反応が素早い）',
+        },
+        {
+          detailInfo: 'B(6)',
+          questionImg: [],
+          questionSentence:
+            'ノルアドレナリンが心筋細胞の受容体に結合すると、心筋細胞内のAキナーゼが活性化して（　）をリン酸化し、その結果、筋小胞体のCa²⁺ATPaseが活性化する。',
+          answerImg: [vasoconstriction],
+          answer: 'ホスホランバン',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(7)',
+          questionImg: [],
+          questionSentence: '低酸素環境下では、腎臓から（　）が分泌される',
+          answerImg: [],
+          answer: 'エリスロポエチン',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(8)',
+          questionImg: [],
+          questionSentence:
+            'ポワズイユの法則によると、血管抵抗は、血管半径の（　）乗に反比例する',
+          answerImg: [],
+          answer: '4',
+          commentary: 'ポワズイユの法則',
+        },
+        {
+          detailInfo: 'B(9)',
+          questionImg: [],
+          questionSentence:
+            '心室筋の静止電位は、（　）チャネルの開口により維持される',
+          answerImg: [],
+          answer: '内向き整流K⁺チャネル',
+          commentary: '血中カリウム濃度が上がると心室筋は静止電位を維持できなくなる',
+        },
+        {
+          detailInfo: 'B(10)',
+          questionImg: [],
+          questionSentence: '間接ビリルビンは、血中で（　）と結合している',
+          answerImg: [bilirubin],
+          answer: 'アルブミン',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(11)',
+          questionImg: [],
+          questionSentence: 'ビリルビンは肝臓において（　）と縫合する',
+          answerImg: [bilirubin],
+          answer: 'グルクロン酸',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(12)',
+          questionImg: [],
+          questionSentence:
+            'MHCクラスⅡ分子は、ヘルパーT細胞の表面に存在する（　）と結合する',
+          answerImg: [CD4],
+          answer: 'CD4',
+          commentary: 'MHCクラスⅠ分子（基本的に全ての細胞表面に発現）→CD8',
+        },
+        {
+          detailInfo: 'B(13)',
+          questionImg: [],
+          questionSentence:
+            'ビタミンKの存在下で合成される凝固因子を全て記載せよ',
+          answerImg: [coagulation],
+          answer: '第Ⅱ・Ⅶ・Ⅸ・Ⅹ因子',
+          commentary: 'ワーファリンが関係',
+        },
+        {
+          detailInfo: 'B(14)',
+          questionImg: [],
+          questionSentence:
+            'Infantile respiratory distress syndrome:IRDSは、（　）の欠乏が原因である',
+          answerImg: [],
+          answer: '肺サーファクタント',
+          commentary: 'Ⅱ型肺胞上皮細胞は28週前後までできてこない',
+        },
+        {
+          detailInfo: 'B(15)',
+          questionImg: [],
+          questionSentence:
+            'ヘモグロビンの酸素解離曲線は、（　）効果のためにS字曲線を描く',
+          answerImg: [ODC],
+          answer: 'アロステリック効果',
+          commentary: '4量体のうちどれか1か所でも酸素を受け取ると、他の3か所が酸素を受け取りやすくなる。逆もしかり。',
+        },
+        {
+          detailInfo: 'B(16)',
+          questionImg: [],
+          questionSentence: '閉塞性換気障害では、（　）が70%未満になる',
+          answerImg: [ventilationDisorder,FEV1],
+          answer: '1秒率',
+          commentary: 'FEV1%の数値が大きく悪化するのは閉塞性障害だけ',
+        },
         // {
-        //   detailInfo: 'A(1)',
+        //   detailInfo: 'B(1)',
         //   questionImg: [],
         //   questionSentence: '',
-        //   choices: ['','',''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
+
         // {
         //   detailInfo: 'A(1)',
         //   questionImg: [],
