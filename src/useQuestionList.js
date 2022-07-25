@@ -1087,7 +1087,8 @@ export const useQuestionList = () => {
             '心筋細胞において、電位依存性Ca²⁺チャネルを介してCa²⁺が細胞内へ流入すると、リアノジン受容体が活性化されて開口し、Ca²⁺が筋小胞体から細胞質へ放出される。この現象を、（　）という。',
           answerImg: [],
           answer: 'Ca²⁺-induced Ca²⁺release',
-          commentary: 'CICRと略される。骨格筋ではT細管側のDHP受容体の立体構造が変化することが隣接する筋小胞体のリアノジン受容体開口のトリガーとなる点で異なる（骨格筋の方が反応が素早い）',
+          commentary:
+            'CICRと略される。骨格筋ではT細管側のDHP受容体の立体構造が変化することが隣接する筋小胞体のリアノジン受容体開口のトリガーとなる点で異なる（骨格筋の方が反応が素早い）',
         },
         {
           detailInfo: 'B(6)',
@@ -1122,7 +1123,8 @@ export const useQuestionList = () => {
             '心室筋の静止電位は、（　）チャネルの開口により維持される',
           answerImg: [],
           answer: '内向き整流K⁺チャネル',
-          commentary: '血中カリウム濃度が上がると心室筋は静止電位を維持できなくなる',
+          commentary:
+            '血中カリウム濃度が上がると心室筋は静止電位を維持できなくなる',
         },
         {
           detailInfo: 'B(10)',
@@ -1174,24 +1176,63 @@ export const useQuestionList = () => {
             'ヘモグロビンの酸素解離曲線は、（　）効果のためにS字曲線を描く',
           answerImg: [ODC],
           answer: 'アロステリック効果',
-          commentary: '4量体のうちどれか1か所でも酸素を受け取ると、他の3か所が酸素を受け取りやすくなる。逆もしかり。',
+          commentary:
+            '4量体のうちどれか1か所でも酸素を受け取ると、他の3か所が酸素を受け取りやすくなる。逆もしかり。',
         },
         {
           detailInfo: 'B(16)',
           questionImg: [],
           questionSentence: '閉塞性換気障害では、（　）が70%未満になる',
-          answerImg: [ventilationDisorder,FEV1],
+          answerImg: [ventilationDisorder, FEV1],
           answer: '1秒率',
           commentary: 'FEV1%の数値が大きく悪化するのは閉塞性障害だけ',
         },
-        // {
-        //   detailInfo: 'B(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: 'D(1)',
+          questionImg: [],
+          questionSentence:
+            '5%ブドウ糖液を1200ml輸液すると、細胞内液に（　ml）、間質液に（　ml）、血管内に（　ml）、分布する',
+          answerImg: [],
+          answer: '800ml,300ml,100ml',
+          commentary:
+            '等張液であるから、単純に体液の存在比から考えればよく、細胞内液：間質液：血漿＝8:3:1',
+        },
+        {
+          detailInfo: 'D(2)',
+          questionImg: [],
+          questionSentence:
+            '尿細管のうち、アミノ酸を最も多く吸収するのは。(　)尿細管である',
+          answerImg: [],
+          answer: '近位',
+          commentary: '微絨毛が発達している',
+        },
+        {
+          detailInfo: 'D(3)',
+          questionImg: [],
+          questionSentence:
+            '血漿中のグルコースが、尿細管で100%再吸収された場合、グルコースクリアランスの値は、（　）となる。',
+          answerImg: [],
+          answer: '0',
+          commentary: '',
+        },
+        {
+          detailInfo: 'D(4)',
+          questionImg: [],
+          questionSentence:
+            '腎血流量(RBF)は、腎血漿流量(RPF)とヘマトクリット値を用いると、どのような式で表されるか。（　）',
+          answerImg: [],
+          answer: 'RBF = RPF/(1-Ht)',
+          commentary: '',
+        },
+        {
+          detailInfo: 'D(5)',
+          questionImg: [],
+          questionSentence:
+            '慢性腎不全では、（　）カルシウム血症を引き起こす。',
+          answerImg: [],
+          answer: '低',
+          commentary: '',
+        },
 
         // {
         //   detailInfo: 'A(1)',
