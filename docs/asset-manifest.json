@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.462b4739.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.1ef8d02a.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -48,6 +48,7 @@
     "static/media/kidneyFloodControl.png": "/anywhere-2seiriNMU/static/media/kidneyFloodControl.546f9380b1bcdd0512d2.png",
     "static/media/FEV1%.png": "/anywhere-2seiriNMU/static/media/FEV1%.e44fa163047424912291.png",
     "static/media/vasorelaxation.png": "/anywhere-2seiriNMU/static/media/vasorelaxation.c57cd85e4496f7eb1792.png",
+    "static/media/swallowing.png": "/anywhere-2seiriNMU/static/media/swallowing.94fbf0944c3c1e38fcb3.png",
     "static/media/ecg26.png": "/anywhere-2seiriNMU/static/media/ecg26.d5c85b45e90c0a5e93c2.png",
     "static/media/ecg10.png": "/anywhere-2seiriNMU/static/media/ecg10.aa599e8a14a558f16049.png",
     "static/media/ecg15.png": "/anywhere-2seiriNMU/static/media/ecg15.9048e435d0adfb109047.png",
@@ -63,6 +64,7 @@
     "static/media/ecg4.png": "/anywhere-2seiriNMU/static/media/ecg4.63be13c0ebf985ae28fa.png",
     "static/media/hyperkalemia.png": "/anywhere-2seiriNMU/static/media/hyperkalemia.6b080381dc506651fae0.png",
     "static/media/MeasureBloodPressure.png": "/anywhere-2seiriNMU/static/media/MeasureBloodPressure.6d69f9554f8cdfcd5dad.png",
+    "static/media/digestProtein.png": "/anywhere-2seiriNMU/static/media/digestProtein.4a6b4a5cd9be6373ee14.png",
     "static/media/ecg17.png": "/anywhere-2seiriNMU/static/media/ecg17.1da22d2bd6603e4ddb61.png",
     "static/media/ecg7.png": "/anywhere-2seiriNMU/static/media/ecg7.3bedae33a12abfaf598b.png",
     "static/media/ecg2.png": "/anywhere-2seiriNMU/static/media/ecg2.7aa1cbb2ab235f57242e.png",
@@ -74,6 +76,7 @@
     "static/media/ecg40.png": "/anywhere-2seiriNMU/static/media/ecg40.b626ee9f303dc23cc627.png",
     "static/media/ecg14.png": "/anywhere-2seiriNMU/static/media/ecg14.4c25acd0ecb28ac29e25.png",
     "static/media/ecg34.png": "/anywhere-2seiriNMU/static/media/ecg34.0501a67eedd51203606d.png",
+    "static/media/parietalCell.png": "/anywhere-2seiriNMU/static/media/parietalCell.69d0596fd21f3bd8e8d2.png",
     "static/media/synthesizeCatecholamine.png": "/anywhere-2seiriNMU/static/media/synthesizeCatecholamine.3dfa41b552934320dc8b.png",
     "static/media/ventilationDisorder.png": "/anywhere-2seiriNMU/static/media/ventilationDisorder.025a0eda3fa0bb31977a.png",
     "static/media/wenckebach.png": "/anywhere-2seiriNMU/static/media/wenckebach.0093fe4cecc29cd4d879.png",
@@ -89,10 +92,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.462b4739.js.map": "/anywhere-2seiriNMU/static/js/main.462b4739.js.map"
+    "main.1ef8d02a.js.map": "/anywhere-2seiriNMU/static/js/main.1ef8d02a.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.462b4739.js"
+    "static/js/main.1ef8d02a.js"
   ]
 }

@@ -86,6 +86,9 @@ import FEV1 from './img/answer/FEV1%.png'
 import haemoglobin from './img/answer/haemoglobin.png'
 import ODC from './img/answer/ODC.png'
 import ventilationDisorder from './img/answer/ventilationDisorder.png'
+import swallowing from './img/answer/swallowing.png'
+import parietalCell from './img/answer/parietalCell.png'
+import digestProtein from './img/answer/digestProtein.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
