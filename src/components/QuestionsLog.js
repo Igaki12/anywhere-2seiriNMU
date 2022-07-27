@@ -97,7 +97,7 @@ export const QuestionsLog = ({
                   borderWidth="1px"
                   borderRadius="lg"
                   overflow="hidden"
-                  mb={3}
+                  mb={1}
                   mt="3"
                   key={index + 'QuestionBox'}
                 >
@@ -156,7 +156,7 @@ export const QuestionsLog = ({
                 </Box>
                 <Box
                   maxW="lg"
-                  pb={'3'}
+                  mb={'50px'}
                   borderWidth="1px"
                   borderRadius="lg"
                   overflow="hidden"
@@ -242,7 +242,7 @@ export const QuestionsLog = ({
             borderWidth="1px"
             borderRadius="lg"
             overflow="hidden"
-            mb={3}
+            mb={1}
             mt="3"
             className="DownSlideIn"
           >
