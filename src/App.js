@@ -50,7 +50,7 @@ function App() {
   }
   return (
     <Box 
-    // bgColor={'blackAlpha.50'} 
+    bgColor={'blackAlpha.50'} 
     mt="-5" pt={'3'}>
       <Heading mt={'3'} ml="3" color="teal" mb={0}>
         どこでも試験対策

@@ -1728,7 +1728,8 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [ventricularFibrillation],
           answer: '心室細動',
-          commentary: '心拍数に問題あり。頻脈。不規則。まず意識はないので、除細動が必要。',
+          commentary:
+            '心拍数に問題あり。頻脈。不規則。まず意識はないので、除細動が必要。',
         },
         {
           detailInfo: '',
@@ -1736,7 +1737,8 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [prematureVcontraction],
           answer: '心室期外収縮',
-          commentary: '予定より早くQRS波が入る。（上室期外収縮と比べて）QRS波の幅が広い←プルキンエ線維を介さないから伝導速度が遅い',
+          commentary:
+            '予定より早くQRS波が入る。（上室期外収縮と比べて）QRS波の幅が広い←プルキンエ線維を介さないから伝導速度が遅い',
         },
         {
           detailInfo: '',
@@ -1744,7 +1746,8 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [ventricularTachycardia],
           answer: '心室頻拍VT',
-          commentary: '心拍数に問題あり。頻脈。規則的でQRS波の幅が広い。心室細動と違い意識がある場合がある。',
+          commentary:
+            '心拍数に問題あり。頻脈。規則的でQRS波の幅が広い。心室細動と違い意識がある場合がある。',
         },
         {
           detailInfo: '',
@@ -1868,7 +1871,8 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [angina],
           answer: '労作時狭心症',
-          commentary: 'ST下降 運動負荷をかけた後に症状が出る事がヒント',
+          commentary:
+            'ST下降 運動負荷をかけた後に症状が出る事がヒント ニトログリセリンを舌下投与（肝臓を通らない経路）することで治療する。',
         },
         {
           detailInfo: '',
@@ -1876,7 +1880,8 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [LBundleBranchBlock],
           answer: '完全左脚ブロック',
-          commentary: 'QRS幅が広い　Sが深い Tが陽性で増高 (V₁)',
+          commentary:
+            'QRS幅が広い（→心室の伝導に問題がある）　Sが深い Tが陽性で増高 (V₁)。規則的。',
         },
         {
           detailInfo: '',
@@ -1908,7 +1913,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [WPW],
           answer: 'WPW症候群',
-          commentary: 'PQ間隔が異常に短い。デルタ波',
+          commentary: 'PQ間隔が異常に短い。デルタ波。規則的。',
         },
         {
           detailInfo: '',
@@ -1925,7 +1930,7 @@ export const useQuestionList = () => {
           answerImg: [myocardialInfarction],
           answer: 'lateralの心筋梗塞',
           commentary:
-            'STに異常→上昇→急性期心筋梗塞 1 aVL V4 V6で上昇が見られる(2 3 aVF aVR)で下降(reciprocal change)→lateral',
+            'STに異常→上昇→急性期心筋梗塞 Ⅰ aVL V₄~V₆あたりで上昇が見られる(Ⅱ Ⅲ aVF aVR)で下降(reciprocal change)→lateral（側壁）',
         },
         {
           detailInfo: '',
@@ -1949,7 +1954,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [angina],
           answer: '労作性狭心症',
-          commentary: 'ST下降　負荷後というヒント',
+          commentary: 'ST下降　安静時・負荷後というヒント',
         },
         {
           detailInfo: '',
@@ -1957,16 +1962,16 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [avBlock1],
           answer: '第1度房室ブロック',
-          commentary: 'PQ間隔が異常な長さ。',
+          commentary: 'PQ間隔が異常な長さ。QS波',
         },
         {
           detailInfo: '',
           questionImg: [ecg32],
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [myocardialInfarction],
-          answer: '前壁と心室中隔と側壁の心筋梗塞          ',
+          answer: '前壁中隔の心筋梗塞          ',
           commentary:
-            'ST上昇が特に顕著なのはV₃～V₄で、前壁を中心とした広範囲の梗塞と考えられる',
+            'ST上昇が特に顕著なのはV₁～V₄で、前壁中隔の梗塞と考えられる',
         },
         {
           detailInfo: '',
@@ -1991,7 +1996,7 @@ export const useQuestionList = () => {
           answerImg: [RBundleBrunchBlock],
           answer: '完全右脚ブロック',
           commentary:
-            'QRS波が広く、後半はV₁方向で+になっていることから右脚がブロックされている',
+            'QRS波が広く、後半はV₁方向で+（V₆で-）になっていることから右脚がブロックされている',
         },
         {
           detailInfo: '',
@@ -2007,7 +2012,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [wenckebach],
           answer: 'Wenckebach型',
-          commentary: 'PQ間隔が異常に長く、変動している。',
+          commentary: 'PQ間隔が異常に長く、変動している(長くなっていっている)。',
         },
         // {
         //   detailInfo: '',
