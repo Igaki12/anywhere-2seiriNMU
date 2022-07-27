@@ -156,6 +156,7 @@ export const QuestionsLog = ({
                 </Box>
                 <Box
                   maxW="lg"
+                  pb={'3'}
                   borderWidth="1px"
                   borderRadius="lg"
                   overflow="hidden"

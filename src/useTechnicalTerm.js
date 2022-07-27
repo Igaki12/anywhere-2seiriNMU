@@ -331,10 +331,11 @@ export const useTechnicalTerm = () => {
       explanation:
         '尿を濃縮するホルモン。脱水状態を感知した視床下部浸透圧受容器→下垂体後葉から放出され、集合管の血管側に存在するV₂受容体に結合し水チャネルタンパクaquaporin（水受動輸送）を活性化させ水の透過性が上昇する。',
     },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
+    {
+      term: ['QRS波', 'QRS'],
+      explanation:
+        'Q波が無ければRS間隔を計測する。正常は0.06~0.10秒=1.5目盛り~2.5目盛り。',
+    },
     // {
     //   term:[''],
     //   explanation:'',

@@ -561,24 +561,38 @@ export const useQuestionList = () => {
           commentary:
             '胃酸分泌抑制・小腸液分泌促進・血管拡張・心拍出量増加作用を持つ。ガストリンは下部食道括約筋を収縮、CCKはOddi括約筋を弛緩、セクレチンは胆汁分泌促進、ソマトスタチンは胃酸など全体的に抑制としてはたらく。',
         },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '肝臓の生理について誤っているものはどれか',
+          choices: [
+            '胆汁合成を行う',
+            '血小板合成を行う',
+            '門脈血流は肝動脈血流より多い',
+            'Cantlie（カントリー）線は外科的右葉と外科的左葉を分ける',
+            '外科的右葉は外科的左葉より大きい',
+          ],
+          answerImg: [],
+          answer: '血小板合成を行う',
+          commentary: '血小板合成は骨髄巨核球が行う。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '肝臓を構成する細胞とその役割の組み合わせで適切なのはどれか',
+          choices: [
+            '肝実質細胞-異物の貪食',
+            '肝星細胞-ビタミンAの貯蔵',
+            '胆管上皮細胞-胆汁生成',
+            '伊東細胞-抗原提示',
+            'Kupffer(クッパー細胞)-コラーゲン産生',
+          ],
+          answerImg: [],
+          answer: '肝星細胞-ビタミンAの貯蔵',
+          commentary:
+            '肝星細胞は伊東細胞とも呼ばれ、体内の80%のビタミンAが貯蔵される。',
+        },
         // {
         //   detailInfo: '',
         //   questionImg: [],
@@ -1705,7 +1719,8 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [atrialFibrillation],
           answer: '心房細動',
-          commentary: 'P波がない。f波がある（V₁だと見やすい）',
+          commentary:
+            'P波がない。f波がある（V₁だと見やすい）心房細動では心房の中で血栓ができやすい。血液凝固対策としてワーファリンを用いる。ビタミンK依存で肝臓で合成される血液凝固因子2,7,9,10に対して作用する。治療中は納豆などビタミンKを多く含む食物は厳禁',
         },
         {
           detailInfo: '',
@@ -1713,7 +1728,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [ventricularFibrillation],
           answer: '心室細動',
-          commentary: '心拍数に問題あり。頻脈。不規則',
+          commentary: '心拍数に問題あり。頻脈。不規則。まず意識はないので、除細動が必要。',
         },
         {
           detailInfo: '',
@@ -1721,15 +1736,15 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [prematureVcontraction],
           answer: '心室期外収縮',
-          commentary: '予定より早くQRS波が入る。QRS波の幅が広い',
+          commentary: '予定より早くQRS波が入る。（上室期外収縮と比べて）QRS波の幅が広い←プルキンエ線維を介さないから伝導速度が遅い',
         },
         {
           detailInfo: '',
           questionImg: [ecg8],
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [ventricularTachycardia],
-          answer: '心室頻拍',
-          commentary: '心拍数に問題あり。頻脈。規則的でQRS波の幅が広い',
+          answer: '心室頻拍VT',
+          commentary: '心拍数に問題あり。頻脈。規則的でQRS波の幅が広い。心室細動と違い意識がある場合がある。',
         },
         {
           detailInfo: '',
@@ -1738,7 +1753,7 @@ export const useQuestionList = () => {
           answerImg: [supraventricularTachycardia],
           answer: '発作性上室頻拍',
           commentary:
-            '心拍数に問題あり（12.5目盛り＝100前後？）。頻脈。規則的でQRS波が狭い',
+            '心拍数に問題あり（12.5目盛り=0.5秒間隔＝100オーバー）。頻脈。規則的でQRS波が狭い。P波がハッキリしない',
         },
         {
           detailInfo: '',
@@ -1746,7 +1761,7 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [atrialFlutter],
           answer: '心房粗動',
-          commentary: 'P波がない　F波がある　今回は4対1伝導',
+          commentary: 'P波がない→F波がある　今回は4対1伝導',
         },
         {
           detailInfo: '',
