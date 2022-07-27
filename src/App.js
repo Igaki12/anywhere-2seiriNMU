@@ -49,9 +49,7 @@ function App() {
     console.log('saveHistory:' + jsCookie.get('history'))
   }
   return (
-    <Box 
-    bgColor={'blackAlpha.50'} 
-    mt="-5" pt={'3'}>
+    <>
       <Heading mt={'3'} ml="3" color="teal" mb={0}>
         どこでも試験対策
       </Heading>
@@ -92,7 +90,7 @@ function App() {
         />
       )}
       {settingDetail.isSet ? (
-        <>
+        <Box bgColor={'blackAlpha.50'} mt="-100px" pt={'100px'} minH="1000px">
           {/* <ResultBar
             showHistory={showHistory}
             showSettingDetail={showSettingDetail}
@@ -120,11 +118,11 @@ function App() {
             showSettingDetail={showSettingDetail}
             showHistory={showHistory}
           />
-        </>
+        </Box>
       ) : (
         <></>
       )}
-    </Box>
+    </>
   )
 }
 //   )
