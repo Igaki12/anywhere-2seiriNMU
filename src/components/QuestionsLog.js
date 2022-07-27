@@ -94,6 +94,7 @@ export const QuestionsLog = ({
               <>
                 <Box
                   maxW="lg"
+                  bgColor={"white"}
                   borderWidth="1px"
                   borderRadius="lg"
                   overflow="hidden"
@@ -156,11 +157,11 @@ export const QuestionsLog = ({
                 </Box>
                 <Box
                   maxW="lg"
-                  mb={'50px'}
+                  mb={'100px'}
                   borderWidth="1px"
                   borderRadius="lg"
                   overflow="hidden"
-                  bg={'red.50'}
+                  bg={'red.100'}
                   key={index + 'AnswerBox'}
                 >
                   {question.answerImg.map((image) => (
@@ -239,6 +240,7 @@ export const QuestionsLog = ({
         <>
           <Box
             maxW="lg"
+            bgColor={"white"}
             borderWidth="1px"
             borderRadius="lg"
             overflow="hidden"
@@ -351,7 +353,7 @@ export const QuestionsLog = ({
                 borderWidth="1px"
                 borderRadius="lg"
                 overflow="hidden"
-                bg={'red.50'}
+                bg={'red.100'}
                 // className="DownSlideIn"
               >
                 {history[history.length - 1].askingQuestion.answerImg.map(
@@ -558,7 +560,7 @@ export const QuestionsLog = ({
         <Button
           m={1}
           ml="3"
-          mt={-2}
+          mt={0}
           rightIcon={<ArrowDownIcon />}
           colorScheme="red"
           variant={'solid'}
