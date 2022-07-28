@@ -311,14 +311,14 @@ export const useQuestionList = () => {
           questionSentence:
             '1. A patient with renal tubular acidosis ( 尿細管性アシドーシス) would be expected to have which set of blood values?　pH HCO3-(mmol/L) - PCO2 (mmHg) --- Na+ (mmol/L) --- Cl- (mmol/L)',
           choices: [
-            '7.66--22--20---143 --111',
-            '7.52--38--48 ---146 --- 100',
+            '7.66--22--20---143 --- 111',
+            '7.52--38--48---146 --- 100',
             '7.07--14--50---144 --- 102',
             '7.25--12--28---142 --- 102',
-            '7.29--14--30--143 --- 117',
+            '7.29--14--30---143 --- 117',
           ],
           answerImg: [],
-          answer: '7.29--14--30--143 --- 117',
+          answer: '7.29--14--30---143 --- 117',
           commentary:
             'アニオンギャップが正常値より低いので尿細管性アシドーシスとなる。（Cl⁻が高いことが特徴）',
         },

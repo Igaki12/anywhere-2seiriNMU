@@ -94,7 +94,7 @@ export const QuestionsLog = ({
               <>
                 <Box
                   maxW="lg"
-                  bgColor={"white"}
+                  bgColor={'white'}
                   borderWidth="1px"
                   borderRadius="lg"
                   overflow="hidden"
@@ -240,7 +240,7 @@ export const QuestionsLog = ({
         <>
           <Box
             maxW="lg"
-            bgColor={"white"}
+            bgColor={'white'}
             borderWidth="1px"
             borderRadius="lg"
             overflow="hidden"
@@ -543,6 +543,7 @@ export const QuestionsLog = ({
           rightIcon={<ArrowDownIcon />}
           colorScheme="teal"
           variant={'outline'}
+          bgColor="white"
           onClick={() => {
             nextQuestion(settingDetail)
             // scrollToTheBottom()

@@ -40,7 +40,7 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
           color={'gray.600'}
           variant="outline"
           borderRadius={'lg'}
-          bgColor={'gray.50'}
+          bgColor={'white'}
           h="45px"
           w={'45px'}
           onClick={onOpen}
