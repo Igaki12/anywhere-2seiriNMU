@@ -222,6 +222,106 @@ export const useQuestionList = () => {
           answer: '130',
           commentary: 'クレアチンクリアランスCCr参考',
         },
+        {
+          detailInfo: '7/28(1)',
+          questionImg: [],
+          questionSentence:
+            ' A decrease in sodium (Na+) concentration in the distal tubule: (遠位尿細管におけるナト リウム濃度の減少はどの現象を引き起こす か)',
+          answerImg: [kidneyFloodControl],
+          answer: '',
+          commentary:
+            'Na⁺濃度の減少=腎濾液流量の減少。緻密班でのCl⁻濃度低下と同値で、緻密班からのシグナル→輸入細動脈でのレニン分泌。※レニンは緻密班からは分泌されない。また腎濾液流量GFRが減少しているので、輸出細動脈は縮小する方向で調節される。ATPは濾液流量が増加したときに作用し緻密班から放出される。',
+          choices: [
+            'promotes renin release from the  juxtaglomerular cells. (傍糸球体細胞/JG 細胞からレニン放出を促進する)',
+            'inhibits renin secretion from the macula densa (緻密斑からのレニン分泌を阻害 する)',
+            'decreases constriction of the efferent arteriole. (輸出細動脈の収縮を減少させる)',
+            'increases renin secretion from the macula densa.(緻密斑からのレニン分泌 を増加させる)',
+            'promotes ATP release from the  juxtaglomerular cells. (傍糸球体細胞/JG 細胞からのATP放出を促進する)',
+            'わからない、または、時間切れ',
+          ],
+        },
+        {
+          detailInfo: '7/28(2)',
+          questionImg: [],
+          questionSentence:
+            ' Loop diuretics (such as furosemide or bumetanide) produce a diuresis by targeting which of the following transporters?',
+          answerImg: [],
+          answer: 'NKCC-2 (Na⁺-K⁺-2CI⁻) cotransporters',
+          commentary:
+            '心臓病治療薬ジキタリスもここにはたらく。Loop diuretics=ループ利尿薬。EnaCは管腔側に存在するナトリウムチャネル。SGLT',
+          choices: [
+            'Epithelial sodium channel (ENaC)',
+            'NKCC-2 (Na+-K+-2CI-) cotransporters',
+            'Na+-glucose cotransporters',
+            'Na+/K+ ATPase',
+            'Na+/H+ antiporters',
+            'わからない、または、時間切れ',
+          ],
+        },
+        {
+          detailInfo: '7/28(3)',
+          questionImg: [],
+          questionSentence:
+            ' The kidneys perform all of the following functions EXCEPT:(腎臓の機能でないのはどれか)',
+          answerImg: [],
+          answer: '',
+          commentary:
+            'H⁺排泄は近位尿細管で行われる。ビタミンDは腎臓・肝臓で水酸化され活性化される。アルドステロンの産生自体は副腎皮質で行われる（腎臓レニンで制御される）アンモニアは腎臓近位尿細管でグルタミン酸Gln',
+          choices: [
+            'excretion of excess acid (過剰な酸の排 泄)',
+            'activation of vitamin D',
+            'production of aldosterone',
+            'Ammoniagenesis',
+            'regulation of fluid and electrolyte homeostasis',
+            'わからない、または、時間切れ',
+          ],
+        },
+        {
+          detailInfo: '7/28スライド',
+          questionImg: [],
+          questionSentence:
+            '呼吸困難を訴える60歳男性の、以下の動脈血ガス所見を解釈してください。pH7.28(正常値7.35未満) / PaO₂55Torr(正常値80より小さい) / PaCO₂70Torr(正常値45より大きい) / HCO₃⁻32mEq/L',
+          choices: [],
+          answerImg: [],
+          answer: '一部代償された呼吸性アシドーシス',
+          commentary:
+            'pH7.3未満なので治療必要なアシドーシス。CO₂濃度が高いので呼吸性アシドーシス。一部代償（HCO₃⁻上昇）が起こっている。長期的なアシドーシスは完全に代償されている場合もある。',
+        },
+        {
+          detailInfo: '7/28(4)',
+          questionImg: [],
+          questionSentence:
+            ' Use the following blood values to determine the acid-base disorder.(以下の血液検査値を用いて、 どの酸塩基異常が生じているか判断しなさい) pH=7.28 PC02-26 mmHg HCO3-14 mEq/L Na+=136 mEq/L K+=5.0 mEq/L Cl-=100 mEq/L',
+          answerImg: [],
+          answer: 'Metabolic acidosis from acid gain',
+          commentary:
+            'diarrhea:下痢　pH7.4未満なのでacidosis。今回はCO₂もHCO₃⁻も基準値より低い→代謝性Metabolic　炭酸平衡がHCO₃⁻側に傾き（代償）、アニオンギャップを計測すると上昇していることがわかるので、from acid gainとなる。',
+          choices: [
+            'Metabolic alkalosis',
+            'Metabolic acidosis from acid gain',
+            'Respiratory acidosis',
+            'Metabolic acidosis from diarrhea',
+            'Respiratory alkalosis',
+            ' わからない、 または、 時間切れ',
+          ],
+        },
+        {
+          detailInfo: '7/28',
+          questionImg: [],
+          questionSentence:
+            '1. A patient with renal tubular acidosis ( 尿細管性アシドーシス) would be expected to have which set of blood values?　pH HCO3-(mmol/L) - PCO2 (mmHg) --- Na+ (mmol/L) --- Cl- (mmol/L)',
+          choices: [
+            '7.66--22--20---143 --111',
+            '7.52--38--48 ---146 --- 100',
+            '7.07--14--50---144 --- 102',
+            '7.25--12--28---142 --- 102',
+            '7.29--14--30--143 --- 117',
+          ],
+          answerImg: [],
+          answer: '7.29--14--30--143 --- 117',
+          commentary:
+            'アニオンギャップが正常値より低いので尿細管性アシドーシスとなる。（Cl⁻が高いことが特徴）',
+        },
         // {
         //   detailInfo: '7/25練習問題',
         //   questionImg: [],
@@ -231,24 +331,16 @@ export const useQuestionList = () => {
         //   answer: '食物の殺菌',
         //   commentary: 'pHも覚えておく。産生されるのはペプシノーゲンでありペプシンではない。',
         // },
-        // {
-        //   detailInfo: '7/25練習問題',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '7/25練習問題',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+
+        {
+          detailInfo: '7/25練習問題',
+          questionImg: [],
+          questionSentence: '',
+          choices: [],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
         // {
         //   detailInfo: '7/25練習問題',
         //   questionImg: [],
@@ -2012,7 +2104,8 @@ export const useQuestionList = () => {
           questionSentence: 'この心電図が示す疾患を答えよ',
           answerImg: [wenckebach],
           answer: 'Wenckebach型',
-          commentary: 'PQ間隔が異常に長く、変動している(長くなっていっている)。',
+          commentary:
+            'PQ間隔が異常に長く、変動している(長くなっていっている)。',
         },
         // {
         //   detailInfo: '',
