@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.aadfacbf.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.436c4972.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -9,10 +9,12 @@
     "static/media/ecg29.png": "/anywhere-2seiriNMU/static/media/ecg29.35df8e0ed091fc1a2a8a.png",
     "static/media/ecg30.png": "/anywhere-2seiriNMU/static/media/ecg30.bc712fee4c8841d974b6.png",
     "static/media/ecg46.png": "/anywhere-2seiriNMU/static/media/ecg46.4a060d35f77a178fe11e.png",
+    "static/media/portalHypertension.png": "/anywhere-2seiriNMU/static/media/portalHypertension.62dfe5ba16785007f50c.png",
     "static/media/ecg19.png": "/anywhere-2seiriNMU/static/media/ecg19.c2ad8add3e268d3e9568.png",
     "static/media/atrialFibrillation.png": "/anywhere-2seiriNMU/static/media/atrialFibrillation.8cf8f25ef89fe6c7553c.png",
     "static/media/titleImg.png": "/anywhere-2seiriNMU/static/media/titleImg.f97b1afc288809b23ff0.png",
     "static/media/supraventricularTachycardia.png": "/anywhere-2seiriNMU/static/media/supraventricularTachycardia.f80aac2d16c4385abcd7.png",
+    "static/media/digestiveSecretion.png": "/anywhere-2seiriNMU/static/media/digestiveSecretion.602d8936de610e3140e7.png",
     "static/media/atrialFlutter.png": "/anywhere-2seiriNMU/static/media/atrialFlutter.52bae38d9bce1cf7aefd.png",
     "static/media/bilirubin.png": "/anywhere-2seiriNMU/static/media/bilirubin.63d6b3d818633e33a118.png",
     "static/media/LBundleBranchBlock.png": "/anywhere-2seiriNMU/static/media/LBundleBranchBlock.b8757d52a3780a70ce35.png",
@@ -44,6 +46,7 @@
     "static/media/ecg41.png": "/anywhere-2seiriNMU/static/media/ecg41.55739cd902a7e78f7034.png",
     "static/media/ecg18.png": "/anywhere-2seiriNMU/static/media/ecg18.33ca0f94702f88cd0eb3.png",
     "static/media/coronalPlane.png": "/anywhere-2seiriNMU/static/media/coronalPlane.df8eb38fa7bd996c8b60.png",
+    "static/media/gastricCancer.png": "/anywhere-2seiriNMU/static/media/gastricCancer.23ad043e874cb63390fc.png",
     "static/media/ecg38.png": "/anywhere-2seiriNMU/static/media/ecg38.7d081b3e34643b5f77bf.png",
     "static/media/kidneyFloodControl.png": "/anywhere-2seiriNMU/static/media/kidneyFloodControl.546f9380b1bcdd0512d2.png",
     "static/media/FEV1%.png": "/anywhere-2seiriNMU/static/media/FEV1%.e44fa163047424912291.png",
@@ -92,10 +95,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.aadfacbf.js.map": "/anywhere-2seiriNMU/static/js/main.aadfacbf.js.map"
+    "main.436c4972.js.map": "/anywhere-2seiriNMU/static/js/main.436c4972.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.aadfacbf.js"
+    "static/js/main.436c4972.js"
   ]
 }

@@ -89,6 +89,9 @@ import ventilationDisorder from './img/answer/ventilationDisorder.png'
 import swallowing from './img/answer/swallowing.png'
 import parietalCell from './img/answer/parietalCell.png'
 import digestProtein from './img/answer/digestProtein.png'
+import gastricCancer from './img/answer/gastricCancer.png'
+import digestiveSecretion from './img/answer/digestiveSecretion.png'
+import portalHypertension from './img/answer/portalHypertension.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -685,74 +688,270 @@ export const useQuestionList = () => {
           commentary:
             '肝星細胞は伊東細胞とも呼ばれ、体内の80%のビタミンAが貯蔵される。',
         },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '膵液について誤っているのはどれか？',
+          choices: [
+            'pH3で活性が最大となる。',
+            'リパーゼは脂肪を分解する',
+            'アミラーゼはデンプンを分解する',
+            'トリプシンはタンパクを分解する',
+            '重炭酸イオンを含んでいる。',
+          ],
+          answerImg: [],
+          answer: 'pH3で活性が最大となる',
+          commentary:
+            '膵液は十二指腸に分泌され、pH8~9のHCO₃⁻の存在下で活性が高まる。膵液はアミラーゼ（デンプンをマルトースに）トリプシン（タンパク質をペプチドに）、リパーゼ（脂肪を脂肪酸とグリセリンに）など多様な酵素を含んでいる。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '胃酸分泌における腸相に関与するのはどれか',
+          choices: [
+            'ヒスタミン',
+            'アセチルコリン',
+            'セクレチン',
+            'ガストリン',
+            'モチリン',
+          ],
+          answerImg: [digestiveSecretion],
+          answer: 'セクレチン',
+          commentary:
+            '胃酸分泌は脳相（刺激）・胃相（刺激）・腸相（抑制）の3相。脳相では、視覚・味覚刺激などにより迷走神経からアセチルコリンの分泌→ガストリン（G細胞）・胃酸（壁細胞）・ヒスタミン（ECL細胞・肥満細胞）などの分泌を促す。胃相では胃内に入った食物による物理的刺激などによりガストリン（G細胞）・胃酸分泌などが促進される。腸相では、食物が十二指腸に達することによりセクレチン（十二指腸のS細胞）分泌が促進→ガストリン・胃酸分泌を抑制する。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '嚥下の際に行われるのはどれか',
+          choices: [
+            '舌根の下降',
+            '咽頭の後方移動',
+            '下鼻道の閉塞',
+            '咽頭の挙上',
+            '食道の挙上',
+          ],
+          answerImg: [swallowing],
+          answer: '咽頭の挙上',
+          commentary:
+            '舌根と咽頭は一環として前上方に挙上し、舌根部の後方移動と伴って、咽頭が舌根部に押し付けられ咽頭蓋が咽頭前庭を覆うように閉塞し、食塊が気道に侵入するのを防ぐ。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '早期胃癌の深達度で最も深いのはどれか',
+          choices: ['粘膜下層', '粘膜固有層', '漿膜', '固有筋層', '粘膜筋板'],
+          answerImg: [gastricCancer],
+          answer: '粘膜下層',
+          commentary:
+            '早期胃癌は粘膜下層までの浸潤である。上皮→粘膜固有層→粘膜筋板→粘膜下層→固有筋層（内斜・中輪・外縦）→漿膜の順に深くなり、粘膜下層までの癌を早期胃癌という。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '胃全摘手術の後も分泌が障害されないのはどれか',
+          choices: [
+            '内因子',
+            'トリプシン',
+            'ソマトスタチン',
+            'ガストリン',
+            'ペプシン',
+          ],
+          answerImg: [],
+          answer: 'トリプシン',
+          commentary:
+            'トリプシンは膵から分泌される蛋白分解酵素で、胃全摘にて障害されない。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '肝硬変において腹水の原因となるのはどれか？',
+          choices: [
+            '血漿膠原浸透圧低下',
+            '糸球体濾過量の増加',
+            '血漿タンパク増加',
+            '血管浸透圧亢進',
+            '循環血漿量増加',
+          ],
+          answerImg: [portalHypertension],
+          answer: '血漿膠原浸透圧低下',
+          commentary:
+            '肝硬変での腹水貯留には、1)肝でのアルブミン合成阻害による膠原浸透圧低下、2)肝線維化による門脈圧亢進などが関与している。その他糸球体濾過量が低下すると体内におけるH₂O・ナトリウム貯留がみられるようになり、蕁麻疹などでは血管浸透圧亢進が浮腫を誘導する。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence:
+            '消化管の感染防御システムのうち、自然免疫に関係するのはどれか',
+          choices: ['壁細胞', '杯細胞', '形質細胞', '樹状細胞', 'パネート細胞'],
+          answerImg: [],
+          answer: 'パネート細胞',
+          commentary:
+            '壁細胞は胃酸分泌、杯細胞は粘液分泌でともに非免疫系の防御システムである。一方形質細胞は免疫グロブリン産生、樹状細胞は抗原提示でともに獲得免疫系の防御システムである。パネート細胞は小腸陰窩に存在してリゾチームなどのAMP（抗微生物タンパク質）を分泌する自然免疫系の防御システムである。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence: '消化管の壁内神経叢について正しいのはどれか。',
+          choices: [
+            '消化管の蠕動運動を抑制している',
+            '食道から小腸までの消化管壁内に存在する',
+            'マイスナーMessner神経叢は輪走筋と縦走筋の間に存在する。',
+            '先天的な欠如によってヒルシュスプリングHirschsprung病を発症する',
+            'アウエルバッハAuerbach神経叢は中枢神経からの指令がないと機能しない。',
+          ],
+          answerImg: [],
+          answer:
+            '先天的な欠如によってヒルシュスプリングHirschsprung病を発症する',
+          commentary:
+            '腸管神経系は食道から直腸までの消化管壁内に存在し、消化管運動や腸液分泌をコントロールしている。ヒルシュスプリングHirschsprung病（無神経叢性巨大結腸症）は、筋層間神経叢・粘膜下神経叢の先天的欠損により発症する。この患者では無神経節部位における蠕動運動が欠如しており、小児では3週間に1回の割合以下でしか排便できない。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence: '肝臓の働きについて正しいのはどれか',
+          choices: [
+            'ビタミンCを貯蔵する',
+            'アンモニアから尿酸を産生する',
+            'グルコースからアミノ酸を産生する',
+            'β酸化によりコレステロールを産生する',
+            'グルコースをグリコーゲンに変換して貯蔵する',
+          ],
+          answerImg: [],
+          answer: 'グルコースをグリコーゲンに変換して貯蔵する',
+          commentary:
+            'ビタミンCは貯蔵できない。アンモニアから産生されるのは尿素。アミノ酸はグルコースから産生されない（グルコース→アミノ酸は起こる）β酸化は脂肪酸の分解',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence: '胃液の作用について正しいのはどれか',
+          choices: [
+            '糖分解酵素を多量に含む',
+            'ミセルの形成に重要である',
+            '脂肪分解酵素を多量に含む',
+            'ビタミンB12の吸収に重要である',
+            'タンパク質の分解吸収に重要である。',
+          ],
+          answerImg: [],
+          answer: 'ビタミンB12の吸収に重要である',
+          commentary:
+            '胃液に含まれる主な消化酵素はペプシノーゲンである。これはタンパク質の分解酵素であるが、この酵素が欠乏しても膵液中の酵素があればタンパク質の分解吸収に支障はない。ミセル形成は胆汁の作用である。胃液の内因子がビタミンB12の吸収に必要不可欠である。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence: '胃酸の分泌を抑制するのはどれか',
+          choices: [
+            'ガストリン',
+            'ヒスタミン',
+            '迷走神経刺激',
+            'アセチルコリン',
+            'プロトンポンプ阻害薬',
+          ],
+          answerImg: [parietalCell],
+          answer: 'プロトンポンプ阻害薬',
+          commentary:
+            '胃酸の分泌機序にプロトンポンプは必須である。ガストリン・ヒスタミン・アセチルコリン（迷走神経刺激）はいずれも胃液分泌を促進する',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence: '膵液について正しいのはどれか',
+          choices: [
+            '酸性である',
+            'ペプシンを含む',
+            'リパーゼを含む',
+            'マルターゼを含む',
+            '脂肪の乳化に重要である',
+          ],
+          answerImg: [],
+          answer: 'リパーゼを含む',
+          commentary:
+            'ペプシンは胃液中、マルターゼは小腸上皮の酵素である。乳化は胆汁の作用。胃液の酸性を中和するために、膵液にはHCO₃⁻が多量に含まれていることを知らなければならない。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence: '膵液の分泌刺激と分泌物の関係で正しいのはどれか',
+          choices: [
+            '迷走神経の刺激-酵素を多量に含む',
+            'セクレチンによる刺激-酵素を多量に含む',
+            '十二指腸の酸による刺激-酵素を多量に含む',
+            'ガストリンによる刺激-HCO₃⁻を多量に含む',
+            'コレシストキニンによる刺激-HCO₃⁻を多量に含む',
+          ],
+          answerImg: [],
+          answer: '迷走神経の刺激-酵素を多量に含む',
+          commentary:
+            '酵素を多量に含む膵液と、HCO₃⁻を多量に含む膵液とでは、分泌刺激が異なっている。迷走神経・コレシストキニンCCK・ガストリンは消化酵素を多量に分泌させる。酸やセクレチンはHCO₃⁻を分泌させる。HCO₃⁻は胃酸を中和する。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence:
+            '膵液の分泌機能が低下したときの症候として正しいのはどれか。',
+          choices: [
+            '便の比重が大きくなる',
+            '血液凝固能が低下する',
+            'ビタミンB12の吸収が低下する',
+            '十二指腸内がアルカリ性に傾く',
+            '骨へのカルシウム沈着が多くなる',
+          ],
+          answerImg: [],
+          answer: '血液凝固能が低下する',
+          commentary:
+            '脂肪吸収が低下するため、便の比重は小さくなる。血液凝固能低下は、主にビタミンK吸収不足によるビタミンK依存因子の産生低下が原因である。ビタミンB12吸収低下は胃液分泌障害による。膵液にはHCO₃⁻が含まれるので、分泌が低下すると酸性に傾く。脂溶性ビタミンD吸収不全によりカルシウム吸収も低下する。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence: '小腸における栄養素の吸収について正しいのはどれか',
+          choices: [
+            '脂肪はミセルの形で吸収される',
+            '側底膜には2種類のグルコース輸送体GLUT2・GLUT5がある',
+            '上皮細胞で形成される主要なリポタンパク質はキロミクロンである。',
+            '冊子縁のNa⁺-グルコース輸送体SGLT1はATPを必要する',
+            'タンパク質は終末消化によりポリペプチドまで分解されて吸収される',
+          ],
+          answerImg: [],
+          answer:
+            '上皮細胞で形成される主要なリポタンパク質はキロミクロンである。',
+          commentary:
+            'ミセルは最終消化された後、吸収される。側底膜にあるグルコース輸送体はGLUT2のみである。Na⁺-グルコース共輸送体SGLT1は二次性能動輸送であってATPはない。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence:
+            '手術により小腸を90%除去した患者に最も生じがたい病態はどれか',
+          choices: ['貧血', '脱水', '脂肪便', '骨粗鬆症', 'るいそう（やせ）'],
+          answerImg: [],
+          answer: '脱水',
+          commentary:
+            '栄養素の吸収不全によりるいそう・脂肪便が生じる。鉄・ビタミンB12吸収不全の結果貧血も生じる。ビタミンD・カルシウム吸収不全により骨粗鬆症にもなりやすい。対して、塩分や水は残存している腸（大腸が主）で吸収可能である。',
+        },
+        {
+          detailInfo: 'CBT準拠問題',
+          questionImg: [],
+          questionSentence: '消化管ホルモンで正しいのはどれか',
+          choices: [
+            'グレリンは摂食によって分泌が増加する。',
+            'コレシストキニンは中枢神経系にも存在する',
+            'ガストリンは幽門前庭のG細胞から管腔側へ分泌される',
+            'ソマトスタチンは成長ホルモン放出ホルモンとも呼ばれる',
+            '膵液によって胃からの酸が中和されるとセクレチン分泌は増加する。',
+          ],
+          answerImg: [],
+          answer: 'コレシストキニンは中枢神経系にも存在する',
+          commentary:
+            '消化管ホルモン（広義）は消化管内分泌細胞・神経などから放出される。コレシストキニンは上部小腸の粘膜上皮のI細胞から分泌されるが、中枢神経系にも存在し、食物摂取の調節にも関与しているといわれている。',
+        },
         // {
-        //   detailInfo: '',
+        //   detailInfo: 'CBT準拠問題',
         //   questionImg: [],
         //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '7/25',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: [],
+        //   choices: ['', '', '', '', ''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
@@ -1349,7 +1548,7 @@ export const useQuestionList = () => {
             'ヘモグロビンに対する一酸化炭素の親和性は、酸素の200倍以上高い',
             'ミオグロビンの酸素親和性は、ヘモグロビンよりも高い',
           ],
-          answerImg: [],
+          answerImg: [ODC],
           answer:
             'ヘモグロビンに対する一酸化炭素の親和性は、酸素の200倍以上高い/ミオグロビンの酸素親和性は、ヘモグロビンよりも高い',
           commentary:
@@ -1520,7 +1719,7 @@ export const useQuestionList = () => {
           ],
           answerImg: [],
           answer: 'すべて正しい',
-          commentary: '',
+          commentary: '参考　アニオンギャップ',
         },
         {
           detailInfo: 'B(1)',
