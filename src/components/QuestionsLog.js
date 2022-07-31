@@ -538,6 +538,7 @@ export const QuestionsLog = ({
       {history[history.length - 1].isAnswered &&
       history[history.length - 1].remainingQuestionList.length > 0 ? (
         <Button
+          autoFocus
           m={1}
           ml="3"
           rightIcon={<ArrowDownIcon />}
@@ -559,6 +560,7 @@ export const QuestionsLog = ({
         <></>
       ) : (
         <Button
+          autoFocus
           m={1}
           ml="3"
           mt={0}
