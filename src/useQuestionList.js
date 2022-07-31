@@ -103,6 +103,7 @@ import sympatheticNerve from './img/answer/sympatheticNerve.png'
 import vessel from './img/answer/vessel.png'
 import E20202 from './img/question/E20202.png'
 import hematopoiesis from './img/answer/hematopoiesis.png'
+import gasPressure from './img/answer/gasPressure.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -2129,105 +2130,175 @@ export const useQuestionList = () => {
           commentary:
             'マグネシウムは血液凝固に関係しない。凝固した血液を延伸して得た上清は血清。参考：クエン酸ナトリウム',
         },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: 'A(5)',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            'phosphatidylinositol-4,5-bisphosphate(PIP₂)は、phospholipase C(PLC)により、diacylglycerol(DG)とinositol-4,5-triphosphate(IP₃)に変換される',
+            'PIP₂は、細胞膜の構成要素である',
+            'DGは、proteinkinase C(PKC)を活性化させる',
+            'IP₃は、小胞体からのカルシウム放出を促進する',
+          ],
+          answerImg: [],
+          answer: 'すべて正しい',
+          commentary: '参考:PIP₂ IP₃ DG',
+        },
+        {
+          detailInfo: 'A(6)',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            '肺動脈弁は大動脈弁の前方に位置する',
+            '冠動脈の血流量は、心室の収縮期よりも拡張期の方が多い',
+            '心筋は、頚動脈により供給される血中酸素の約40%を消費する',
+            '房室結節の伝導速度は、心房金の伝導速度より早い',
+          ],
+          answerImg: [],
+          answer:
+            '肺動脈弁は大動脈弁の前方に位置する / 動脈の血流量は、心室の収縮期よりも拡張期の方が多い',
+          commentary:
+            '心筋は冠動脈により供給される血中酸素の75％を消費（他の組織は25％ぐらい）。プルキンエ線維、ヒス束、左・右脚＞固有心筋（心室・心房筋）＞特殊心筋（結節）',
+        },
+        {
+          detailInfo: 'A(7)',
+          questionImg: [],
+          questionSentence: 'ニトログリセリンに関して正しいものを全て選べ',
+          choices: [
+            '心筋梗塞に対して顕著な効果を示す',
+            '舌下錠として投与する',
+            '体内ではNOに変換されたうえで、標的細胞へ作用する',
+            '冠動脈を収縮させる作用を示す。',
+          ],
+          answerImg: [],
+          answer:
+            '舌下錠として投与する / 体内ではNOに変換されたうえで、標的細胞へ作用する',
+          commentary:
+            'ニトログリセリンは血管平滑筋を弛緩させる（血管を広げる）。心筋梗塞ではすでに心筋や血管は壊死していると考えられて投与しても効果なし',
+        },
+        {
+          detailInfo: 'A(8)',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            'Ⅰ音は、僧帽弁が閉じる際に聴取される',
+            'Ⅱ音は、大動脈弁が開く際に聴取される',
+            'Ⅲ音は三尖弁が閉じる際に聴取される',
+            'Ⅳ音は、肺動脈弁が開く際に聴取される',
+          ],
+          answerImg: [],
+          answer: 'Ⅰ音は、僧帽弁が閉じる際に聴取される',
+          commentary:
+            'Ⅰ音は房室弁の閉鎖音、Ⅱ音は動脈弁の閉鎖音。Ⅲ・Ⅳ音は正常時は聞こえない（過剰心音といわれる）。Ⅲ音は心室の急速充満期に発生し、心不全の兆候。Ⅳ音は心房収縮期に心室で聞こえる音で、肺高血圧症などで心室が異常拡張している場合に聞こえる。',
+        },
+        {
+          detailInfo: 'A(9)',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            'リンパ管には弁がない',
+            '胸管は、鎖骨下動脈へ連結する',
+            '心臓のNa⁺-K⁺ポンプは、2個のNa⁺を排出し、3個のK⁺を取り込む',
+            '心臓のNa⁺-Ca²⁺交換系では、3個のNa⁺と1個のCa²⁺が交換される',
+          ],
+          answerImg: [cardiacIonChannel],
+          answer: '心臓のNa⁺-Ca²⁺交換系では、3個のNa⁺と1個のCa²⁺が交換される',
+          commentary:
+            'リンパ管、静脈には弁がある。胸管は鎖骨下静脈へ連結。Na⁺-K⁺ ATPaseもNCXも3個のNa⁺を運ぶ（イオンの中でNa⁺が最も動かしやすい傾向にある）。ただし方向は逆',
+        },
+        {
+          detailInfo: 'A(10)',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            '肢誘導では、前額面における心臓の電気的活動方向を計測する',
+            '胸部誘導では、水平面における心臓の電気的活動方向を計測する',
+            'P波は洞房結節の興奮を示す',
+            'QRS波は房室結節の興奮を示す',
+          ],
+          answerImg: [coronalPlane],
+          answer:
+            '肢誘導では、前額面における心臓の電気的活動方向を計測する / 胸部誘導では、水平面における心臓の電気的活動方向を計測する',
+          commentary:
+            '肢誘導とは標準四肢誘導や増幅単極肢誘導のことで、垂直方向。胸部誘導とは単極胸部誘導のことで、水平方向の電位変化を計測している。P波は心房筋の興奮、QRS波は心室筋の興奮（結節は伝導速度が小さすぎて計測されない）',
+        },
+        {
+          detailInfo: 'A(12)',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            '有窓型の毛細血管は、肝臓で見られる',
+            '洞様の毛細血管は、腎臓で見られる',
+            '毛細血管壁は、一層の平滑筋細胞で形成される',
+            'ヒスタミンは、毛細血管における血液透過性を高める作用を有す',
+          ],
+          answerImg: [],
+          answer: 'ヒスタミンは、毛細血管における血液透過性を高める作用を有す',
+          commentary:
+            '肝臓は洞様毛細血管、腎臓は有窓型毛細血管（隔膜なし）、毛細血管を覆うのは周皮細胞',
+        },
+        {
+          detailInfo: 'A(13)',
+          questionImg: [],
+          questionSentence: '血管平滑筋の収縮を促進するものを全て選べ',
+          choices: [
+            'angiotensinⅡ',
+            'prostacyclin',
+            'bradykinin',
+            'acetylcholine',
+          ],
+          answerImg: [vasoconstriction],
+          answer: 'angiotensinⅡ（アンジオテンシンⅡ）',
+          commentary:
+            'プロスタサイクリンProstacyclinはPGI₂のこと。ブラジキニンBrabykininは血管拡張(空咳の原因)。アセチルコリンAcetylcholineは副交感神経なので末梢血管を拡張',
+        },
+        {
+          detailInfo: 'A(14)',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            '脳血管は、二酸化炭素分圧の上昇時に拡張する',
+            '神経細胞の主たるエネルギー源は脂肪酸である',
+            '門脈とは、2つの毛細血管網に挟まれた血管のことである',
+            '炭酸脱水酵素は、赤血球内に豊富に存在する',
+          ],
+          answerImg: [],
+          answer:
+            '脳血管は、二酸化炭素分圧の上昇時に拡張する / 門脈とは、2つの毛細血管網に挟まれた血管のことである / 炭酸脱水酵素は、赤血球内に豊富に存在する',
+          commentary: '神経細胞はグルコースかケトン体が栄養源。',
+        },
+        {
+          detailInfo: 'A(15)',
+          questionImg: [],
+          questionSentence:
+            'ヘモグロビンの酸素解離曲線を右方へ移動させる要因を、全て選べ',
+          choices: [
+            'pH低下',
+            '二酸化炭素分圧低下',
+            '2,3-diphosphoglycerate(2,3-DPG)上昇',
+            '温度上昇',
+          ],
+          answerImg: [ODC],
+          answer: 'pH低下、2,3-diphosphoglycerate(2,3-DPG)上昇、温度上昇',
+          commentary:
+            '酸素解離曲線を右方へ移動させる要因は、pH低下=CO₂濃度上昇・温度上昇・2,3-DPG上昇。酸素解離曲線が右方へ移動すると、筋肉などに酸素を渡しやすくなる。',
+        },
+        {
+          detailInfo: 'A(16)',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            '健常者の動脈血酸素分圧は、約160mmHgである',
+            '健常者の動脈血二酸化炭素分圧は、約40mmHgである',
+            '健常者の静脈血酸素分圧は、約40mmHgである',
+            '健常者の静脈血二酸化炭素分圧は、約46mmHgである',
+          ],
+          answerImg: [gasPressure],
+          answer:
+            '健常者の動脈血二酸化炭素分圧は、約40mmHgである / 健常者の静脈血二酸化炭素分圧は、約46mmHgである',
+          commentary:
+            '肺胞気で100mmHgあった酸素分圧が、静脈血では40mmHgまで消費され、二酸化炭素分圧と逆転する。',
+        },
         // {
         //   detailInfo: 'A(1)',
         //   questionImg: [],
