@@ -92,6 +92,16 @@ import digestProtein from './img/answer/digestProtein.png'
 import gastricCancer from './img/answer/gastricCancer.png'
 import digestiveSecretion from './img/answer/digestiveSecretion.png'
 import portalHypertension from './img/answer/portalHypertension.png'
+import adjacentPHinKidney from './img/answer/AdjacentPHinKidney.png'
+import autonomicNerve from './img/answer/autonomicNerve.png'
+import calculateCareer from './img/answer/calculateCareer.JPG'
+import carbonicAnhydrase from './img/answer/carbonicAnhydrase.png'
+import kidneyPressureBalance from './img/answer/kidneyPressureBalance.png'
+import parasympatheticNerve from './img/answer/parasympatheticNerve.png'
+import RhPregnancy from './img/answer/RhPregnancy.png'
+import sympatheticNerve from './img/answer/sympatheticNerve.png'
+import vessel from './img/answer/vessel.png'
+import E20202 from './img/question/E20202.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -2422,20 +2432,129 @@ export const useQuestionList = () => {
       ],
     },
     {
-      groupTag: '過去問記述集',
+      groupTag: '2020中間記述',
       groupContents: [
         {
           detailInfo: '2020中間C(1)',
           questionImg: [C2020m],
           questionSentence: '心電図の診断名と判定根拠を記述せよ',
-          choices: [],
-          answerImg: [],
+          answerImg: [wenckebach],
+          answer: 'Wenckebach型房室ブロック',
+          commentary:
+            'PQ間隔が長くなっていき、時々心室に命令が伝わらなくなる（QRS消失）',
+        },
+        {
+          detailInfo: '2020中間C(2)',
+          questionImg: [],
+          questionSentence:
+            '上室期外収縮と心室期外収縮の心電図所見の違いを、刺激伝達速度に言及して説明せよ',
+          answerImg: [prematureVcontraction, SVPrematureContraction],
           answer:
-            '赤血球が破壊されるとヘモグロビンが鉄とビリルビンに分解され、',
+            '上室期外収縮はプルキンエ線維を通るので、QRS波の幅が短い（心房での刺激伝達速度が早い）。心室期外収縮はプルキンエ線維を通らないので、心房での刺激伝達速度が遅い（QRS波の幅が広い）',
+          commentary: '',
+        },
+        {
+          detailInfo: '2020中間C(3)',
+          questionImg: [],
+          questionSentence:
+            '緊張したときに、顔面蒼白、心悸亢進、体のほてりを認めるのはなぜか。各症状について説明せよ',
+          choices: [],
+          answerImg: [autonomicNerve],
+          answer:
+            '緊張時には交感神経からノルアドレナリンが放出される。α1受容体刺激によって細動脈が収縮し、皮膚への血液が減ることにより顔面蒼白となる。またβ1受容体刺激によって心臓の拍出が増え、心悸亢進となる。皮膚血流が減少するので、熱放散量が減少しほてりが生じる。',
+          commentary: '',
+        },
+        {
+          detailInfo: '2020中間C(4)',
+          questionImg: [],
+          questionSentence:
+            '心室拡張期は、心臓から大動脈への血流は途絶えているが、それにもかかわらず全身への血流が維持されているのはなぜか。大動脈の組織学的な特徴に言及して説明せよ。',
+          choices: [],
+          answerImg: [vessel],
+          answer:
+            '大動脈は弾性繊維が豊富なので、心室収縮期には大動脈壁が押し広げられて血液を貯え、拡張期には大動脈壁が収縮して血液を末梢へ送り出すことで血圧を維持している。',
+          commentary: '',
+        },
+        {
+          detailInfo: '2020中間C(5)',
+          questionImg: [],
+          questionSentence:
+            '血中の二酸化炭素濃度が高まるにつれて血液が酸性になるのはなぜか。二酸化炭素と水分子の化学反応を記載して説明せよ。また、この反応の律速段階を触媒する酵素名を記載せよ。',
+          choices: [],
+          answerImg: [carbonicAnhydrase],
+          answer:
+            'CO₂ + H₂O ⇔ H₂CO₃ ⇔ H⁺ + HCO₃⁻ 炭酸脱水酵素carbonic anhydraseが触媒',
+          commentary:
+            '二酸化炭素が増えると平衡が右に移動しH⁺が増え、アシドーシスを生じる。',
+        },
+        {
+          detailInfo: '2020中間C(6)',
+          questionImg: [],
+          questionSentence: '膵癌の患者で灰白色の便を認めた。理由を説明せよ',
+          choices: [],
+          answerImg: [bilirubin],
+          answer: '胆管が圧迫されてビリルビンが腸へ排出されないから',
+          commentary:
+            '膵頭部や肝臓に癌が生じるとビリルビンが消化管へ排出されず、腸内細菌によるウロビリノーゲン生成が行われない。尿の色も薄くなる。',
+        },
+        {
+          detailInfo: '2020中間C(7)',
+          questionImg: [],
+          questionSentence:
+            'Rh式血液型不適合妊娠では胎児の溶血が生じる野に対して、ABO式血液型不適合妊娠では胎児への影響はほとんどない。理由を述べよ。',
+          choices: [],
+          answerImg: [RhPregnancy],
+          answer:
+            '抗D抗体はIgG型なので胎盤を通過するが、抗A,B抗体はIgM型であるから胎盤を通過せず、胎児に影響しない。',
+          commentary:
+            '胎盤は最小のIgG抗体のみ通す。このため胎児は母親のIgG抗体のおかげで生後半年ほど風邪を引かない。',
+        },
+        {
+          detailInfo: '2020中間C(8)',
+          questionImg: [],
+          questionSentence:
+            '嚢胞性繊維症は、常染色体劣性の遺伝病であり、欧米白人の2500人に一人が発症する。この場合、保因者（キャリア）は何人に1人か。計算過程も記載せよ',
+          choices: [],
+          answerImg: [calculateCareer],
+          answer: '25人に1人',
+          commentary:
+            '劣性の遺伝病の場合、両親から異常遺伝子aを受け取る必要がある。片側の親から異常遺伝子aをうけとる確率は√2500 → 1/50なので、片側からだけ異常遺伝子を受け取るキャリアAaの確率は約1/50 + 1/50 = 1/25',
+        },
+        {
+          detailInfo: '2020中間E(1)',
+          questionImg: [],
+          questionSentence:
+            '糸球体内の毛細血管圧が60mmHg、糸球体毛細血管膠原浸透圧が25mmHg、ボウマン腔内の液体の静水圧が15mmHg、ボウマン腔内の液体の膠原浸透圧が4mmHgだったとき糸球体浸透圧は何mmHgと計算されるか答えなさい。',
+          choices: [],
+          answerImg: [kidneyPressureBalance],
+          answer: '(60-15) - (25-4) = 24(mmHg)',
+          commentary:
+            '毛細血管における濾過圧P = 静水圧差ΔP - 膠原浸透圧差Δπ。静水圧の差は濾過圧を大きくする方向に、膠原浸透圧の差は濾過に対して逆向きの圧力として作用する',
+        },
+        {
+          detailInfo: '2020中間E(2)問1',
+          questionImg: [E20202],
+          questionSentence:
+            '換気駆動力の低下により呼吸性アシドーシスが引き起こされた際、腎臓による代償性反応が起こった後の状態を表すものはグラフの1~6の中でどれか、番号を答えなさい。',
+          choices: [],
+          answerImg: [adjacentPHinKidney],
+          answer: '3',
+          commentary:
+            '換気駆動力の低下→CO₂濃度上昇。そのままだと2の状態（アシドーシス）だが、腎臓でH⁺分泌（HCO₃産生）が行われることで数日かけて血漿pHは補正される',
+        },
+        {
+          detailInfo: '2020中間E(2)問2',
+          questionImg: [],
+          questionSentence:
+            '換気駆動力の低下により呼吸性アシドーシスが引き起こされた際、腎臓による代償性反応とは具体的にどのようなものか、簡潔に答えなさい',
+          choices: [],
+          answerImg: [adjacentPHinKidney],
+          answer:
+            '換気駆動力の低下によりCO₂(←→ H⁺ + HCO₃⁻)濃度が上昇すると、血漿のpHが低下し高炭酸ガス血漿となる。一方腎臓では代償性反応として集合管でH⁺分泌やHCO₃⁻新生、近位尿細管でGln→NH₃産生→NH₄⁺として尿中排出する反応が起こり、1日最大300mEqの酸負荷に対応する',
           commentary: '',
         },
         // {
-        //   detailInfo: '6/24確認問題',
+        //   detailInfo: '2020中間C(2)',
         //   questionImg: [],
         //   questionSentence: '',
         //   choices: [],
