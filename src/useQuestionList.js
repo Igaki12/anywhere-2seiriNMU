@@ -102,6 +102,7 @@ import RhPregnancy from './img/answer/RhPregnancy.png'
 import sympatheticNerve from './img/answer/sympatheticNerve.png'
 import vessel from './img/answer/vessel.png'
 import E20202 from './img/question/E20202.png'
+import hematopoiesis from './img/answer/hematopoiesis.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
