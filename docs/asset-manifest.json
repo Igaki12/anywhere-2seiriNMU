@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.ad65f7f5.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.b973ef76.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -54,6 +54,7 @@
     "static/media/coronalPlane.png": "/anywhere-2seiriNMU/static/media/coronalPlane.df8eb38fa7bd996c8b60.png",
     "static/media/gastricCancer.png": "/anywhere-2seiriNMU/static/media/gastricCancer.23ad043e874cb63390fc.png",
     "static/media/ecg38.png": "/anywhere-2seiriNMU/static/media/ecg38.7d081b3e34643b5f77bf.png",
+    "static/media/lungCapacity.png": "/anywhere-2seiriNMU/static/media/lungCapacity.53e47c213a64c866bea0.png",
     "static/media/kidneyFloodControl.png": "/anywhere-2seiriNMU/static/media/kidneyFloodControl.546f9380b1bcdd0512d2.png",
     "static/media/FEV1%.png": "/anywhere-2seiriNMU/static/media/FEV1%.e44fa163047424912291.png",
     "static/media/vasorelaxation.png": "/anywhere-2seiriNMU/static/media/vasorelaxation.c57cd85e4496f7eb1792.png",
@@ -107,10 +108,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.ad65f7f5.js.map": "/anywhere-2seiriNMU/static/js/main.ad65f7f5.js.map"
+    "main.b973ef76.js.map": "/anywhere-2seiriNMU/static/js/main.b973ef76.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.ad65f7f5.js"
+    "static/js/main.b973ef76.js"
   ]
 }

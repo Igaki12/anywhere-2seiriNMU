@@ -104,6 +104,7 @@ import vessel from './img/answer/vessel.png'
 import E20202 from './img/question/E20202.png'
 import hematopoiesis from './img/answer/hematopoiesis.png'
 import gasPressure from './img/answer/gasPressure.png'
+import lungCapacity from './img/answer/lungCapacity.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -2299,33 +2300,294 @@ export const useQuestionList = () => {
           commentary:
             '肺胞気で100mmHgあった酸素分圧が、静脈血では40mmHgまで消費され、二酸化炭素分圧と逆転する。',
         },
+        {
+          detailInfo: 'A(17)',
+          questionImg: [],
+          questionSentence: 'スパイロメーターで計測できるものを全て選べ',
+          choices: ['一回換気量', '予備吸気量', '全肺気量', '残気量'],
+          answerImg: [lungCapacity],
+          answer: '一回換気量、予備呼気量',
+          commentary:
+            '残気量RVが含まれる要素は計測不可能。逆に努力して呼吸している幅に収まる量は計測可能',
+        },
+        {
+          detailInfo: 'B(1)',
+          questionImg: [],
+          questionSentence:
+            '生体の特定の状態が一定に維持されることを（　）とよぶ',
+          answerImg: [],
+          answer: 'ホメオスタシス',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(2)',
+          questionImg: [],
+          questionSentence:
+            '生理食塩水における塩化ナトリウムの含有率は、（　）％である',
+          answerImg: [],
+          answer: '0.9',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(3)',
+          questionImg: [],
+          questionSentence: '（　）％のブドウ糖液は、生理食塩水と等張である',
+          answerImg: [],
+          answer: '5',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(4)',
+          questionImg: [],
+          questionSentence:
+            '成人において、血液が体重に占める割合は、約（　）％である',
+          answerImg: [],
+          answer: '8',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(5)',
+          questionImg: [],
+          questionSentence:
+            '虫刺されで局所的な腫れを生じるのは、（　）細胞の細胞間隙が拡大するためである。',
+          answerImg: [],
+          answer: '血管内皮細胞',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(6)',
+          questionImg: [],
+          questionSentence:
+            '溶血により産生されたビリルビンが尿中に出ないのは、ビリルビンが（　）と結合しているからである。',
+          answerImg: [],
+          answer: 'アルブミン',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(7)',
+          questionImg: [],
+          questionSentence:
+            '胎生5か月における主たる造血部位は、（　）と脾臓である',
+          answerImg: [],
+          answer: '肝臓',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(8)',
+          questionImg: [],
+          questionSentence: '鎌状赤血球症は、（　）の多発地帯に多い。',
+          answerImg: [],
+          answer: 'マラリア',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(9)',
+          questionImg: [],
+          questionSentence:
+            'erythropoietinを産生する主たる臓器は、（　）である',
+          answerImg: [],
+          answer: '腎臓',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(10)',
+          questionImg: [],
+          questionSentence: '肝臓の組織マクロファージを、（　）細胞という。',
+          answerImg: [],
+          answer: 'クッパー細胞',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(11)',
+          questionImg: [],
+          questionSentence:
+            'CD4陽性T細胞は、抗原提示細胞の表面において、MHC（　）分子が提示した抗原を認識する',
+          answerImg: [],
+          answer: 'クラスⅡ',
+          commentary: 'CD8はMHCクラスⅠ分子',
+        },
+        {
+          detailInfo: 'B(12)',
+          questionImg: [],
+          questionSentence: '母乳を介して乳児へ移行する抗体の種類を記せ',
+          answerImg: [],
+          answer: 'IgA',
+          commentary: '胎盤を通過するのはIgG',
+        },
+        {
+          detailInfo: 'B(13)',
+          questionImg: [],
+          questionSentence:
+            '肥満細胞の表面には、（　）に対する受容体が存在する。そこへ抗原が結合することで、ヒスタミンが放出される。抗体の種類を記せ',
+          answerImg: [],
+          answer: 'IgE',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(14)',
+          questionImg: [],
+          questionSentence: 'ビタミンK依存性の凝固因子を4つ記せ',
+          answerImg: [],
+          answer: '2,7,9,10',
+          commentary:
+            'ワーファリンはビタミンKの働きを抑えて血栓ができるのを防ぐ。ビタミンKは納豆に多く含まれる',
+        },
+        {
+          detailInfo: 'B(15)',
+          questionImg: [],
+          questionSentence: 'プラスミンは（　）を分解する',
+          answerImg: [coagulation],
+          answer: 'フィブリン',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(16)',
+          questionImg: [],
+          questionSentence:
+            'カテコールアミンは、アミノ酸の（　）から合成される',
+          answerImg: [synthesizeCatecholamine],
+          answer: 'チロシン',
+          commentary:
+            'チロシン→L-DOPA→ドーパミン→ノルアドレナリン→アドレナリン',
+        },
+        {
+          detailInfo: 'B(17)',
+          questionImg: [],
+          questionSentence: 'ドーパミンの前駆体は、（　）である',
+          answerImg: [synthesizeCatecholamine],
+          answer: 'L-DOPA',
+          commentary:
+            'チロシン→L-DOPA→ドーパミン→ノルアドレナリン→アドレナリン',
+        },
+        {
+          detailInfo: 'B(18)',
+          questionImg: [],
+          questionSentence:
+            'カテコールアミン受容体の中の、（　）受容体は、心機能を亢進させる作用を有す',
+          answerImg: [autonomicNerve],
+          answer: 'β₁受容体',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(19)',
+          questionImg: [],
+          questionSentence:
+            'カテコールアミン受容体の中の、（　）受容体は、気管支平滑筋の弛緩によって気道を拡張させる作用を有し、喘息の治療へも応用されている。',
+          answerImg: [autonomicNerve],
+          answer: 'β₂受容体',
+          commentary:
+            'ノルアドレナリンはこの受容体に作用しない（アドレナリンだけ）',
+        },
+        {
+          detailInfo: 'B(20)',
+          questionImg: [],
+          questionSentence: '心筋が機能的合胞体をなすのは、（　）の存在による',
+          answerImg: [],
+          answer: 'gap junction',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(21)',
+          questionImg: [],
+          questionSentence: '動脈硬化では、（　）波の伝達速度が亢進する',
+          answerImg: [],
+          answer: '脈波',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(22)',
+          questionImg: [],
+          questionSentence:
+            '血流速度が増大すると、（　）応力を受けた血管内皮から、血管拡張作用を有す物質が放出される',
+          answerImg: [],
+          answer: 'ずり',
+          commentary: '放出されるのはNOやPGI₂',
+        },
+        {
+          detailInfo: 'B(23)',
+          questionImg: [],
+          questionSentence:
+            '血圧は、（　）と大動脈弓に存在する圧受容器により感知される',
+          answerImg: [autonomicNerve],
+          answer: '頚動脈洞',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(24)',
+          questionImg: [],
+          questionSentence:
+            '肺サーファクタントは表面張力を緩和することにより、（　）の萎縮を防いでいる。',
+          answerImg: [],
+          answer: '肺胞',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B(25)',
+          questionImg: [],
+          questionSentence:
+            'Cystic fibrosis の原因は、（　）チャネルの遺伝的異常である。',
+          answerImg: [],
+          answer: 'Cl⁻',
+          commentary: '嚢胞性繊維症は常染色体劣性遺伝疾患',
+        },
+        {
+          detailInfo: 'B(26)',
+          questionImg: [],
+          questionSentence:
+            '心房細動を有す患者は、心房内に（　）が形成されやすく、そのため脳梗塞を起こしやすい',
+          answerImg: [],
+          answer: '血栓',
+          commentary: '',
+        },
         // {
-        //   detailInfo: 'A(1)',
+        //   detailInfo: 'B()',
         //   questionImg: [],
         //   questionSentence: '',
-        //   choices: ['','','',''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
         // {
-        //   detailInfo: 'A(1)',
+        //   detailInfo: 'B()',
         //   questionImg: [],
         //   questionSentence: '',
-        //   choices: ['','','',''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
         // {
-        //   detailInfo: 'A(1)',
+        //   detailInfo: 'B()',
         //   questionImg: [],
         //   questionSentence: '',
-        //   choices: ['','','',''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
+        // {
+        //   detailInfo: 'B()',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: 'B()',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: 'B()',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+
         // {
         //   detailInfo: 'A(1)',
         //   questionImg: [],

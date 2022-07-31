@@ -476,22 +476,25 @@ export const useTechnicalTerm = () => {
       explanation:
         '血管内皮細胞endothelial cellから放出されるペプチドホルモンで、強い血管収縮作用を示す。種々のサイトカインや血管壁の伸展などによって分泌され、局所の血流維持に働いている。エンドセリン受容体阻害剤は肺高血圧症の治療に用いられる。',
     },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
+    {
+      term: ['全肺気量', 'total lung capacity', 'TLC'],
+      explanation:
+        ' = 肺活量VC + 残気量RV。最大吸気位から残気まで全てを含んだ、物理的に肺に入る最大量（実際は残気は排出できない）。残気量RVを計測できないためスパイロメーターでは計測不可能',
+    },
+    {
+      term: ['肺活量', 'vital capacity', 'VC'],
+      explanation:
+        '= 予備吸気量IRV + 一回換気量TV + 予備呼気量ERV。最大吸気位から最大呼気位までの、人間ができる最大の呼吸量。スパイロメーターで測定可能',
+    },
+    {
+      term: ['機能的残気量', 'functional residual capacity', 'FRC'],
+      explanation:
+        '= 予備呼気量ERV + 残気量RV。安静呼気位（意識せず呼吸しているときの肺に取り残される量）をあらわす。残気量RVが含まれるためスパイロメーターで計測不可能',
+    },
+    {
+      term: ['一回換気量', 'tidal volume', 'TV'],
+      explanation: '安静時に呼吸しているときの幅。スパイロメーターで計測可能',
+    },
     // {
     //   term:[''],
     //   explanation:'',
