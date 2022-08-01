@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.b24953b6.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.6b6cf2a5.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -41,6 +41,7 @@
     "static/media/ventilationPerfusionRatio.png": "/anywhere-2seiriNMU/static/media/ventilationPerfusionRatio.106981276f4a399d0d9c.png",
     "static/media/ecg42.png": "/anywhere-2seiriNMU/static/media/ecg42.17baee7cc752ee0c9ac3.png",
     "static/media/anionGap.png": "/anywhere-2seiriNMU/static/media/anionGap.f89fe686f6213382df34.png",
+    "static/media/glomerularFiltration.png": "/anywhere-2seiriNMU/static/media/glomerularFiltration.e5ee59350f8bcbc14d57.png",
     "static/media/ecg35.png": "/anywhere-2seiriNMU/static/media/ecg35.9acc0ec16aecc00517f9.png",
     "static/media/calculateCareer.JPG": "/anywhere-2seiriNMU/static/media/calculateCareer.73d7a9e622f3d116d71b.JPG",
     "static/media/vessel.png": "/anywhere-2seiriNMU/static/media/vessel.360ef4fb5098b1007088.png",
@@ -86,6 +87,7 @@
     "static/media/ecg2.png": "/anywhere-2seiriNMU/static/media/ecg2.7aa1cbb2ab235f57242e.png",
     "static/media/ANP.png": "/anywhere-2seiriNMU/static/media/ANP.3c8cb15b4d61ac7a8113.png",
     "static/media/ODC.png": "/anywhere-2seiriNMU/static/media/ODC.aa458b9c195929a8df2e.png",
+    "static/media/glomeruli.png": "/anywhere-2seiriNMU/static/media/glomeruli.c37ff8e94201e2a8dfa0.png",
     "static/media/ecg9.png": "/anywhere-2seiriNMU/static/media/ecg9.1fbddf5ab6028151f77f.png",
     "static/media/aldosterone.png": "/anywhere-2seiriNMU/static/media/aldosterone.f3e23d8182c0bbd682c3.png",
     "static/media/ecg23.png": "/anywhere-2seiriNMU/static/media/ecg23.7c30b049ca1ad3c0e60a.png",
@@ -117,10 +119,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.b24953b6.js.map": "/anywhere-2seiriNMU/static/js/main.b24953b6.js.map"
+    "main.6b6cf2a5.js.map": "/anywhere-2seiriNMU/static/js/main.6b6cf2a5.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.b24953b6.js"
+    "static/js/main.6b6cf2a5.js"
   ]
 }
