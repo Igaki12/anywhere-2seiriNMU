@@ -109,6 +109,11 @@ import anionGap from './img/answer/anionGap.png'
 import ANP from './img/answer/ANP.png'
 import collectingTubuleReabsorption from './img/answer/collectingTubuleReabsorption.png'
 import diuretic from './img/answer/diuretic.png'
+import A201911 from './img/question/A201911.png'
+import A201912 from './img/question/A201912.png'
+import A201913 from './img/question/A201913.png'
+import A201914 from './img/question/A201914.png'
+import actionPotential from './img/answer/actionPotential.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -2649,6 +2654,133 @@ export const useQuestionList = () => {
         //   answer: '',
         //   commentary: '',
         // },
+      ],
+    },
+    {
+      groupTag: '2019中間記述',
+      groupContents: [
+        {
+          detailInfo: 'A問3',
+          questionImg: [],
+          questionSentence:
+            '黄疸患者で尿ウロビリノーゲンを検出できない場合、黄疸の原因としてどのようなものを考えるか。理由も記載せよ。',
+          answerImg: [bilirubin],
+          answer:
+            'ビリルビンを腸へ排出する経路が閉塞しているため（閉塞性黄疸）腸内細菌によるウロビリノーゲン変換が行われていない。例えば膵頭部癌',
+          commentary:
+            '正常なら腸内細菌によってビリルビン→ウロビリノーゲンに変換され一部が再吸収され尿中に排泄される。',
+        },
+        {
+          detailInfo: 'A問4',
+          questionImg: [],
+          questionSentence:
+            'A型の血清へB型の血球を加えると、どうなるか。理由も記せ。',
+          answerImg: [],
+          answer: '凝集する',
+          commentary:
+            'B型の赤血球にはB抗原があり、A型の血清には抗B抗体（IgM）が含まれているから',
+        },
+        {
+          detailInfo: 'A問5',
+          questionImg: [],
+          questionSentence:
+            '大動脈弁が閉鎖して左心室からの血液の拍出がなくなっても、血液は途絶せず、血圧も維持される。理由を説明せよ',
+          answerImg: [vessel],
+          answer:
+            '大動脈は弾性繊維が豊富で、心臓収縮期は伸展して血液を一部貯留し心臓拡張期には収縮して貯留血液を送り出すから。',
+          commentary: '動脈硬化によりこの作用は失われる→高血圧',
+        },
+        {
+          detailInfo: 'A問6',
+          questionImg: [],
+          questionSentence: 'Crush症候群で心機能が停止するのはなぜか',
+          answerImg: [hyperkalemia],
+          answer:
+            'Crush症候群により細胞外K⁺濃度が上昇し、K⁺チャネルによる再分極が行われなくなり膜電位が上昇し電位依存性Na⁺チャネルが不活化されてしまうから',
+          commentary:
+            '(正常構造p110)電位依存性Na⁺チャネルの閾値は-50mV前後で、これより膜電位が下がらない状態が続くと機能せず脈が跳ぶ。参考：高カリウム血症',
+        },
+        {
+          detailInfo: 'A問7',
+          questionImg: [],
+          questionSentence:
+            '心室筋と洞房結節の活動電位を図示し、相違点を二つ記載せよ',
+          answerImg: [actionPotential],
+          answer:
+            '洞房結節には電位依存性Na⁺チャネルによる素早い脱分極（1相）と、L型電位依存性Ca²⁺チャネルによる非常に長い脱分極（2相）がみられない。',
+          commentary:
+            'そのほか、内向き整流性K⁺チャネルによる静止膜電位の固定がみられない。',
+        },
+        {
+          detailInfo: 'A問8',
+          questionImg: [],
+          questionSentence:
+            'スターリングの心臓の法則を、「前負荷」と「一回心拍出量」の用語を用いて説明せよ',
+          answerImg: [],
+          answer:
+            '生理的範囲内で、前負荷が増大するほど一回拍出量が多くなるという法則',
+          commentary:
+            '心筋が伸展するとアクチンとミオシンの連結橋の数が増えて収縮力が強くなる。',
+        },
+        {
+          detailInfo: 'A問9',
+          questionImg: [],
+          questionSentence:
+            '１万人に一人が発症する常染色体劣性遺伝病について、キャリア（保因者）は何人に一人かを、計算過程とともに記せ',
+          answerImg: [calculateCareer],
+          answer: '1/100 * ほぼ1 * 2 = 1/50',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A問10',
+          questionImg: [],
+          questionSentence:
+            'スパイロメーターによる呼吸機能障害の分類方法について説明せよ',
+          answerImg: [ventilationDisorder],
+          answer:
+            '1秒率が70%未満だと閉塞性換気障害、%肺活量（肺活量の予測値に対する実測値の割合）が80%未満だと拘束性換気障害、両方だと混合性換気障害',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A問11',
+          questionImg: [A201911],
+          questionSentence: '以下の心電図の診断名と、診断の根拠を記せ',
+          answerImg: [atrialFlutter],
+          answer: '心房粗動',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A問12',
+          questionImg: [A201912],
+          questionSentence: '以下の心電図の診断名と、診断の根拠を記せ',
+          answerImg: [mobitz],
+          answer: 'MobitzⅡ型房室ブロック',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A問13',
+          questionImg: [A201913],
+          questionSentence: '以下の心電図の診断名と、診断の根拠を記せ',
+          answerImg: [ventricularFibrillation],
+          answer: '心室細動',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A問14',
+          questionImg: [A201914],
+          questionSentence: '以下の心電図の診断名と、診断の根拠を記せ',
+          answerImg: [prematureVcontraction],
+          answer: '心室期外収縮',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B()',
+          questionImg: [],
+          questionSentence: '',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
         // {
         //   detailInfo: 'B()',
         //   questionImg: [],
@@ -2681,102 +2813,26 @@ export const useQuestionList = () => {
         //   answer: '',
         //   commentary: '',
         // },
-
         // {
-        //   detailInfo: 'A(1)',
+        //   detailInfo: 'B()',
         //   questionImg: [],
         //   questionSentence: '',
-        //   choices: ['','','',''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
         // {
-        //   detailInfo: 'A(1)',
+        //   detailInfo: 'B()',
         //   questionImg: [],
         //   questionSentence: '',
-        //   choices: ['','','',''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
         // {
-        //   detailInfo: 'A(1)',
+        //   detailInfo: 'B()',
         //   questionImg: [],
         //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: 'A(1)',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['','','',''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',

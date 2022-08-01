@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.b44c2895.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.b24953b6.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
     "static/media/ecg11.png": "/anywhere-2seiriNMU/static/media/ecg11.ad7e01db5720d9281bcd.png",
+    "static/media/actionPotential.png": "/anywhere-2seiriNMU/static/media/actionPotential.69674abba3af3acc6979.png",
     "static/media/ecg29.png": "/anywhere-2seiriNMU/static/media/ecg29.35df8e0ed091fc1a2a8a.png",
     "static/media/ecg30.png": "/anywhere-2seiriNMU/static/media/ecg30.bc712fee4c8841d974b6.png",
     "static/media/ecg46.png": "/anywhere-2seiriNMU/static/media/ecg46.4a060d35f77a178fe11e.png",
@@ -103,19 +104,23 @@
     "static/media/AdjacentPHinKidney.png": "/anywhere-2seiriNMU/static/media/AdjacentPHinKidney.f834beb92c947a9d0bdf.png",
     "static/media/mobitz.png": "/anywhere-2seiriNMU/static/media/mobitz.3b94a585cd1159dab0a6.png",
     "static/media/ecg33.png": "/anywhere-2seiriNMU/static/media/ecg33.48267d0378b4365aa7fa.png",
+    "static/media/A201913.png": "/anywhere-2seiriNMU/static/media/A201913.76d61deb5770c31c74e9.png",
+    "static/media/A201912.png": "/anywhere-2seiriNMU/static/media/A201912.65405ab03a639def7bb4.png",
     "static/media/ecg16.png": "/anywhere-2seiriNMU/static/media/ecg16.c2dfedea96476d650637.png",
+    "static/media/A201911.png": "/anywhere-2seiriNMU/static/media/A201911.8e379e8b47d2e16c0886.png",
     "static/media/ecg8.png": "/anywhere-2seiriNMU/static/media/ecg8.89fff2bf1aa4dd3b5063.png",
     "static/media/avBlock3.png": "/anywhere-2seiriNMU/static/media/avBlock3.a796c9e99366082cae7a.png",
     "static/media/ecg22.png": "/anywhere-2seiriNMU/static/media/ecg22.b4f85b702d5788a14638.png",
     "static/media/myocardialInfarction.png": "/anywhere-2seiriNMU/static/media/myocardialInfarction.2eae61de55ad257e122f.png",
+    "static/media/A201914.png": "/anywhere-2seiriNMU/static/media/A201914.8f35ff2e68a6243d9454.png",
     "static/media/ecg6.png": "/anywhere-2seiriNMU/static/media/ecg6.68142718f67c62304320.png",
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.b44c2895.js.map": "/anywhere-2seiriNMU/static/js/main.b44c2895.js.map"
+    "main.b24953b6.js.map": "/anywhere-2seiriNMU/static/js/main.b24953b6.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.b44c2895.js"
+    "static/js/main.b24953b6.js"
   ]
 }
