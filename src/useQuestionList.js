@@ -105,6 +105,10 @@ import E20202 from './img/question/E20202.png'
 import hematopoiesis from './img/answer/hematopoiesis.png'
 import gasPressure from './img/answer/gasPressure.png'
 import lungCapacity from './img/answer/lungCapacity.png'
+import anionGap from './img/answer/anionGap.png'
+import ANP from './img/answer/ANP.png'
+import collectingTubuleReabsorption from './img/answer/collectingTubuleReabsorption.png'
+import diuretic from './img/answer/diuretic.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -2539,14 +2543,104 @@ export const useQuestionList = () => {
           answer: '血栓',
           commentary: '',
         },
-        // {
-        //   detailInfo: 'B()',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: 'B問1(1)',
+          questionImg: [],
+          questionSentence:
+            '腎血漿流量をRPF、ヘマトクリットをHtとすると、腎血流量はどのように表されるか。',
+          answerImg: [],
+          answer: '｛1/(1-Ht)｝×RPF',
+          commentary:
+            'Htは血中に赤血球がしめる割合。血液の固体成分はほとんど赤血球と考えられるので',
+        },
+        {
+          detailInfo: 'B問1(2)',
+          questionImg: [],
+          questionSentence:
+            '血漿浸透圧が上昇すると、Kイオンの分泌は（　）される',
+          answerImg: [collectingTubuleReabsorption],
+          answer: '抑制',
+          commentary:
+            '（正常構造p380）血漿浸透圧を構成する主な浸透圧成分はNa⁺である。過剰なNa⁺は、腎臓におけるNa⁺再吸収量を減らす。Na⁺の能動的な再吸収は細胞の側底膜に存在するNa⁺/K⁺ ATPase活性に依存しており、Na⁺再吸収量が減るとK⁺分泌量も減少する',
+        },
+        {
+          detailInfo: 'B問1(3)',
+          questionImg: [],
+          questionSentence:
+            '循環血流量が増加すると、心房圧が上昇し心房筋伸展刺激により心房性ナトリウム利尿ペプチドが分泌される。これにより、尿細管中の浸透圧は（　）するため、水の再吸収は抑制される',
+          answerImg: [ANP],
+          answer: '上昇',
+          commentary:
+            '水の再吸収は濃度勾配（浸透圧）にしたがって受動的に行われる。ANPはNa⁺再吸収を抑制することで水の再吸収も抑制している。',
+        },
+        {
+          detailInfo: 'B問1(4)',
+          questionImg: [],
+          questionSentence:
+            '血漿浸透圧が上昇すると、下垂体後葉からのバソプレシンの分泌は（　）される',
+          answerImg: [],
+          answer: '促進',
+          commentary:
+            'バソプレシンADHは集合管細胞の管腔膜の水透過性を上げ、尿を濃縮する作用（抗利尿作用）がある。→水の再吸収が促進される',
+        },
+        {
+          detailInfo: 'B問1(5)',
+          questionImg: [],
+          questionSentence:
+            '遠位尿細管が糸球体と接する部分は（　）とよばれる特殊な上皮を形成している。この部分は、ここに到達する尿量を尿中Cl⁻濃度の形で監視している',
+          answerImg: [],
+          answer: '緻密班',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B問1(6)',
+          questionImg: [],
+          questionSentence:
+            'ループ利尿薬は尿細管のうち、（　）に作用し、Na⁺-K⁺-Cl⁻共輸送体を阻害することで、ナトリウムを尿中に排泄させ利尿作用を発揮する。',
+          answerImg: [diuretic],
+          answer: '太い上行脚TAL',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B問1(7)',
+          questionImg: [],
+          questionSentence:
+            '女性の血清クレアチニンの値の正常範囲は、男性のその値より（　）。',
+          answerImg: [],
+          answer: '小さい',
+          commentary:
+            'クレアチンは筋肉が収縮する際にエネルギーとなるATPの再生に利用される。クレアチニンはその代謝産物',
+        },
+        {
+          detailInfo: 'B問1(8)',
+          questionImg: [],
+          questionSentence:
+            '代謝性アシドーシスの代償性反応として、肺での呼吸は（　）する。',
+          answerImg: [],
+          answer: '促進',
+          commentary:
+            'CO₂ + H₂O ←→ H₂CO₃ ←→ H⁺ + HCO₃⁻より、二酸化炭素濃度を下げようとする。',
+        },
+        {
+          detailInfo: 'B問1(9)',
+          questionImg: [],
+          questionSentence:
+            '集合管においてHCO₃⁻が新生される際に生じるH⁺は、尿細管中に移動し、（　）として尿中に排泄される',
+          answerImg: [],
+          answer: 'HPO₄²⁻/NH₃',
+          commentary:
+            'NH₃はアシドーシス時に腎臓で過剰なH⁺を排出する際に用いられる',
+        },
+        {
+          detailInfo: 'B問1(10)',
+          questionImg: [],
+          questionSentence:
+            'ケトン体や有機酸の蓄積するアシドーシスでは、アニオンギャップは（　）する',
+          answerImg: [anionGap],
+          answer: '増加',
+          commentary:
+            '糖尿病性ケトアシドーシスなどでは、酸性物質が体内に蓄積することで代謝性アシドーシスを引き起こす。',
+        },
         // {
         //   detailInfo: 'B()',
         //   questionImg: [],
