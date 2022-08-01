@@ -64,7 +64,7 @@ function App() {
           colorScheme="teal"
           variant={'outline'}
         >
-          Ver.0.9
+          Ver.1.0
         </Badge>
         <Badge m={1} mt="0" borderRadius="full" px="2" colorScheme="teal">
           第2生理学
