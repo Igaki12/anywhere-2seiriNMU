@@ -116,6 +116,16 @@ import A201914 from './img/question/A201914.png'
 import actionPotential from './img/answer/actionPotential.png'
 import glomerularFiltration from './img/answer/glomerularFiltration.png'
 import glomeruli from './img/answer/glomeruli.png'
+import CDDC from './img/answer/CDDC.png'
+import controlP from './img/answer/controlP.png'
+import dehydration from './img/answer/dehydration.png'
+import H2CO3 from './img/answer/H2CO3.png'
+import immunoGloblin from './img/answer/immunoGloblin.png'
+import reentry from './img/answer/reentry.png'
+import respiratoryReflex from './img/answer/respiratoryReflex.png'
+import superoxide from './img/answer/superoxide.png'
+import vonWillebrand from './img/answer/vonWillebrand.png'
+import cardiacPotential from './img/answer/CardiacPotential.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -1956,7 +1966,7 @@ export const useQuestionList = () => {
             '肺動脈弁は大動脈弁の前方に位置する',
             '冠動脈の血流量は、心室の収縮期よりも拡張期の方が多い',
             '心筋は、頚動脈により供給される血中酸素の約40%を消費する',
-            '房室結節の伝導速度は、心房金の伝導速度より早い',
+            '房室結節の伝導速度は、心房筋の伝導速度より早い',
           ],
           answerImg: [],
           answer:
@@ -2099,7 +2109,7 @@ export const useQuestionList = () => {
           ],
           answerImg: [gasPressure],
           answer:
-            '健常者の動脈血二酸化炭素分圧は、約40mmHgである / 健常者の静脈血二酸化炭素分圧は、約46mmHgである',
+            '健常者の動脈血二酸化炭素分圧は、約40mmHgである / 健常者の静脈血酸素分圧は、約40mmHgである / 健常者の静脈血二酸化炭素分圧は、約46mmHgである',
           commentary:
             '肺胞気で100mmHgあった酸素分圧が、静脈血では40mmHgまで消費され、二酸化炭素分圧と逆転する。',
         },
@@ -2619,6 +2629,502 @@ export const useQuestionList = () => {
             '例1)オーバーフロー蛋白尿（分子量の小さな蛋白が血中に多く産生されて糸球体の濾過量を上回ることで尿に蛋白が出現する）。例2)ベンスジョーンズ蛋白が出現する円柱腎症。',
           commentary:
             '尿試験紙は低いpHに緩衝されており、タンパク質は濾液のpHによって荷電する。その荷電によりpH指示薬の色調が変化し、どのくらい尿蛋白がでているか把握できる。試験紙法で検出される蛋白の大部分はアルブミン。',
+        },
+      ],
+    },
+    {
+      groupTag: '2018中間(記述以外)',
+      groupContents: [
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '成人では、細胞内液は体重の（　）％を占める。',
+          choices: ['20', '30', '40', '50', '60'],
+          answerImg: [],
+          answer: '40',
+          commentary:
+            '細胞内液:間質液:血漿 = 8:3:1。全体重の6割が水分なので、この2/3が細胞内液ICF',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '血液のpHの正常値は、（　）±0.05である。',
+          choices: ['7.0', '7.2', '7.4', '7.6', '7.8'],
+          answerImg: [],
+          answer: '7.4',
+          commentary:
+            '酸性物質や二酸化炭素は腎臓や肺から排出されやすいので、ややアルカリ性',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '（　）%の食塩水の浸透圧は、体液の浸透圧とほぼ等張である',
+          answerImg: [],
+          answer: '0.9',
+          commentary: '生理食塩水。ブドウ糖なら5%',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '血中の（　）は、体内の貯蔵鉄の量を反映する',
+          answerImg: [],
+          answer: 'フェリチン',
+          commentary:
+            '血清中のフェリチンは、鉄をほとんど含まないが、体内の貯蔵鉄量を鋭敏に反映するので、鉄欠乏の検査マーカーとしての意義が高い。→鉄欠乏性貧血',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '腎不全で貧血をきたすのは、腎臓での（　）産生が低下するためである',
+          answerImg: [],
+          answer: 'エリスロポエチン',
+          commentary: '→腎性貧血　EPO注射で治療',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '正しいものを全て選べ',
+          choices: [
+            'IgMは胎盤を通過しない',
+            'IgEはⅠ型アレルギーで低下する',
+            'IgGは血中の免疫グロブリンの中で、最も濃度が高い',
+            'HIVは、CD8陽性細胞へ感染する',
+            '直接型ビリルビンは、血中ではアルブミンと結合している',
+          ],
+          answerImg: [immunoGloblin, bilirubin],
+          answer:
+            'IgMは胎盤を通過しない / IgGは血中の免疫グロブリンの中で、最も濃度が高い',
+          commentary:
+            '胎盤を通過するのはIgG。IgEはⅠ型（即時型）アレルギーで中心的な役割をする。血漿中濃度はIgG > IgA > IgM > IgD > IgEの順。HIVが感染するのはCD4陽性T細胞（ヘルパーT）。アルブミンと結合しているのは間接型ビリルビン（グルクロン酸抱合を受けていない）',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '（　）は、superoxide をhydrogen peroxideに変換する酵素である',
+          answerImg: [superoxide],
+          answer: 'SOD/superoxide dismutase',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '補体活性化の古典的経路は、（　）複合体のFc部にC₁が結合することで連鎖的に生じる',
+          answerImg: [],
+          answer: '抗原抗体',
+          commentary:
+            '補体活性化の最終産物は膜侵襲複合体という。細菌などの細胞膜に穴をあける。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'von Willebrand因子は、血管内皮の損傷時に、内皮下の（　）へ結合する',
+          answerImg: [vonWillebrand],
+          answer: 'コラーゲン線維',
+          commentary:
+            'フォン・ウィルブランド因子は血小板（の膜に存在するGpⅠb-Ⅴ-Ⅸ）とコラーゲンとの間を架橋する。正常構造p496',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '血小板の凝集を促進する因子を全て選べ',
+          choices: ['ADP', 'PAF', 'トロンビン', 'PGI₂', 'NO', 'フィブリン'],
+          answerImg: [],
+          answer: 'ADP、PAF、トロンビン、フィブリン',
+          commentary:
+            'PAF:血小板活性化因子。ADPは血小板の密顆粒中に存在し、セロトニンとともに細胞外に放出されること（脱顆粒）で他の血小板を活性化させる',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '肝臓での合成にビタミンKが必須な凝固因子を4つ挙げよ。',
+          answerImg: [],
+          answer: '2,7,9,10',
+          commentary: 'にく・なっとう',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: 'フィブリンは（　）により分解される',
+          answerImg: [coagulation],
+          answer: 'プラスミン',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '心臓のⅠ音に寄与するものを全て選べ',
+          choices: [
+            '僧帽弁の閉鎖',
+            '僧帽弁の開放',
+            '大動脈弁の閉鎖',
+            '大動脈弁の開放',
+            '三尖弁の閉鎖',
+            '三尖弁の開放',
+            '肺動脈弁の閉鎖',
+            '肺動脈弁の開放',
+          ],
+          answerImg: [],
+          answer: '僧帽弁の閉鎖　三尖弁の閉鎖',
+          commentary: 'Ⅰ音は房室弁が閉鎖する音。Ⅱ音は動脈弁が閉鎖する音。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '以下のうちで、刺激伝達速度が最も遅いものはどれか',
+          choices: ['プルキンエ線維', 'ヒス束', '心房筋', '心室筋', '洞房結節'],
+          answerImg: [cardiacPotential],
+          answer: '洞房結節',
+          commentary:
+            '伝達速度はプルキンエ線維・ヒス束 > 心房筋・心室筋 > 洞房結節・房室結節',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'Na⁺-K⁺ポンプ(Na⁺-K⁺ ATPase)は、（　）個のNa⁺を細胞外へ排出して、2個のK⁺を取り込む',
+          answerImg: [cardiacIonChannel],
+          answer: '3',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'リエントリーは、頻脈性不整脈の主なメカニズムの一つである。リエントリーの回路は一方向性ブロックと（　）の低下の2条件がそろうことで形成される',
+          answerImg: [reentry],
+          answer: '伝導速度',
+          commentary: '参考：心房粗動・上室頻拍',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'ポアズイユの法則が成立するのは、血液の流れが（　）流を形成している場合である',
+          answerImg: [],
+          answer: '層流laminar flow',
+          commentary:
+            '流速が早くなると、流れの中に渦が生じ、流体の各部分が互いに不規則に入り乱れる。このような流れを乱流turbulent flowという。乱流下では法則は成立しない',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'ポワズイユの法則によると、血管抵抗は血管半径の（　）乗に反比例する',
+          answerImg: [],
+          answer: '4',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '安静時に血流量が最も多いものを選べ',
+          choices: ['冠動脈', '脳', '内臓', '筋肉', '皮膚'],
+          answerImg: [],
+          answer: '内臓',
+          commentary: '冠動脈5%,腎20%,脳15%,内臓30%,皮膚10%,筋15%',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '体内で血管総断面積が最大なのはどれか',
+          choices: ['動脈', '細動脈', '毛細血管', '細静脈', '静脈'],
+          answerImg: [vessel],
+          answer: '毛細血管',
+          commentary: '容量血管とよばれるのは静脈',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '最高血圧と最低血圧の差を（　）という',
+          answerImg: [measureBloodPressure],
+          answer: '脈圧',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '心臓の拍動に伴う末梢血管系内の血圧・体積の変化を（　）という',
+          answerImg: [],
+          answer: '心拍変動？',
+          commentary:
+            '心臓の拍動に伴う血圧の変化を血圧の心拍変動と呼びます。一方、呼吸に伴う血圧の変化を血圧の呼吸変動と呼びます。息を吸ったときに血圧は低下し、息を吐いたときに上昇します。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '重力の影響で、（　）cmあたり1mmHgの静水圧差が生じる',
+          answerImg: [],
+          answer: '1.35cm',
+          commentary:
+            '水銀Hgの密度（比重）は約13.5g/cmで、水の13.5倍→水銀1mmと水13.5mmに働く重力が同じ',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '細胞膜のphosphatidylinositol-4,5-bisphosphate(PIP₂)がphospholipase C(PLC)により切断されると、（　）とinositol-1,4,5-trisphosphate(IP₃)が生成される',
+          answerImg: [],
+          answer: 'ジアシルグリセロール(DG)',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: 'IP₃は、細胞内の（　）の濃度の上昇に寄与する',
+          answerImg: [vasoconstriction],
+          answer: 'Ca²⁺',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'アドレナリン受容体には複数の種類が存在し、その中の（　）受容体は、心機能の亢進に寄与する',
+          answerImg: [autonomicNerve],
+          answer: 'β₁受容体',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '血管平滑筋の収縮を促進する物質を全て選べ',
+          choices: [
+            'アンギオテンシンⅡ',
+            'バゾプレッシン',
+            'ブラジキニン',
+            'アセチルコリン',
+            'アドレノメジュリン',
+            'ヒスタミン',
+          ],
+          answerImg: [vasoconstriction],
+          answer: 'アンギオテンシンⅡ、バゾプレッシンADH',
+          commentary:
+            'アドレノメジュリン（アドレノメデュリン）・ブラジキニン・アセチルコリンは血管弛緩作用。ヒスタミンは血管壁透過性も亢進する',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '（　）は、心房壁が伸展されると放出され、利尿や血管平滑筋の弛緩を促す',
+          answerImg: [],
+          answer: 'ANP',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '血流のずり応力は、（　）細胞を刺激して、NOやPGI₂などの放出を促す',
+          answerImg: [],
+          answer: '血管内皮細胞',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '頚動脈洞圧受容器が刺激されると、その情報は、舌咽神経を介して、延髄の（　）へ達する',
+          answerImg: [autonomicNerve],
+          answer: '孤束核',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '末梢組織で生成したCO₂は、炭酸脱水酵素の働きにより、H⁺と（　）に変換される',
+          answerImg: [],
+          answer: 'HCO₃⁻',
+          commentary: 'CO2 + H20 <-> H2CO3 <-> H + HCO3 ',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '全身の血流が急激に低下し、その結果、末梢組織への血流の供給が不足した状態を、（　）という。',
+          answerImg: [],
+          answer: '血行障害',
+          commentary: '疼痛が伴うことがある',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '頚動脈小体、大動脈小体は、主に（　）の低下を感知する',
+          answerImg: [],
+          answer: '酸素分圧',
+          commentary:
+            'これら末梢性化学受容器に対して、延髄の中枢性化学受容器は主に二酸化炭素分圧を感知する',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '気道の中で、ガス交換に関与しない部分を（　）という。',
+          answerImg: [],
+          answer: '導管部',
+          commentary:
+            '導管部（解剖学的死腔/気道系）：気管～終末細気管支　呼吸部（肺胞実質系）：呼吸細気管支～肺胞嚢',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'Cystic fibrosisは（　）チャネルの遺伝的異常が原因である',
+          answerImg: [],
+          answer: 'Cl⁻',
+          commentary:
+            '嚢胞性線維症は常染色体劣性遺伝で、欧米白人の1/2500が発病。外分泌液が著しく粘稠',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: 'スパイロメーターで測定できないものを全て選べ',
+          choices: [
+            '全肺気量',
+            '肺活量',
+            '一回換気量',
+            '残気量',
+            '機能的残気量',
+            '予備吸気量',
+            '予備呼気量',
+          ],
+          answerImg: [lungCapacity],
+          answer: '全肺気量、残気量',
+          commentary:
+            'スパイロメーターでは残気量RVや、残気量を含む指標が全て測定できない',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '酸素解離曲線を右方へ移動させる要因を全て選べ',
+          choices: [
+            'pH低下',
+            '二酸化炭素分圧上昇',
+            '温度低下',
+            '2,3-DPG低下',
+            '高血糖',
+          ],
+          answerImg: [ODC],
+          answer: 'pH低下、二酸化炭素分圧上昇、高血糖',
+          commentary:
+            '例えば糖尿病性ケトアシドーシスはpH低下と同義。その他、温度上昇・2,3-DPG上昇でも右方へ移動する。参考：ボーア効果',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'ホールデン効果によると、血液が含有する（　）の量は、酸素分圧の上昇に反比例して減少する。',
+          answerImg: [CDDC],
+          answer: '二酸化炭素',
+          commentary:
+            '保有できなくなった二酸化炭素は速やかに肺から排出されるため都合が良い',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '肺の伸展受容器を介する呼吸反射を、（　）反射という',
+          answerImg: [respiratoryReflex],
+          answer: 'Hering-Breuer反射',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '糖尿病ケトアシドーシスでは、CO₂の排出によりアシドーシスを補正しようとする生体反応の結果、ゆっくりとした深い規則的な呼吸を認めることがある。この呼吸を（　）という。',
+          answerImg: [],
+          answer: 'Kussmaul呼吸',
+          commentary: 'クスマウル呼吸',
+        },
+        {
+          detailInfo: 'B1',
+          questionImg: [],
+          questionSentence:
+            '過剰に存在するK⁺イオンは集合管の（　）細胞から分泌される',
+          answerImg: [collectingTubuleReabsorption],
+          answer: '主細胞',
+          commentary:
+            'Na⁺/K⁺ ATPaseによりNa⁺再吸収とK⁺分泌を同時に行う。アルドステロンはこのポンプの合成やATP産生を促進する。この部位を阻害する利尿薬はK⁺保持性利尿薬と呼ばれる',
+        },
+        {
+          detailInfo: 'B2',
+          questionImg: [],
+          questionSentence:
+            '不揮発性酸を分泌するために、近位尿細管で（　）からα-ケトグルタル酸とNH₃が合成され、NH₃は細胞内から尿細管中に拡散し、H⁺と結合してNH₄⁺を形成する。',
+          answerImg: [adjacentPHinKidney],
+          answer: 'グルタミンGln',
+          commentary:
+            '体液が酸性に傾くと、近位尿細管においてグルタミン→NH₃産生が促進され、遠位尿細管などから分泌されたH⁺と反応してNH₄⁺となり、尿中に排出される。1日最大300mEqの酸負荷に対応する',
+        },
+        {
+          detailInfo: 'B3',
+          questionImg: [],
+          questionSentence:
+            '近位尿細管におけるリン酸の再吸収は（　）ホルモンにより調節される',
+          answerImg: [controlP],
+          answer: '副甲状腺ホルモンPTH',
+          commentary:
+            'PTHはCa²⁺再吸収も促進する。カルシトニンにはリン酸調節作用はない。',
+        },
+        {
+          detailInfo: 'B4',
+          questionImg: [],
+          questionSentence:
+            'アルドステロンは、アンジオテンシンⅡまたは、血漿中のK⁺イオン濃度の（　）によって副腎皮質より分泌される',
+          answerImg: [],
+          answer: '上昇',
+          commentary:
+            'アルドステロンは皮質集合管主細胞でNa⁺再吸収K⁺分泌を促進する',
+        },
+        {
+          detailInfo: 'B5',
+          questionImg: [],
+          questionSentence:
+            'アシドーシスのうち、HCO₃⁻が減少するのは（　）性アシドーシスである',
+          answerImg: [H2CO3],
+          answer: '代謝性',
+          commentary:
+            'H₂O + CO₂ <-> H₂CO₃ <-> H⁺ + HCO₃⁻参考。代謝性アシドーシスでは酸負荷に対しHCO₃⁻を消費する緩衝作用がはたらく。呼吸性アシドーシス（換気不良）ならCO₂↑のためHCO₃⁻はむしろ増える。',
+        },
+        {
+          detailInfo: 'B6',
+          questionImg: [],
+          questionSentence:
+            '下痢や脱水で体内の水分が不足したとき、血漿浸透圧は（　）する',
+          answerImg: [dehydration],
+          answer: '上昇',
+          commentary:
+            '水欠乏型脱水では、水分が減るので血漿Na⁺濃度は上昇する（塩は不足していない）。ただし一般的に下痢の場合はミネラル流失による塩欠乏性脱水となる事が多い',
+        },
+        {
+          detailInfo: 'B7',
+          questionImg: [],
+          questionSentence:
+            'アルカローシスのうち、腎でのHCO₃⁻の排泄により病態が改善するものは、（　）が原因で起こる。',
+          answerImg: [H2CO3],
+          answer: '呼吸',
+          commentary:
+            '呼吸性アルカローシスでは過換気症候群などによりCO₂濃度が低下しており、これはある程度腎でのHCO₃⁻排泄（→H⁺増加）により代償される。',
+        },
+        {
+          detailInfo: 'B8',
+          questionImg: [],
+          questionSentence:
+            'アルコールに利尿作用があるのは、ADHの（　）からの分泌が抑制されるためである。',
+          answerImg: [],
+          answer: '下垂体後葉',
+          commentary:
+            '経口摂取されたアルコールは、20%が胃、80%が小腸で吸収される。アルコールは中枢神経系に抑制的に作用する',
         },
       ],
     },

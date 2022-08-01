@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.6b6cf2a5.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.47fd6cc8.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -22,8 +22,11 @@
     "static/media/ecg27.png": "/anywhere-2seiriNMU/static/media/ecg27.38652552ed381697f95d.png",
     "static/media/ecg3.png": "/anywhere-2seiriNMU/static/media/ecg3.6e46f98e7808e9c5f443.png",
     "static/media/vasoconstriction.png": "/anywhere-2seiriNMU/static/media/vasoconstriction.7eec91baf949f49427cc.png",
+    "static/media/respiratoryReflex.png": "/anywhere-2seiriNMU/static/media/respiratoryReflex.152c2bcbc6635a8fac7c.png",
     "static/media/diuretic.png": "/anywhere-2seiriNMU/static/media/diuretic.d624638441be424b50dd.png",
+    "static/media/superoxide.png": "/anywhere-2seiriNMU/static/media/superoxide.81c55b41aefb0fdcd5f9.png",
     "static/media/ecg13.png": "/anywhere-2seiriNMU/static/media/ecg13.140a70085dbd074c30cd.png",
+    "static/media/AdjacentPHinKidney.png": "/anywhere-2seiriNMU/static/media/AdjacentPHinKidney.3482d35a15bcaf40ea20.png",
     "static/media/cardiacNerves.png": "/anywhere-2seiriNMU/static/media/cardiacNerves.0ab67348085ed1ab4c4a.png",
     "static/media/hyperVentilation.png": "/anywhere-2seiriNMU/static/media/hyperVentilation.c306cd9611cfc8d52259.png",
     "static/media/ecg44.png": "/anywhere-2seiriNMU/static/media/ecg44.fae8d8806fead8dac265.png",
@@ -35,17 +38,21 @@
     "static/media/SVprematureContraction.png": "/anywhere-2seiriNMU/static/media/SVprematureContraction.05c04803086e32dbbb09.png",
     "static/media/hematopoiesis.png": "/anywhere-2seiriNMU/static/media/hematopoiesis.fed131c3c0fe30b36ad4.png",
     "static/media/ventricularFibrillation.png": "/anywhere-2seiriNMU/static/media/ventricularFibrillation.88468ae09225ca742704.png",
+    "static/media/controlP.png": "/anywhere-2seiriNMU/static/media/controlP.5f8d73facb003f3bef9b.png",
     "static/media/haemoglobin.png": "/anywhere-2seiriNMU/static/media/haemoglobin.ba2069ccb45e0cdf26f2.png",
     "static/media/sickSinusSyndrome.png": "/anywhere-2seiriNMU/static/media/sickSinusSyndrome.a1bd9aa8089a76cabc79.png",
     "static/media/coagulation.png": "/anywhere-2seiriNMU/static/media/coagulation.78db40e333afae14b97f.png",
     "static/media/ventilationPerfusionRatio.png": "/anywhere-2seiriNMU/static/media/ventilationPerfusionRatio.106981276f4a399d0d9c.png",
     "static/media/ecg42.png": "/anywhere-2seiriNMU/static/media/ecg42.17baee7cc752ee0c9ac3.png",
     "static/media/anionGap.png": "/anywhere-2seiriNMU/static/media/anionGap.f89fe686f6213382df34.png",
+    "static/media/vonWillebrand.png": "/anywhere-2seiriNMU/static/media/vonWillebrand.31998538e3a943a4c3e3.png",
     "static/media/glomerularFiltration.png": "/anywhere-2seiriNMU/static/media/glomerularFiltration.e5ee59350f8bcbc14d57.png",
     "static/media/ecg35.png": "/anywhere-2seiriNMU/static/media/ecg35.9acc0ec16aecc00517f9.png",
     "static/media/calculateCareer.JPG": "/anywhere-2seiriNMU/static/media/calculateCareer.73d7a9e622f3d116d71b.JPG",
+    "static/media/reentry.png": "/anywhere-2seiriNMU/static/media/reentry.544a41a4b7687ac0380e.png",
     "static/media/vessel.png": "/anywhere-2seiriNMU/static/media/vessel.360ef4fb5098b1007088.png",
     "static/media/ecg39.png": "/anywhere-2seiriNMU/static/media/ecg39.fe6f2d2112666c985823.png",
+    "static/media/CDDC.png": "/anywhere-2seiriNMU/static/media/CDDC.d04705b9776a2c543883.png",
     "static/media/ecg21.png": "/anywhere-2seiriNMU/static/media/ecg21.555b39ed41412cb79b57.png",
     "static/media/kidneyPressureBalance.png": "/anywhere-2seiriNMU/static/media/kidneyPressureBalance.0a6e93caa0c2bcde59b9.png",
     "static/media/ecg24.png": "/anywhere-2seiriNMU/static/media/ecg24.dbe4cbf4c12c8f20f321.png",
@@ -53,6 +60,7 @@
     "static/media/ecg20.png": "/anywhere-2seiriNMU/static/media/ecg20.25e8a5a16538fd44bb16.png",
     "static/media/ecg5.png": "/anywhere-2seiriNMU/static/media/ecg5.1603ed9f65502ecbb804.png",
     "static/media/ventricularTachycardia.png": "/anywhere-2seiriNMU/static/media/ventricularTachycardia.d1b14a1dcceb120d060a.png",
+    "static/media/CardiacPotential.png": "/anywhere-2seiriNMU/static/media/CardiacPotential.d3241b33a78e0226bd5f.png",
     "static/media/ecg41.png": "/anywhere-2seiriNMU/static/media/ecg41.55739cd902a7e78f7034.png",
     "static/media/ecg18.png": "/anywhere-2seiriNMU/static/media/ecg18.33ca0f94702f88cd0eb3.png",
     "static/media/coronalPlane.png": "/anywhere-2seiriNMU/static/media/coronalPlane.df8eb38fa7bd996c8b60.png",
@@ -62,6 +70,7 @@
     "static/media/kidneyFloodControl.png": "/anywhere-2seiriNMU/static/media/kidneyFloodControl.546f9380b1bcdd0512d2.png",
     "static/media/FEV1%.png": "/anywhere-2seiriNMU/static/media/FEV1%.e44fa163047424912291.png",
     "static/media/vasorelaxation.png": "/anywhere-2seiriNMU/static/media/vasorelaxation.c57cd85e4496f7eb1792.png",
+    "static/media/immunoGloblin.png": "/anywhere-2seiriNMU/static/media/immunoGloblin.a26c32fba11a6944c212.png",
     "static/media/swallowing.png": "/anywhere-2seiriNMU/static/media/swallowing.94fbf0944c3c1e38fcb3.png",
     "static/media/ecg26.png": "/anywhere-2seiriNMU/static/media/ecg26.d5c85b45e90c0a5e93c2.png",
     "static/media/parasympatheticNerve.png": "/anywhere-2seiriNMU/static/media/parasympatheticNerve.2bc013d1ad482257db0d.png",
@@ -79,6 +88,7 @@
     "static/media/ecg37.png": "/anywhere-2seiriNMU/static/media/ecg37.6ff4ac1ef59a14aa08c1.png",
     "static/media/ecg4.png": "/anywhere-2seiriNMU/static/media/ecg4.63be13c0ebf985ae28fa.png",
     "static/media/hyperkalemia.png": "/anywhere-2seiriNMU/static/media/hyperkalemia.6b080381dc506651fae0.png",
+    "static/media/dehydration.png": "/anywhere-2seiriNMU/static/media/dehydration.0bf8c587d308990f2ebe.png",
     "static/media/MeasureBloodPressure.png": "/anywhere-2seiriNMU/static/media/MeasureBloodPressure.6d69f9554f8cdfcd5dad.png",
     "static/media/E20202.png": "/anywhere-2seiriNMU/static/media/E20202.3487bd91876f3d3294ea.png",
     "static/media/digestProtein.png": "/anywhere-2seiriNMU/static/media/digestProtein.4a6b4a5cd9be6373ee14.png",
@@ -103,7 +113,7 @@
     "static/media/ventilationDisorder.png": "/anywhere-2seiriNMU/static/media/ventilationDisorder.025a0eda3fa0bb31977a.png",
     "static/media/wenckebach.png": "/anywhere-2seiriNMU/static/media/wenckebach.0093fe4cecc29cd4d879.png",
     "static/media/ecg43.png": "/anywhere-2seiriNMU/static/media/ecg43.72e0bda6fdf9ca649525.png",
-    "static/media/AdjacentPHinKidney.png": "/anywhere-2seiriNMU/static/media/AdjacentPHinKidney.f834beb92c947a9d0bdf.png",
+    "static/media/H2CO3.png": "/anywhere-2seiriNMU/static/media/H2CO3.6fbad662a06923a704c7.png",
     "static/media/mobitz.png": "/anywhere-2seiriNMU/static/media/mobitz.3b94a585cd1159dab0a6.png",
     "static/media/ecg33.png": "/anywhere-2seiriNMU/static/media/ecg33.48267d0378b4365aa7fa.png",
     "static/media/A201913.png": "/anywhere-2seiriNMU/static/media/A201913.76d61deb5770c31c74e9.png",
@@ -119,10 +129,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.6b6cf2a5.js.map": "/anywhere-2seiriNMU/static/js/main.6b6cf2a5.js.map"
+    "main.47fd6cc8.js.map": "/anywhere-2seiriNMU/static/js/main.47fd6cc8.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.6b6cf2a5.js"
+    "static/js/main.47fd6cc8.js"
   ]
 }
