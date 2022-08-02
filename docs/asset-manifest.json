@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.702dc1fd.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.0d50b360.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -66,6 +66,7 @@
     "static/media/ecg18.png": "/anywhere-2seiriNMU/static/media/ecg18.33ca0f94702f88cd0eb3.png",
     "static/media/coronalPlane.png": "/anywhere-2seiriNMU/static/media/coronalPlane.df8eb38fa7bd996c8b60.png",
     "static/media/gastricCancer.png": "/anywhere-2seiriNMU/static/media/gastricCancer.23ad043e874cb63390fc.png",
+    "static/media/clearanceExample.png": "/anywhere-2seiriNMU/static/media/clearanceExample.199f1a208de81c725340.png",
     "static/media/ecg38.png": "/anywhere-2seiriNMU/static/media/ecg38.7d081b3e34643b5f77bf.png",
     "static/media/lungCapacity.png": "/anywhere-2seiriNMU/static/media/lungCapacity.53e47c213a64c866bea0.png",
     "static/media/kidneyFloodControl.png": "/anywhere-2seiriNMU/static/media/kidneyFloodControl.546f9380b1bcdd0512d2.png",
@@ -105,6 +106,7 @@
     "static/media/collectingTubuleReabsorption.png": "/anywhere-2seiriNMU/static/media/collectingTubuleReabsorption.1b6bd7d582ab92055322.png",
     "static/media/CD4.png": "/anywhere-2seiriNMU/static/media/CD4.bdb59fd2a2c2e7f31ee3.png",
     "static/media/ecg40.png": "/anywhere-2seiriNMU/static/media/ecg40.b626ee9f303dc23cc627.png",
+    "static/media/B20182.png": "/anywhere-2seiriNMU/static/media/B20182.c884043091b3621ed019.png",
     "static/media/ecg14.png": "/anywhere-2seiriNMU/static/media/ecg14.4c25acd0ecb28ac29e25.png",
     "static/media/ecg34.png": "/anywhere-2seiriNMU/static/media/ecg34.0501a67eedd51203606d.png",
     "static/media/parietalCell.png": "/anywhere-2seiriNMU/static/media/parietalCell.69d0596fd21f3bd8e8d2.png",
@@ -130,10 +132,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.702dc1fd.js.map": "/anywhere-2seiriNMU/static/js/main.702dc1fd.js.map"
+    "main.0d50b360.js.map": "/anywhere-2seiriNMU/static/js/main.0d50b360.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.702dc1fd.js"
+    "static/js/main.0d50b360.js"
   ]
 }

@@ -127,6 +127,8 @@ import respiratoryReflex from './img/answer/respiratoryReflex.png'
 import superoxide from './img/answer/superoxide.png'
 import vonWillebrand from './img/answer/vonWillebrand.png'
 import cardiacPotential from './img/answer/CardiacPotential.png'
+import clearanceExample from './img/answer/clearanceExample.png'
+import B20182 from './img/question/B20182.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -3227,7 +3229,68 @@ export const useQuestionList = () => {
           answer: '右脚ブロック',
           commentary: 'Ⅲ,V₁の波形が特徴的',
         },
-                // {
+        {
+          detailInfo: 'B9',
+          questionImg: [],
+          questionSentence:
+            '糸球体で濾過された原尿が尿管にたどり着くまでに、どのようなルートを経由するか、以下の項目をそのルートの順に並べなさい',
+          choices: [
+            'ヘンレ系蹄太い上行脚',
+            '遠位尿細管',
+            '集合管',
+            '腎盂',
+            'ヘンレ系蹄下行脚',
+            '腎杯',
+            'ヘンレ系蹄細い上行脚',
+          ],
+          answerImg: [diuretic],
+          answer:
+            'ヘンレ系蹄下行脚→ヘンレ系蹄細い上行脚→ヘンレ系蹄太い上行脚→遠位尿細管→集合管→腎杯→腎盂',
+          commentary: '',
+        },
+        {
+          detailInfo: 'B10',
+          questionImg: [],
+          questionSentence:
+            '糸球体に働く以下で示される4つの圧差により、血漿が毛細血管からボウマン腔へ濾過される。ここで、糸球体濾過係数をKfとすると、糸球体濾過量GFRはどのような式で表されるか',
+          choices: [
+            '糸球体毛細血管静水圧 Pgc',
+            'ボウマン腔内に含まれる液体の膠原浸透圧 πt',
+            '糸球体毛細血管内に含まれる液体の膠原浸透圧 πgc',
+            'ボウマン腔内静水圧 Pt',
+          ],
+          answerImg: [],
+          answer: 'GFR = Kf{Pgc - Pt - (πgc - πt)}',
+          commentary:
+            '毛細血管における浸透圧 P = 静水圧差ΔP - 膠原浸透圧差Δπ。浸透圧と濾過量は比例関係にある',
+        },
+        {
+          detailInfo: 'B②-1',
+          questionImg: [],
+          questionSentence: 'イヌリンのクリアランスと同義なのは以下のどれか',
+          choices: [
+            '糸球体で濾過される単位時間当たりのイヌリンの量',
+            '膀胱へ流入する単位時間当たりのイヌリンの量',
+            'イヌリンが完全に除去されるために必要な単位時間当たりの血漿量',
+            '糸球体を通過する単位時間当たりの血液量',
+            '糸球体で濾過された後、尿細管で再吸収される単位時間当たりのイヌリンの量',
+          ],
+          answerImg: [],
+          answer: '糸球体で濾過される単位時間当たりの【血液量】',
+          commentary:
+            'イヌリンクリアランスは、「イヌリンが1分あたりに何mLの血液から除去されたか」を示すもので、イヌリンの量ではない。イヌリンは濾過量を反映する物質で糸球体を通過する血液量とは直接関係しないし、「イヌリンが完全に除去されるために必要な単位時間当たりの血漿量」も意味不明（腎血漿流量RPFを指しているのならこの選択肢ではない）',
+        },
+        {
+          detailInfo: 'B2-2',
+          questionImg: [B20182],
+          questionSentence:
+            'イヌリンとPAHは輸入細動脈から糸球体に流入した後、それぞれどのような挙動をとり尿中に排泄されるか、解答例にならって図示しなさい',
+          answerImg: [clearanceExample],
+          answer:
+            'イヌリン:糸球体濾過された分は全て除去される（再吸収も分泌もない）。　PAH（馬尿酸）:濾過・尿細管分泌を通して最終的に腎臓を通過したほとんどが除去される',
+          commentary: '',
+        },
+        // {
         //   detailInfo: 'A4',
         //   questionImg: [],
         //   questionSentence: '',
@@ -3235,47 +3298,6 @@ export const useQuestionList = () => {
         //   answer: '',
         //   commentary: '',
         // },
-                // {
-        //   detailInfo: 'A4',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-                // {
-        //   detailInfo: 'A4',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-                // {
-        //   detailInfo: 'A4',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-                // {
-        //   detailInfo: 'A4',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-                // {
-        //   detailInfo: 'A4',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-
       ],
     },
     {
