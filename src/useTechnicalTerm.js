@@ -495,6 +495,104 @@ export const useTechnicalTerm = () => {
       term: ['一回換気量', 'tidal volume', 'TV'],
       explanation: '安静時に呼吸しているときの幅。スパイロメーターで計測可能',
     },
+    {
+      term: ['拘束性換気障害', '拘束性障害'],
+      explanation:
+        '肺の線維化などにより肺が広がらず、呼吸に使える肺の容量が減少している状態。%VC(肺活量の予測値に対する実測値の割合)<80%で診断。間質性肺疾患・肺線維症などが原因',
+    },
+    {
+      term: ['閉塞性換気障害', '閉塞性障害'],
+      explanation:
+        '気道の閉塞のため息が吐きにくく、特にある一定以上の息の呼出が極端に難しくなっている状態。1秒率(努力肺活量に対する1秒量の割合)<70%で診断。気管支喘息・COPDなどが原因',
+    },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
     // {
     //   term:[''],
     //   explanation:'',

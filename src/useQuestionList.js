@@ -113,6 +113,7 @@ import A201911 from './img/question/A201911.png'
 import A201912 from './img/question/A201912.png'
 import A201913 from './img/question/A201913.png'
 import A201914 from './img/question/A201914.png'
+import A201850 from './img/question/A201850.png'
 import actionPotential from './img/answer/actionPotential.png'
 import glomerularFiltration from './img/answer/glomerularFiltration.png'
 import glomeruli from './img/answer/glomeruli.png'
@@ -3126,6 +3127,155 @@ export const useQuestionList = () => {
           commentary:
             '経口摂取されたアルコールは、20%が胃、80%が小腸で吸収される。アルコールは中枢神経系に抑制的に作用する',
         },
+      ],
+    },
+    {
+      groupTag: '2018記述',
+      groupContents: [
+        {
+          detailInfo: 'A41',
+          questionImg: [],
+          questionSentence:
+            'スパイロメーターによる拘束性換気障害と閉塞性換気障害の診断基準を述べ、各障害をきたす代表的な疾患を一つずつ記載せよ',
+          answerImg: [ventilationDisorder],
+          answer:
+            '拘束性換気障害:%VC < 80%、代表的疾患は肺線維症・間質性肺疾患など　/　閉塞性換気障害:1秒率 < 70%、代表的疾患は気管支喘息・慢性閉塞性肺疾患COPDなど',
+          commentary:
+            '1秒率/FEV₁%=努力肺活量に対する1秒量の割合。70%以上で正常。　%VC/%肺活量=肺活量の予測値に対する実測値の割合。80%以上で正常。',
+        },
+        {
+          detailInfo: 'A42',
+          questionImg: [],
+          questionSentence: '栄養状態の不良により浮腫をきたすのはなぜか',
+          answerImg: [],
+          answer:
+            '栄養失調によりアルブミンの生成が不足し、血漿膠質浸透圧が低下し間質液量が増加するから。',
+          commentary: '',
+        },
+        {
+          detailInfo: 'A43',
+          questionImg: [],
+          questionSentence:
+            '黄疸の患者で、尿ウロビリノーゲンを検出できない時、どのような病態が考えられるか',
+          answerImg: [bilirubin],
+          answer: '膵頭部癌などによる胆道の閉鎖',
+          commentary: '直接ビリルビン→ウロビリノーゲンには腸内細菌が必須',
+        },
+        {
+          detailInfo: 'A44',
+          questionImg: [],
+          questionSentence: '筋肉ポンプとは何か、説明せよ',
+          answerImg: [],
+          answer:
+            '筋肉が収縮すると血管を圧迫する。これが静脈やリンパ管の一方向性の弁と組み合わさることで、血液を押し上げる作用のこと',
+          commentary: '→動脈には筋ポンプ作用はない',
+        },
+        {
+          detailInfo: 'A45',
+          questionImg: [],
+          questionSentence:
+            '心室筋の活動電位の形状を図示し、各相へ寄与するチャネル電流について説明せよ',
+          answerImg: [actionPotential],
+          answer:
+            '0相)電位依存性Na⁺チャネルによる内向きNa⁺電流　1相)電位依存性K⁺チャネルによる外向きK⁺電流　2相)L型電位依存性Ca²⁺チャネルによる内向きCa²⁺電流　3相)電位依存性K⁺チャネルによる外向きK⁺電流　4相)内向き整流性K⁺チャネルによる内向きK⁺電流（外向きにも少し流れる）',
+          commentary:
+            '脱分極→早期再分極→プラトー→再分極→静止電位　正常構造p110',
+        },
+        {
+          detailInfo: 'A46',
+          questionImg: [],
+          questionSentence: 'スターリングの心臓の法則について説明せよ',
+          answerImg: [],
+          answer:
+            '一定の範囲内で、前負荷が大きいほど心臓の拍出量が増すという法則',
+          commentary: '心筋の性質（伸展時の方が連絡橋が増え収縮力が増す）',
+        },
+        {
+          detailInfo: 'A47',
+          questionImg: [],
+          questionSentence:
+            '心臓の拡張期には、心臓から大動脈への拍出がゼロになるが、それにも関わらず、大動脈から末梢への血流は維持される。理由を説明せよ',
+          answerImg: [vessel],
+          answer:
+            '大動脈は弾性繊維が豊富で、一定の血圧を維持しながら心臓収縮期に拡張することで貯えた血液を心臓拡張期に送り出すから。',
+          commentary: '動脈硬化や加齢によりこの機能は失われる→高血圧',
+        },
+        {
+          detailInfo: 'A48',
+          questionImg: [],
+          questionSentence:
+            '門脈圧亢進症の患者が吐血した。どのような理由が考えられるか',
+          answerImg: [portalHypertension],
+          answer: '食道静脈瘤の破裂',
+          commentary: 'その他痔核・臍傍静脈の怒張（メデューサの頭）など',
+        },
+        {
+          detailInfo: 'A49',
+          questionImg: [],
+          questionSentence:
+            '換気血流比の不均衡により肺胞でのガス交換の効率が低下すると、それを是正するために、肺の血管に特徴的な反応が生じる。どのような反応が生じるかを説明せよ。',
+          answerImg: [ventilationPerfusionRatio],
+          answer: '低酸素性肺血管収縮',
+          commentary:
+            '換気不良などにより交換効率が悪化している箇所の肺細動脈が収縮することによって血流が減少し、換気血流比の均等性が回復する反応',
+        },
+        {
+          detailInfo: 'A50',
+          questionImg: [A201850],
+          questionSentence: '次の心電図の疾患名と、診断の根拠を記載せよ',
+          answerImg: [RBundleBrunchBlock],
+          answer: '右脚ブロック',
+          commentary: 'Ⅲ,V₁の波形が特徴的',
+        },
+                // {
+        //   detailInfo: 'A4',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+                // {
+        //   detailInfo: 'A4',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+                // {
+        //   detailInfo: 'A4',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+                // {
+        //   detailInfo: 'A4',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+                // {
+        //   detailInfo: 'A4',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+                // {
+        //   detailInfo: 'A4',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+
       ],
     },
     {
