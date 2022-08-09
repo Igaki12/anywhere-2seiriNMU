@@ -1968,7 +1968,7 @@ export const useQuestionList = () => {
           choices: [
             '肺動脈弁は大動脈弁の前方に位置する',
             '冠動脈の血流量は、心室の収縮期よりも拡張期の方が多い',
-            '心筋は、頚動脈により供給される血中酸素の約40%を消費する',
+            '心筋は、冠動脈により供給される血中酸素の約40%を消費する',
             '房室結節の伝導速度は、心房筋の伝導速度より早い',
           ],
           answerImg: [],
@@ -3132,7 +3132,7 @@ export const useQuestionList = () => {
       ],
     },
     {
-      groupTag: '2018記述',
+      groupTag: '2018中間記述',
       groupContents: [
         {
           detailInfo: 'A41',
