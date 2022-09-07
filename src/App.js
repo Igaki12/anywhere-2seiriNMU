@@ -8,7 +8,7 @@ import { useSetting } from './hooks/useSetting'
 import { useHistory } from './hooks/useHistory'
 import { ChoicePanel } from './components/ChoicePanel'
 import { useTechnicalTerm } from './useTechnicalTerm'
-import jsCookie from 'js-cookie'
+// import jsCookie from 'js-cookie'
 
 function App() {
   const { showQuestionList } = useQuestionList()
@@ -45,15 +45,15 @@ function App() {
       savingHistory += ','
     })
     savingHistory = savingHistory.substring(0, savingHistory.length - 1)
-    jsCookie.set('history', savingHistory)
-    console.log('saveHistory:' + jsCookie.get('history'))
+    // jsCookie.set('history', savingHistory)
+    // console.log('saveHistory:' + jsCookie.get('history'))
     let jsonData = {
       app: 'anywhere-2seiriNMU',
       latestUpdate: new Date().getTime(),
       status: settingDetail,
       history: savingHistory,
     }
-    localStorage.setItem('anywhere-studying02', JSON.stringify(jsonData))
+    localStorage.setItem('anywhere-2seiriNMU', JSON.stringify(jsonData))
     console.log(localStorage.getItem('anywhere-2seiriNMU'))
   }
   return (
