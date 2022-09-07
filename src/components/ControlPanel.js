@@ -14,6 +14,10 @@ import {
   Divider,
   Text,
   Tag,
+  CircularProgress,
+  CircularProgressLabel,
+  Flex,
+  Box,
 } from '@chakra-ui/react'
 import { SettingsIcon, ChevronDownIcon } from '@chakra-ui/icons'
 export const ControlPanel = ({ showSettingDetail, showHistory }) => {
@@ -23,7 +27,10 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
   const scrollToTheBottom = () => {
     let element = document.documentElement
     let bottom = element.scrollHeight - element.clientHeight
-    window.scroll(0, bottom)
+    window.scrollTo({
+      top: bottom,
+      behavior: 'smooth',
+    })
   }
   return (
     <>
@@ -76,10 +83,37 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
             ))}
             <Divider orientation="horizontal" mt={3} mb="1" />
             <Text>現在の成績:</Text>
-            <Text fontWeight={'bold'} pl="2">
+            {/* <Text fontWeight={'bold'} pl="2">
               現在{history[history.length - 1].questionNum}問目 / 残り
               {history[history.length - 1].remainingQuestionList.length}問
-            </Text>
+            </Text> */}
+            <Flex ml={'4'} mt={3} mb="-2" alignItems={'center'}>
+              <CircularProgress
+                color="teal"
+                trackColor="gray.200"
+                value={
+                  (100 * (history[history.length - 1].questionNum - 1)) /
+                  (history[history.length - 1].questionNum +
+                    history[history.length - 1].remainingQuestionList.length)
+                }
+              >
+                <CircularProgressLabel>
+                  {Math.floor(
+                    (100 * (history[history.length - 1].questionNum - 1)) /
+                      (history[history.length - 1].questionNum +
+                        history[history.length - 1].remainingQuestionList
+                          .length),
+                  )}
+                  %
+                </CircularProgressLabel>
+              </CircularProgress>
+              <Box ml={2}>
+                <Text fontWeight={'bold'} pl="2">
+                  現在{history[history.length - 1].questionNum}問目 / 残り
+                  {history[history.length - 1].remainingQuestionList.length}問
+                </Text>
+              </Box>
+            </Flex>
           </ModalBody>
 
           <ModalFooter>

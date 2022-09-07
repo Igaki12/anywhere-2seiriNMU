@@ -25,7 +25,7 @@ function App() {
     deleteWordFilter,
     updateAllSettings,
   } = useSetting()
-  const settingDetail = showSettingDetail()
+  let settingDetail = showSettingDetail()
   const {
     showHistory,
     selectQuestionList,
@@ -37,24 +37,33 @@ function App() {
     loadHistory,
   } = useHistory()
   const history = showHistory()
-  // ここからCookieを利用した設定の引継ぎ
-  const saveHistory = (latestHistory) => {
-    let savingHistory = latestHistory.questionNum + ','
-    latestHistory.remainingQuestionList.forEach((question) => {
-      savingHistory += question.id
-      savingHistory += ','
-    })
-    savingHistory = savingHistory.substring(0, savingHistory.length - 1)
-    // jsCookie.set('history', savingHistory)
-    // console.log('saveHistory:' + jsCookie.get('history'))
+  const thisAppNameTag = 'anywhere-2seiriNMU'
+  // ここからWebStorageを利用した設定の引継ぎ
+  let loadData = {
+    app: `${thisAppNameTag}`,
+    latestUpdate: new Date().getTime(),
+  }
+  if (localStorage.getItem(thisAppNameTag)) {
+    loadData = JSON.parse(localStorage.getItem(thisAppNameTag))
+  }
+  const saveHistory = (latestHistory, newSetting) => {
+    let savingHistory = ''
+    if (latestHistory && latestHistory.remainingQuestionList) {
+      savingHistory = latestHistory.questionNum + ','
+      latestHistory.remainingQuestionList.forEach((question) => {
+        savingHistory += question.id
+        savingHistory += ','
+      })
+      savingHistory = savingHistory.substring(0, savingHistory.length - 1)
+    }
     let jsonData = {
-      app: 'anywhere-2seiriNMU',
+      app: `${thisAppNameTag}`,
       latestUpdate: new Date().getTime(),
-      status: settingDetail,
+      status: newSetting,
       history: savingHistory,
     }
-    localStorage.setItem('anywhere-2seiriNMU', JSON.stringify(jsonData))
-    console.log(localStorage.getItem('anywhere-2seiriNMU'))
+    localStorage.setItem(thisAppNameTag, JSON.stringify(jsonData))
+    console.log(localStorage.getItem(thisAppNameTag))
   }
   return (
     <>
@@ -72,7 +81,7 @@ function App() {
           colorScheme="teal"
           variant={'outline'}
         >
-          Ver.1.0
+          Ver.1.1
         </Badge>
         <Badge m={1} mt="0" borderRadius="full" px="2" colorScheme="teal">
           第2生理学
@@ -84,6 +93,9 @@ function App() {
       ) : (
         <Setting
           questionList={questionList}
+          loadData={loadData}
+          history={history}
+          saveHistory={saveHistory}
           showSettingDetail={showSettingDetail}
           updateQuestionOrder={updateQuestionOrder}
           toggleQuestionRange={toggleQuestionRange}
@@ -105,6 +117,7 @@ function App() {
           /> */}
           <QuestionsLog
             // questionList={questionList}
+            loadData={loadData}
             showHistory={showHistory}
             nextQuestion={nextQuestion}
             checkAnswer={checkAnswer}

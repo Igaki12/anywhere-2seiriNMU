@@ -21,6 +21,7 @@ import { useState } from 'react'
 
 export const QuestionsLog = ({
   // questionList,
+  loadData,
   showHistory,
   nextQuestion,
   checkAnswer,
@@ -74,6 +75,7 @@ export const QuestionsLog = ({
   }
   let history = showHistory()
   let settingDetail = showSettingDetail()
+  console.log(settingDetail)
 
   console.log(history[history.length - 1].askedQuestionList)
   // const scrollToTheBottom = () => {
@@ -280,13 +282,13 @@ export const QuestionsLog = ({
                   .reduce(
                     (prev, currentTerms) => {
                       return currentTerms.term.reduce((previousArray, term) => {
-                        console.log(previousArray)
+                        // console.log(previousArray)
                         return previousArray.reduce(
                           (previousStr, currentStr) => {
-                            console.log(currentStr)
-                            console.log(
-                              currentStr.split(new RegExp(`(${term})`, 'g')),
-                            )
+                            // console.log(currentStr)
+                            // console.log(
+                            // currentStr.split(new RegExp(`(${term})`, 'g')),
+                            // )
                             let newStr = []
                             if (
                               currentStr.match(new RegExp(`(${term})`, 'g'))
@@ -568,10 +570,12 @@ export const QuestionsLog = ({
           colorScheme="red"
           variant={'solid'}
           onClick={() => {
+            console.log('setting確認')
+            console.log(settingDetail)
             checkAnswer()
             setIsOpen(true)
             toastGoodJob()
-            saveHistory(history[history.length - 1])
+            saveHistory(history[history.length - 1], settingDetail)
             // setTimeout(() => scrollToTheBottom(), 500)
           }}
         >
