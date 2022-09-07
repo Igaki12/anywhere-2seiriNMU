@@ -110,7 +110,7 @@ function App() {
         />
       )}
       {settingDetail.isSet ? (
-        <Box bgColor={'blackAlpha.100'} mt="-100px" pt={'100px'} minH="1000px">
+        <Box bgColor={'blackAlpha.100'} mt="-100px" pt={'100px'} minH="150%">
           {/* <ResultBar
             showHistory={showHistory}
             showSettingDetail={showSettingDetail}

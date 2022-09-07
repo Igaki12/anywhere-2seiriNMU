@@ -362,7 +362,7 @@ export const Setting = ({
         checkSelection={checkSelection}
         // saveSetting={saveSetting}
       />
-      <Divider orientation="horizontal" />
+      <Divider orientation="horizontal" maxW={'sm'} />
       <Text fontSize="xs" textColor={'blackAlpha.500'} ml="4">
         ©2022- IgaTatApps
       </Text>
