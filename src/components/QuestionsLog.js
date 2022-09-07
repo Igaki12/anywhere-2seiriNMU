@@ -95,7 +95,7 @@ export const QuestionsLog = ({
             .map((question, index) => (
               <>
                 <Box
-                  maxW="lg"
+                  maxW="xl"
                   bgColor={'white'}
                   borderWidth="1px"
                   borderRadius="lg"
@@ -158,7 +158,7 @@ export const QuestionsLog = ({
                   </Box>
                 </Box>
                 <Box
-                  maxW="lg"
+                  maxW="xl"
                   mb={'100px'}
                   borderWidth="1px"
                   borderRadius="lg"
@@ -241,7 +241,7 @@ export const QuestionsLog = ({
       {history[history.length - 1].askingQuestion.questionSentence ? (
         <>
           <Box
-            maxW="lg"
+            maxW="xl"
             bgColor={'white'}
             borderWidth="1px"
             borderRadius="lg"
@@ -351,7 +351,7 @@ export const QuestionsLog = ({
           <Collapse in={isOpen} animateOpacity>
             {history[history.length - 1].isAnswered ? (
               <Box
-                maxW="lg"
+                maxW="xl"
                 borderWidth="1px"
                 borderRadius="lg"
                 overflow="hidden"
