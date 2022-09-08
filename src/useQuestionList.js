@@ -1933,7 +1933,7 @@ export const useQuestionList = () => {
           answer:
             '血友病Aは、女性よりも男性の方が多い / 血友病Bの原因遺伝子は、X染色体上に存在する。',
           commentary:
-            '血友病A→第8因子、血友病B→第9因子。血友病はX染色体上の遺伝子異常なので男性の方が発症しやすい。',
+            '血友病A→第8因子、血友病B→第9因子。血友病はX染色体上の遺伝子異常（劣性）なので男性の方が発症しやすい。',
         },
         {
           detailInfo: 'A(4)',
@@ -1942,8 +1942,8 @@ export const useQuestionList = () => {
           choices: [
             'カルシウムとマグネシウムは、血液凝固に必須である',
             'EDTAは、カルシウムの除去により血液凝固を抑制する',
-            'クエン酸ナトリウムはマグネシウム除去により血液凝固を抑制する',
-            '凝固した血液を延伸して得た上清を血漿という',
+            'クエン酸ナトリウムは、マグネシウム除去により血液凝固を抑制する。',
+            '凝固した血液を遠心して得た上清を血漿という',
           ],
           answerImg: [coagulation],
           answer: 'EDTAは、カルシウムの除去により血液凝固を抑制する',
@@ -1960,7 +1960,7 @@ export const useQuestionList = () => {
             'DGは、proteinkinase C(PKC)を活性化させる',
             'IP₃は、小胞体からのカルシウム放出を促進する',
           ],
-          answerImg: [],
+          answerImg: [vasoconstriction],
           answer: 'すべて正しい',
           commentary: '参考:PIP₂ IP₃ DG',
         },
@@ -2082,7 +2082,7 @@ export const useQuestionList = () => {
             '門脈とは、2つの毛細血管網に挟まれた血管のことである',
             '炭酸脱水酵素は、赤血球内に豊富に存在する',
           ],
-          answerImg: [],
+          answerImg: [carbonicAnhydrase],
           answer:
             '脳血管は、二酸化炭素分圧の上昇時に拡張する / 門脈とは、2つの毛細血管網に挟まれた血管のことである / 炭酸脱水酵素は、赤血球内に豊富に存在する',
           commentary: '神経細胞はグルコースかケトン体が栄養源。',
@@ -2127,7 +2127,7 @@ export const useQuestionList = () => {
           answerImg: [lungCapacity],
           answer: '一回換気量、予備呼気量',
           commentary:
-            '残気量RVが含まれる要素は計測不可能。逆に努力して呼吸している幅に収まる量は計測可能',
+            '残気量RVが含まれる要素は計測不可能。逆に努力して呼吸できる幅に収まる量は計測可能',
         },
         {
           detailInfo: 'B(1)',
@@ -2180,7 +2180,8 @@ export const useQuestionList = () => {
             '溶血により産生されたビリルビンが尿中に出ないのは、ビリルビンが（　）と結合しているからである。',
           answerImg: [],
           answer: 'アルブミン',
-          commentary: '',
+          commentary:
+            'アルブミンは負電荷により正常時は腎糸球体で濾過されない。→ネフローゼ症候群',
         },
         {
           detailInfo: 'B(7)',
@@ -2221,7 +2222,7 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence:
             'CD4陽性T細胞は、抗原提示細胞の表面において、MHC（　）分子が提示した抗原を認識する',
-          answerImg: [],
+          answerImg: [CD4],
           answer: 'クラスⅡ',
           commentary: 'CD8はMHCクラスⅠ分子',
         },
@@ -2249,7 +2250,7 @@ export const useQuestionList = () => {
           answerImg: [],
           answer: '2,7,9,10',
           commentary:
-            'ワーファリンはビタミンKの働きを抑えて血栓ができるのを防ぐ。ビタミンKは納豆に多く含まれる',
+            'ワーファリンはビタミンKの働きを抑えて血栓ができるのを防ぐ。ビタミンKは納豆菌が腸内で産生できる',
         },
         {
           detailInfo: 'B(15)',
@@ -2329,7 +2330,7 @@ export const useQuestionList = () => {
             '血圧は、（　）と大動脈弓に存在する圧受容器により感知される',
           answerImg: [autonomicNerve],
           answer: '頚動脈洞',
-          commentary: '',
+          commentary: '経路の脳神経は異なるが、同じ孤束核へ信号を伝える。',
         },
         {
           detailInfo: 'B(24)',
