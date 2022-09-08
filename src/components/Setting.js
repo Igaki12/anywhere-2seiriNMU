@@ -125,7 +125,7 @@ export const Setting = ({
   return (
     <>
       <Box
-        maxW="sm"
+        maxW="lg"
         minH={'150px'}
         transitionDelay="3s"
         className="Headline1"
@@ -283,86 +283,87 @@ export const Setting = ({
           </ModalFooter>
         </ModalContent>
       </Modal>
+      <Box mr={'auto'} ml="auto" maxW={'sm'}>
+        {checkMsg === '条件を満たした質問が存在しません' ? (
+          <Alert status="error" fontWeight={'semibold'} maxW="lg">
+            <AlertIcon />
+            {checkMsg}
+          </Alert>
+        ) : (
+          <>
+            {checkMsg ? (
+              <Alert status="success" maxW={'lg'}>
+                <AlertIcon />
+                {checkMsg}
+              </Alert>
+            ) : (
+              <></>
+            )}
+          </>
+        )}
 
-      {checkMsg === '条件を満たした質問が存在しません' ? (
-        <Alert status="error" fontWeight={'semibold'} maxW="sm">
-          <AlertIcon />
-          {checkMsg}
-        </Alert>
-      ) : (
-        <>
-          {checkMsg ? (
-            <Alert status="success" maxW={'sm'}>
-              <AlertIcon />
-              {checkMsg}
-            </Alert>
-          ) : (
-            <></>
-          )}
-        </>
-      )}
-
-      <RadioGroup defaultValue={settingDetail.questionOrder}>
-        <Stack spacing={5} direction="row" p={2}>
-          <Radio
-            colorScheme="red"
-            value="random"
-            onChange={() => {
-              updateQuestionOrder('random')
-              // saveSetting(settingDetail)
-            }}
-          >
-            ランダム出題
-          </Radio>
-          <Radio
-            colorScheme="green"
-            value="ascend"
-            onChange={() => {
-              updateQuestionOrder('ascend')
-              // saveSetting(settingDetail)
-            }}
-          >
-            順番通り出題
-          </Radio>
-        </Stack>
-      </RadioGroup>
-      <CheckboxGroup
-        colorScheme="green"
-        defaultValue={settingDetail.questionRange}
-      >
-        <Stack
-          w={'sm'}
-          spacing={[2, 4]}
-          direction={['column']}
-          bg="blackAlpha.100"
-          p={2}
-          mb="5"
-        >
-          {questionList.map((group, index) => (
-            <Checkbox
-              value={group.groupTag}
-              key={index}
+        <RadioGroup defaultValue={settingDetail.questionOrder}>
+          <Stack spacing={5} direction="row" p={2}>
+            <Radio
+              colorScheme="red"
+              value="random"
               onChange={() => {
-                toggleQuestionRange(group.groupTag)
-                checkSelection()
+                updateQuestionOrder('random')
                 // saveSetting(settingDetail)
               }}
             >
-              {group.groupTag}(
-              {group.groupContents ? group.groupContents.length : '0'}問)
-            </Checkbox>
-          ))}
-        </Stack>
-      </CheckboxGroup>
-      <SearchWord
-        showSettingDetail={showSettingDetail}
-        addWordFilter={addWordFilter}
-        deleteWordFilter={deleteWordFilter}
-        questionList={questionList}
-        checkSelection={checkSelection}
-        // saveSetting={saveSetting}
-      />
-      <Divider orientation="horizontal" maxW={'sm'} />
+              ランダム出題
+            </Radio>
+            <Radio
+              colorScheme="green"
+              value="ascend"
+              onChange={() => {
+                updateQuestionOrder('ascend')
+                // saveSetting(settingDetail)
+              }}
+            >
+              順番通り出題
+            </Radio>
+          </Stack>
+        </RadioGroup>
+        <CheckboxGroup
+          colorScheme="green"
+          defaultValue={settingDetail.questionRange}
+        >
+          <Stack
+            w={'sm'}
+            spacing={[2, 4]}
+            direction={['column']}
+            bg="blackAlpha.100"
+            p={2}
+            mb="5"
+          >
+            {questionList.map((group, index) => (
+              <Checkbox
+                value={group.groupTag}
+                key={index}
+                onChange={() => {
+                  toggleQuestionRange(group.groupTag)
+                  checkSelection()
+                  // saveSetting(settingDetail)
+                }}
+              >
+                {group.groupTag}(
+                {group.groupContents ? group.groupContents.length : '0'}問)
+              </Checkbox>
+            ))}
+          </Stack>
+        </CheckboxGroup>
+        <SearchWord
+          showSettingDetail={showSettingDetail}
+          addWordFilter={addWordFilter}
+          deleteWordFilter={deleteWordFilter}
+          questionList={questionList}
+          checkSelection={checkSelection}
+          // saveSetting={saveSetting}
+        />
+      </Box>
+      <Divider orientation="horizontal" maxW={'lg'} />
       <Text fontSize="xs" textColor={'blackAlpha.500'} ml="4">
         ©2022- IgaTatApps
       </Text>

@@ -91,7 +91,7 @@ function App() {
       {settingDetail.isSet ? (
         <></>
       ) : (
-        <Box maxW={"sm"} mr="auto" ml={"auto"}>
+        <Box maxW={"lg"} mr="auto" ml={"auto"}>
         <Setting
           questionList={questionList}
           loadData={loadData}

@@ -746,7 +746,7 @@ export const useQuestionList = () => {
             '冊子縁のNa⁺-グルコース輸送体SGLT1はATPを必要する',
             'タンパク質は終末消化によりポリペプチドまで分解されて吸収される',
           ],
-          answerImg: [],
+          answerImg: [lipidAbsorption],
           answer:
             '上皮細胞で形成される主要なリポタンパク質はキロミクロンである。',
           commentary:
