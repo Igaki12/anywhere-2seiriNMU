@@ -91,6 +91,7 @@ function App() {
       {settingDetail.isSet ? (
         <></>
       ) : (
+        <Box maxW={"sm"} mr="auto" ml={"auto"}>
         <Setting
           questionList={questionList}
           loadData={loadData}
@@ -108,6 +109,7 @@ function App() {
           updateAllSettings={updateAllSettings}
           loadHistory={loadHistory}
         />
+        </Box>
       )}
       {settingDetail.isSet ? (
         <Box bgColor={'blackAlpha.100'} mt="-100px" pt={'100px'} minH="2000px">

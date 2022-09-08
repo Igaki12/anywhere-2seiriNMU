@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.4edb8d55.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.e333b76e.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -24,6 +24,7 @@
     "static/media/ecg3.png": "/anywhere-2seiriNMU/static/media/ecg3.6e46f98e7808e9c5f443.png",
     "static/media/vasoconstriction.png": "/anywhere-2seiriNMU/static/media/vasoconstriction.7eec91baf949f49427cc.png",
     "static/media/respiratoryReflex.png": "/anywhere-2seiriNMU/static/media/respiratoryReflex.152c2bcbc6635a8fac7c.png",
+    "static/media/lipidAbsorption.png": "/anywhere-2seiriNMU/static/media/lipidAbsorption.d72e060f34c3db686b34.png",
     "static/media/diuretic.png": "/anywhere-2seiriNMU/static/media/diuretic.d624638441be424b50dd.png",
     "static/media/superoxide.png": "/anywhere-2seiriNMU/static/media/superoxide.81c55b41aefb0fdcd5f9.png",
     "static/media/ecg13.png": "/anywhere-2seiriNMU/static/media/ecg13.140a70085dbd074c30cd.png",
@@ -60,6 +61,7 @@
     "static/media/carbonicAnhydrase.png": "/anywhere-2seiriNMU/static/media/carbonicAnhydrase.b84110eeaaa739c43368.png",
     "static/media/ecg20.png": "/anywhere-2seiriNMU/static/media/ecg20.25e8a5a16538fd44bb16.png",
     "static/media/ecg5.png": "/anywhere-2seiriNMU/static/media/ecg5.1603ed9f65502ecbb804.png",
+    "static/media/lipidSynthesize.png": "/anywhere-2seiriNMU/static/media/lipidSynthesize.9b667b0713be34c68cf2.png",
     "static/media/ventricularTachycardia.png": "/anywhere-2seiriNMU/static/media/ventricularTachycardia.d1b14a1dcceb120d060a.png",
     "static/media/CardiacPotential.png": "/anywhere-2seiriNMU/static/media/CardiacPotential.d3241b33a78e0226bd5f.png",
     "static/media/ecg41.png": "/anywhere-2seiriNMU/static/media/ecg41.55739cd902a7e78f7034.png",
@@ -132,10 +134,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.4edb8d55.js.map": "/anywhere-2seiriNMU/static/js/main.4edb8d55.js.map"
+    "main.e333b76e.js.map": "/anywhere-2seiriNMU/static/js/main.e333b76e.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.4edb8d55.js"
+    "static/js/main.e333b76e.js"
   ]
 }

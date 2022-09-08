@@ -285,14 +285,14 @@ export const Setting = ({
       </Modal>
 
       {checkMsg === '条件を満たした質問が存在しません' ? (
-        <Alert status="error" fontWeight={'semibold'}>
+        <Alert status="error" fontWeight={'semibold'} maxW="sm">
           <AlertIcon />
           {checkMsg}
         </Alert>
       ) : (
         <>
           {checkMsg ? (
-            <Alert status="success">
+            <Alert status="success" maxW={'sm'}>
               <AlertIcon />
               {checkMsg}
             </Alert>

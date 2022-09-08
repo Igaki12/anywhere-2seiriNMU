@@ -129,6 +129,8 @@ import vonWillebrand from './img/answer/vonWillebrand.png'
 import cardiacPotential from './img/answer/CardiacPotential.png'
 import clearanceExample from './img/answer/clearanceExample.png'
 import B20182 from './img/question/B20182.png'
+import lipidSynthesize from './img/answer/lipidSynthesize.png'
+import lipidAbsorption from './img/answer/lipidAbsorption.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -381,7 +383,7 @@ export const useQuestionList = () => {
           answerImg: [swallowing],
           answer: '消化管運動には蠕動・振り子・分節運動がある',
           commentary:
-            '副交感神経刺激は消化管運動を促進させる/嚥下運動は3相（口腔・咽頭・食道相）/舌の運動は舌下神経支配である/嚥下時に下部食道括約筋は弛緩する',
+            '副交感神経刺激は消化管運動を促進させる。嚥下運動は3相（口腔・咽頭・食道相。舌の運動は舌下神経支配である。嚥下時に下部食道括約筋は弛緩する',
         },
         {
           detailInfo: '',
@@ -413,7 +415,7 @@ export const useQuestionList = () => {
           answerImg: [],
           answer: '食物の殺菌',
           commentary:
-            '胃酸はpH1~3で、ペプシノーゲン（→ペプシン）の変性を促進する。粘膜保護は表面粘膜細胞からの粘液、糖の分解は唾液や膵液や小腸膜酵素で行われる。胃で吸収されるのはアルコールなどごく少量。',
+            '胃酸はpH1~3で、ペプシノーゲン（→ペプシン）の変性を促進する。ペプシンによりタンパク質の消化は行われるが、吸収には関与しない。粘膜保護は表面粘膜細胞からの粘液、糖の分解は唾液や膵液や小腸膜酵素で行われる。胃で吸収されるのはアルコールなどごく少量。',
         },
         {
           detailInfo: '',
@@ -439,13 +441,14 @@ export const useQuestionList = () => {
           choices: ['ビタミンB12', '鉄', '脂質', '尿素', 'グルコース'],
           answerImg: [],
           answer: 'グルコース',
-          commentary: 'グルコースは小腸壁にてナトリウムと共輸送される:SGLT1。',
+          commentary:
+            'グルコースは小腸上皮細胞でナトリウムと共輸送される:SGLT1。ほか、脂質・鉄は主に空腸、ビタミンB12は回腸、アンモニアは胃や小腸で吸収されるが、Naとの共輸送ではない。',
         },
         {
           detailInfo: '',
           questionImg: [],
           questionSentence:
-            '60歳男性。小腸大量切除術後、完全静脈栄養にて加療中である。術後3か月目に四肢末端に落屑を伴う60歳の男性.小腸大量切除術後, 完全静脈栄養にて加療中である. 術後3ヵ月疣贅, 壊死を認めた.原因として最も考えられるのはどれか.',
+            '60歳男性。小腸大量切除術後、完全静脈栄養にて加療中である。術後3か月目に四肢末端に落屑を伴う疣贅, 壊死を認めた。原因として最も考えられるのはどれか。',
           choices: [
             '葉酸欠乏',
             'ビタミンC',
@@ -463,10 +466,10 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence: '小腸で生成される食事由来のリポタンパク質はどれか',
           choices: ['カイロミクロン', 'LDL', 'IDL', 'VLDL', 'HDL'],
-          answerImg: [],
+          answerImg: [lipidSynthesize],
           answer: '',
           commentary:
-            'カイロミクロンは、食事により資質を吸収する際に小腸で合成される。VLDLは肝臓で合成され、VLDL→IDL→LDLとなる',
+            'カイロミクロンは、食事により脂質を吸収する際に小腸で合成される。VLDLは肝臓で合成され、VLDL→IDL→LDLとなる',
         },
         {
           detailInfo: '',
@@ -483,7 +486,7 @@ export const useQuestionList = () => {
           answerImg: [],
           answer: 'VIP(血管作動性腸管ペプチド)-小腸液分泌促進',
           commentary:
-            '胃酸分泌抑制・小腸液分泌促進・血管拡張・心拍出量増加作用を持つ。ガストリンは下部食道括約筋を収縮、CCKはOddi括約筋を弛緩、セクレチンは胆汁分泌促進、ソマトスタチンは胃酸など全体的に抑制としてはたらく。',
+            '胃酸分泌抑制・小腸液分泌促進・血管拡張・心拍出量増加作用を持つ。他は全て逆で、ガストリンは下部食道括約筋を収縮、CCKはOddi括約筋を弛緩、セクレチンは胆汁分泌促進、ソマトスタチンは胃酸など全体的に抑制としてはたらく。',
         },
         {
           detailInfo: '',
@@ -515,7 +518,7 @@ export const useQuestionList = () => {
           answerImg: [],
           answer: '肝星細胞-ビタミンAの貯蔵',
           commentary:
-            '肝星細胞は伊東細胞とも呼ばれ、体内の80%のビタミンAが貯蔵される。',
+            '肝星細胞は伊東細胞とも呼ばれ、体内の80%のビタミンAが貯蔵される。他、Kuppfer細胞は異物の貪食、胆汁合成は肝実質細胞が担当する。',
         },
         {
           detailInfo: '',
@@ -531,7 +534,7 @@ export const useQuestionList = () => {
           answerImg: [],
           answer: 'pH3で活性が最大となる',
           commentary:
-            '膵液は十二指腸に分泌され、pH8~9のHCO₃⁻の存在下で活性が高まる。膵液はアミラーゼ（デンプンをマルトースに）トリプシン（タンパク質をペプチドに）、リパーゼ（脂肪を脂肪酸とグリセリンに）など多様な酵素を含んでいる。',
+            '膵液は十二指腸に分泌され、pH8~9のHCO₃⁻存在下で活性が高まる。膵液はアミラーゼ（デンプン→マルトース）トリプシン（タンパク質→ペプチド）、リパーゼ（脂肪→脂肪酸・グリセリン）など多様な酵素を含んでいる。',
         },
         {
           detailInfo: '',
@@ -563,7 +566,7 @@ export const useQuestionList = () => {
           answerImg: [swallowing],
           answer: '咽頭の挙上',
           commentary:
-            '舌根と咽頭は一環として前上方に挙上し、舌根部の後方移動と伴って、咽頭が舌根部に押し付けられ咽頭蓋が咽頭前庭を覆うように閉塞し、食塊が気道に侵入するのを防ぐ。',
+            '舌根と咽頭は一塊として前上方に挙上し、舌根部の後方移動と伴って、咽頭が舌根部に押し付けられ咽頭蓋が咽頭前庭を覆うように閉塞し、食塊が気道に侵入するのを防ぐ。その他、閉塞するのは下鼻道ではなく鼻咽頭腔（咽頭相）で、舌根は膨隆（口腔相）したり後方移動（咽頭相）したりし、咽頭は咽頭挙筋により挙上（咽頭相）する。食道が挙上することはない。',
         },
         {
           detailInfo: '',
