@@ -1288,7 +1288,7 @@ export const useQuestionList = () => {
             'トロンボキサンA2とプロスタサイクリンは、ともに血小板凝集を促進する',
             'プラスミンは、フィブリンの分解を阻害する',
           ],
-          answerImg: [],
+          answerImg: [vonWillebrand],
           answer: 'すべて誤り',
           commentary:
             '血小板の血管壁への粘着を促進するのはフォン・ウィルブランド因子。トロンボキサンA₂とブロスタサイクリンは互いに作用が拮抗する。プラスミンはフィブリンの分解を促進する',
@@ -1318,7 +1318,7 @@ export const useQuestionList = () => {
             '残気量は、スパイロメーターで計測可能である',
             '予備呼気量は、スパイロメーターで計測可能である',
           ],
-          answerImg: [],
+          answerImg: [lungCapacity],
           answer:
             '肺活量は、スパイロメーターで計測可能である/予備呼気量は、スパイロメーターで計測可能である',
           commentary: '残気量は計測不可能',
@@ -1333,7 +1333,7 @@ export const useQuestionList = () => {
             'pHの低下は、酸素解離曲線を右方へ移動させる',
             '2,3-DPGの低下は、酸素解離曲線を右方へ移動させる。',
           ],
-          answerImg: [],
+          answerImg: [ODC],
           answer:
             '肺でのガス交換において、二酸化炭素の拡散能は、酸素の拡散能よりも高い/pHの低下は、酸素解離曲線を右方へ移動させる',
           commentary:
@@ -1349,7 +1349,7 @@ export const useQuestionList = () => {
             '頚動脈小体で感知された情報は、迷走神経を介して延髄の孤束核へ伝達される',
             '延髄腹側の中枢化学受容器は、二酸化炭素分圧の上昇を感知する',
           ],
-          answerImg: [],
+          answerImg: [autonomicNerve],
           answer:
             '末梢化学受容器の一つである頚動脈小体は、主に酸素分圧の低下を感知する/延髄腹側の中枢化学受容器は、二酸化炭素分圧の上昇を感知する',
           commentary: '頚動脈小体→舌咽神経、大動脈小体→迷走神経',
@@ -1364,7 +1364,7 @@ export const useQuestionList = () => {
             'Cheyne-Strokes呼吸は、ゆっくりとした深く規則的な呼吸で,糖尿病ケトアシドーシスで特徴的に認められる',
             'Hering-Breuer反射は、肺の伸展受容器を介する呼吸調節反射である',
           ],
-          answerImg: [],
+          answerImg: [respiratoryReflex],
           answer:
             'Hering-Breuer反射は、肺の伸展受容器を介する呼吸調節反射である',
           commentary:
@@ -1823,13 +1823,13 @@ export const useQuestionList = () => {
           detailInfo: '2020中間C(7)',
           questionImg: [],
           questionSentence:
-            'Rh式血液型不適合妊娠では胎児の溶血が生じる野に対して、ABO式血液型不適合妊娠では胎児への影響はほとんどない。理由を述べよ。',
+            'Rh式血液型不適合妊娠では胎児の溶血が生じるのに対して、ABO式血液型不適合妊娠では胎児への影響はほとんどない。理由を述べよ。',
           choices: [],
           answerImg: [RhPregnancy],
           answer:
             '抗D抗体はIgG型なので胎盤を通過するが、抗A,B抗体はIgM型であるから胎盤を通過せず、胎児に影響しない。',
           commentary:
-            '胎盤は最小のIgG抗体のみ通す。このため胎児は母親のIgG抗体のおかげで生後半年ほど風邪を引かない。',
+            '胎盤はIgG抗体のみ通す。このため胎児は母親のIgG抗体のおかげで生後半年ほど風邪を引かない。',
         },
         {
           detailInfo: '2020中間C(8)',
