@@ -91,56 +91,58 @@ function App() {
       {settingDetail.isSet ? (
         <></>
       ) : (
-        <Box maxW={"lg"} mr="auto" ml={"auto"}>
-        <Setting
-          questionList={questionList}
-          loadData={loadData}
-          history={history}
-          saveHistory={saveHistory}
-          showSettingDetail={showSettingDetail}
-          updateQuestionOrder={updateQuestionOrder}
-          toggleQuestionRange={toggleQuestionRange}
-          updateQuestionMode={updateQuestionMode}
-          selectQuestionList={selectQuestionList}
-          nextQuestion={nextQuestion}
-          makeSetting={makeSetting}
-          addWordFilter={addWordFilter}
-          deleteWordFilter={deleteWordFilter}
-          updateAllSettings={updateAllSettings}
-          loadHistory={loadHistory}
-        />
+        <Box maxW={'lg'} mr="auto" ml={'auto'}>
+          <Setting
+            questionList={questionList}
+            loadData={loadData}
+            history={history}
+            saveHistory={saveHistory}
+            showSettingDetail={showSettingDetail}
+            updateQuestionOrder={updateQuestionOrder}
+            toggleQuestionRange={toggleQuestionRange}
+            updateQuestionMode={updateQuestionMode}
+            selectQuestionList={selectQuestionList}
+            nextQuestion={nextQuestion}
+            makeSetting={makeSetting}
+            addWordFilter={addWordFilter}
+            deleteWordFilter={deleteWordFilter}
+            updateAllSettings={updateAllSettings}
+            loadHistory={loadHistory}
+          />
         </Box>
       )}
       {settingDetail.isSet ? (
-        <Box bgColor={'blackAlpha.100'} mt="-100px" pt={'100px'} minH="2000px">
-          {/* <ResultBar
+        <Box bgColor={'blackAlpha.100'} mt="-100px" pt={'100px'} minH="1500px">
+          <Box maxW="2xl" mr="auto" ml={'auto'}>
+            {/* <ResultBar
             showHistory={showHistory}
             showSettingDetail={showSettingDetail}
           /> */}
-          <QuestionsLog
-            // questionList={questionList}
-            loadData={loadData}
-            showHistory={showHistory}
-            nextQuestion={nextQuestion}
-            checkAnswer={checkAnswer}
-            // hideAnswer={hideAnswer}
-            showSettingDetail={showSettingDetail}
-            reviewQuestion={reviewQuestion}
-            reviewAskingQuestion={reviewAskingQuestion}
-            saveHistory={saveHistory}
-            technicalTerm={technicalTerm}
-          />
-          {settingDetail.mode === 'practice' &&
-          history[history.length - 1].askingQuestion.choices.length > 1 ? (
-            <ChoicePanel />
-          ) : (
-            <></>
-          )}
-          <Box h={'200px'} width="100px"></Box>
-          <ControlPanel
-            showSettingDetail={showSettingDetail}
-            showHistory={showHistory}
-          />
+            <QuestionsLog
+              // questionList={questionList}
+              loadData={loadData}
+              showHistory={showHistory}
+              nextQuestion={nextQuestion}
+              checkAnswer={checkAnswer}
+              // hideAnswer={hideAnswer}
+              showSettingDetail={showSettingDetail}
+              reviewQuestion={reviewQuestion}
+              reviewAskingQuestion={reviewAskingQuestion}
+              saveHistory={saveHistory}
+              technicalTerm={technicalTerm}
+            />
+            {settingDetail.mode === 'practice' &&
+            history[history.length - 1].askingQuestion.choices.length > 1 ? (
+              <ChoicePanel />
+            ) : (
+              <></>
+            )}
+            <Box h={'300px'} width="100px"></Box>
+            <ControlPanel
+              showSettingDetail={showSettingDetail}
+              showHistory={showHistory}
+            />
+          </Box>
         </Box>
       ) : (
         <></>

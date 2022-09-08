@@ -260,6 +260,9 @@ export const Setting = ({
             </List>
             <Divider orientation="horizontal" mt={3} mb="1" />
             <Text>アップデート履歴</Text>
+            <Text fontSize={'sm'}>
+              09-08_Ver1.2-タブレット向けにデザイン調節
+            </Text>
             <Text fontSize={'sm'}>09-07_Ver1.1-WebStorageを採用</Text>
             <Text fontSize={'sm'}>
               08-01_Ver1.0-デザインを改善.正式リリース
