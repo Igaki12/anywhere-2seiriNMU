@@ -32,6 +32,7 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
       behavior: 'smooth',
     })
   }
+  let isAnsweredPoint = history[history.length - 1].isAnswered ? 0 : 1
   return (
     <>
       <Stack
@@ -92,14 +93,14 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
                 color="teal"
                 trackColor="gray.200"
                 value={
-                  (100 * (history[history.length - 1].questionNum - 1)) /
+                  (100 * (history[history.length - 1].questionNum - isAnsweredPoint)) /
                   (history[history.length - 1].questionNum +
                     history[history.length - 1].remainingQuestionList.length)
                 }
               >
                 <CircularProgressLabel>
                   {Math.floor(
-                    (100 * (history[history.length - 1].questionNum - 1)) /
+                    (100 * (history[history.length - 1].questionNum - isAnsweredPoint)) /
                       (history[history.length - 1].questionNum +
                         history[history.length - 1].remainingQuestionList
                           .length),

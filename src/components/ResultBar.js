@@ -10,6 +10,7 @@ import {
 export const ResultBar = ({ showHistory, showSettingDetail }) => {
   let history = showHistory()
   let settingDetail = showSettingDetail()
+  let isAnsweredPoint = history[history.length - 1].isAnswered ? 0 : 1
   return (
     <>
       {settingDetail.mode === 'training' ? (
@@ -21,14 +22,16 @@ export const ResultBar = ({ showHistory, showSettingDetail }) => {
             color="teal"
             trackColor="white"
             value={
-              (100 * (history[history.length - 1].questionNum - 1)) /
+              (100 *
+                (history[history.length - 1].questionNum - isAnsweredPoint)) /
               (history[history.length - 1].questionNum +
                 history[history.length - 1].remainingQuestionList.length)
             }
           >
             <CircularProgressLabel>
               {Math.floor(
-                (100 * (history[history.length - 1].questionNum - 1)) /
+                (100 *
+                  (history[history.length - 1].questionNum - isAnsweredPoint)) /
                   (history[history.length - 1].questionNum +
                     history[history.length - 1].remainingQuestionList.length),
               )}

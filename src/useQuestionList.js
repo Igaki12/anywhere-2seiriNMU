@@ -865,7 +865,7 @@ export const useQuestionList = () => {
             'β1アドレナリン受容体の刺激は、心拍出量を増加させる',
             'β2アドレナリン受容体の刺激は、気管支平滑筋を収縮させる',
           ],
-          answerImg: [],
+          answerImg: [sympatheticNerve],
           answer:
             'α1アドレナリン受容体の刺激は、末梢血管平滑筋を収縮させ、その結果拡張期血圧を上昇させる/β1アドレナリン受容体の刺激は、心拍出量を増加させる',
           commentary:
@@ -986,7 +986,7 @@ export const useQuestionList = () => {
             '冠動脈の血流量は、局所の酸素濃度の低下や、水素イオン・乳酸・アデノシンなどの上昇によって増加する',
             '静脈の血液量は、動脈の血液量よりも多い。',
           ],
-          answerImg: [],
+          answerImg: [vessel],
           answer: 'すべて正しい',
           commentary: '',
         },
@@ -1043,7 +1043,7 @@ export const useQuestionList = () => {
           choices: [
             'アンギオテンシンⅡ、バソプレシンは、いずれも血管平滑筋を収縮させる',
             'ホスホリパーゼC(PLC)が活性化されると、細胞膜からイノシトール三リン酸IP₃とジアシルグリセロールDGが産生される',
-            'IP3は筋小胞体のIP3受容体へ結合して、Caイオンの放出を促す',
+            'IP₃は筋小胞体のIP₃受容体へ結合して、Caイオンの放出を促す',
           ],
           answerImg: [vasoconstriction],
           answer: 'すべて正しい',
@@ -1076,7 +1076,7 @@ export const useQuestionList = () => {
             '頚動脈洞と大動脈弓には、動脈壁の伸展により興奮する圧受容器が存在し、各々舌咽神経・迷走神経を介して延髄の孤束核へ情報を伝達する',
             '静脈還流量が増加すると、血管運動中枢が興奮して心収縮力が増強する。この現象をペインブリッジ反射という。',
           ],
-          answerImg: [],
+          answerImg: [ANP],
           answer:
             '頚動脈洞と大動脈弓には、動脈壁の伸展により興奮する圧受容器が存在し、各々舌咽神経・迷走神経を介して延髄の孤束核へ情報を伝達する/静脈還流量が増加すると、血管運動中枢が興奮して心収縮力が増強する。この現象をペインブリッジ反射という。',
           commentary:
@@ -1126,7 +1126,7 @@ export const useQuestionList = () => {
           answerImg: [],
           answer:
             '皮膚血管には動静脈吻合が存在し、この吻合の開閉によって皮膚の血流量が調節されている/門脈とは、2つの毛細血管網に挟まれた血管のことである。',
-          commentary: '脂質→ぶどう糖',
+          commentary: '脳のエネルギー源はグルコースかケトン体。',
         },
         {
           detailInfo: 'A(23)',
@@ -1138,7 +1138,7 @@ export const useQuestionList = () => {
             'EDTAは、血液凝固に必要なカルシウムを取り除くことにより、抗凝固作用を発揮する',
             'ヘパリンは、トロンビンに直接結合することにより、抗凝固作用を発揮する',
           ],
-          answerImg: [],
+          answerImg: [coagulation],
           answer:
             'EDTAは、血液凝固に必要なカルシウムを取り除くことにより、抗凝固作用を発揮する',
           commentary:
@@ -2723,7 +2723,7 @@ export const useQuestionList = () => {
           answerImg: [],
           answer: '抗原抗体',
           commentary:
-            '補体活性化の最終産物は膜侵襲複合体という。細菌などの細胞膜に穴をあける。',
+            '古典的経路のみ抗体の関与が必要。その他、補体活性化の最終産物は膜侵襲複合体という。細菌などの細胞膜に穴をあける。',
         },
         {
           detailInfo: '',
@@ -2921,7 +2921,7 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence:
             '（　）は、心房壁が伸展されると放出され、利尿や血管平滑筋の弛緩を促す',
-          answerImg: [],
+          answerImg: [ANP],
           answer: 'ANP',
           commentary: '',
         },
@@ -3005,7 +3005,7 @@ export const useQuestionList = () => {
             '予備呼気量',
           ],
           answerImg: [lungCapacity],
-          answer: '全肺気量、残気量',
+          answer: '全肺気量、残気量、機能的残気量',
           commentary:
             'スパイロメーターでは残気量RVや、残気量を含む指標が全て測定できない',
         },
