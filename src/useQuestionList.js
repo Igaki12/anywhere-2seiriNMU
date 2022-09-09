@@ -158,7 +158,7 @@ export const useQuestionList = () => {
           answer:
             '過呼吸により二酸化炭素が肺から排出されるため、炭酸イオンの平衡が移動し、血中の水素イオン濃度が低下する。',
           commentary:
-            'CO2 + H20 <=> H2CO3 <=> H + HCO3　この平衡式がCO2濃度低下により左に遷移し、血液pH濃度が上昇する',
+            'CO2 + H20 <=> H2CO3 <=> H + HCO3　この平衡式がCO2濃度低下により左に遷移し、血液のpHが上昇する',
         },
         {
           detailInfo: 'レジュメ質問',
@@ -166,16 +166,17 @@ export const useQuestionList = () => {
           questionSentence:
             '過呼吸以外の理由で、血液のpHが変化する病態を挙げよ。',
           choices: [],
-          answerImg: [],
+          answerImg: [H2CO3],
           answer: '腎不全',
-          commentary: '',
+          commentary:
+            '肺からはCO₂、腎臓からは尿酸などの酸を排出することでpHを調節している。どちらかに異常があると、もう一方がそれを代償しようとする。',
         },
         {
           detailInfo: 'レジュメ質問',
           questionImg: [],
           questionSentence: '血液のCO2やpHの変化は、どのように感知されるか？',
           choices: [],
-          answerImg: [],
+          answerImg: [autonomicNerve],
           answer: '延髄中枢などの化学受容器で',
           commentary: '',
         },
@@ -184,7 +185,7 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence: '高カリウム血症は、なぜ致死的な不整脈を招くのか？',
           choices: [],
-          answerImg: [],
+          answerImg: [hyperkalemia],
           answer:
             'カリウムイオンの濃度が細胞外液で高くなると、内向き整流性Kイオンチャネルなどが作用しなくなり、静止膜電位が高くなるとナトリウムチャネルが不活化されパルスが発生しなくなるから。',
           commentary: '',
@@ -195,7 +196,7 @@ export const useQuestionList = () => {
           questionSentence:
             '高カリウム血症の原因として、どのようなものが考えられるか？',
           choices: [],
-          answerImg: [],
+          answerImg: [hyperkalemia],
           answer: 'クラッシュ症候群、塩化カリウム製剤投与',
           commentary: '',
         },
@@ -205,7 +206,7 @@ export const useQuestionList = () => {
           questionSentence:
             '心拡張期は大動脈弁が閉鎖しているのに、なぜ、血圧が維持されるのか？',
           choices: [],
-          answerImg: [],
+          answerImg: [vessel],
           answer:
             '弾性動脈である大動脈は伸展性に富むため、収縮期に心臓から送り出された血液の一部は大動脈に貯留し、拡張期に縮みながら血液を末梢に送ることで血圧をある程度維持する。',
           commentary:
@@ -217,11 +218,11 @@ export const useQuestionList = () => {
           questionSentence:
             '緊張したときに、顔面蒼白、心悸亢進、体のほてりが生じるのはなぜか？',
           choices: [],
-          answerImg: [],
+          answerImg: [autonomicNerve],
           answer:
             '交感神経からのノルアドレナリン分泌によって皮膚の血管が収縮し、心拍出量が増え、熱放出量が減り、ほてりが生じる。',
           commentary:
-            '皮膚の血管を収縮させるのはα受容体、心拍出量が増えるのはβ1受容体。',
+            '皮膚の血管を収縮させるのはα1受容体、心拍出量が増えるのはβ1受容体。',
         },
         {
           detailInfo: 'レジュメ質問7/14',
@@ -229,7 +230,7 @@ export const useQuestionList = () => {
           questionSentence:
             '立ち眩みの際に、目の前が暗くなり、しばらくすると胸がドキドキするのはなぜか？',
           choices: [],
-          answerImg: [],
+          answerImg: [autonomicNerve],
           answer:
             '心臓からの拍出量が減り、脳へ行く血液量が減った後、脳への血流量低下を感知して心機能亢進が起こるから。',
           commentary:
@@ -243,7 +244,7 @@ export const useQuestionList = () => {
           choices: ['アミノ酸', 'イヌリン', 'ぶどう糖', 'アルブミン', '電解質'],
           answerImg: [],
           answer: 'アルブミン',
-          commentary: '',
+          commentary: '→ネフローゼ症候群',
         },
         {
           detailInfo: '7/26',
