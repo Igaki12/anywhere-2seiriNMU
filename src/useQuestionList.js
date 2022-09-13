@@ -365,6 +365,137 @@ export const useQuestionList = () => {
           commentary:
             'アニオンギャップが正常値なので尿細管性アシドーシスとなる。（Cl⁻が高いことが特徴）',
         },
+        {
+          detailInfo: '9/13出席Forms',
+          questionImg: [],
+          questionSentence: '細胞内受容体に結合するのはどれか',
+          choices: [
+            'グルカゴン',
+            '成長ホルモン',
+            'サイロキシン',
+            '抗利尿ホルモン',
+            'ガストリン',
+          ],
+          answerImg: [],
+          answer: 'サイロキシン',
+          commentary: 'サイロキシンはT₄',
+        },
+        {
+          detailInfo: '9/13出席Forms',
+          questionImg: [],
+          questionSentence: '体液量上昇で分泌されるのはどれか',
+          choices: [
+            'レニン',
+            'アルドステロン',
+            'Na利尿ペプチド',
+            'コルチコステロン',
+            '抗利尿ホルモン',
+          ],
+          answerImg: [],
+          answer: 'Na利尿ペプチド',
+          commentary: 'Naを体外へ排出するため。レニンなどは尿量を減らす',
+        },
+        {
+          detailInfo: '9/13出席Forms',
+          questionImg: [],
+          questionSentence: '下垂体後葉の異常でみられる疾患はどれか',
+          choices: [
+            'Cushing症候群',
+            '先端巨大症',
+            'プロラクチノーマ',
+            '中枢性尿崩症',
+          ],
+          answerImg: [],
+          answer: '中枢性尿崩症',
+          commentary: '尿崩症でADHが出るのか出ないのか　→出ない',
+        },
+        {
+          detailInfo: '9/13出席Forms',
+          questionImg: [],
+          questionSentence:
+            '下垂体茎の切断により血中で増大するホルモンはどれか？',
+          choices: [
+            'オキシトシン',
+            'バソプレシン',
+            'プロラクチン',
+            '副甲状腺ホルモン',
+            '甲状腺ホルモン',
+          ],
+          answerImg: [],
+          answer: '副甲状腺ホルモン',
+          commentary:
+            '甲状腺刺激ホルモンTSHは甲状腺濾胞細胞の分泌（カルシトニン）を促進するが、一方で副甲状腺（上皮小体）から分泌されるパラトルモンの分泌には影響しない？',
+        },
+        {
+          detailInfo: '9/13出席Forms',
+          questionImg: [],
+          questionSentence:
+            'Which set of findings is an inappropriate hypophysial(下垂体の) hormone response to the hypothalamic hormone listed?',
+          choices: [
+            'Somatostatin--GH↑',
+            'Dopamin--Prolactin↑',
+            'GnRH--LH↑',
+            'TRH--TSH↑',
+            'CRH--ACTH↑',
+          ],
+          answerImg: [],
+          answer: 'Dopamin--Prolactin↑',
+          commentary:
+            'DopaminはProlactin-Inhibiting Hormoneとも呼ばれ、PRL分泌抑制作用を持つ',
+        },
+        {
+          detailInfo: '9/13出席Forms',
+          questionImg: [],
+          questionSentence:
+            'GH secretion would most likely be suppressed under which condition ?',
+          choices: [
+            'Acromegaly',
+            'Gigantism',
+            'Deep sleep',
+            'Exercise',
+            'Acute hyperglycemia',
+          ],
+          answerImg: [],
+          answer: 'Acute hyperglycemia',
+          commentary:
+            'GHは抗インスリン作用により血糖値を上げる働きがあるため、高血糖Acute hyperglycemiaだとGHの分泌が抑制される。GH分泌は日内変動があり、運動時・睡眠初期に分泌が促進される。 Gigantism:巨人症、Acromegaly:先端巨大症',
+        },
+        {
+          detailInfo: '9/13　出席Forms',
+          questionImg: [],
+          questionSentence:
+            ' Which statement about antidiuretic hormone (ADH) is true?',
+          answerImg: [],
+          answer: 'It has opposite effects on urine and plasma osmolality.',
+          commentary:
+            'ADHは下垂体後葉で分泌されるが、合成は視床下部で行われる。のどの渇きを促すのは視床下部による働きであってADHではない。ADHが再吸収を促進するのは水だけ。ADHは尿浸透圧を上げる→血漿浸透圧を下げるという意味。尿浸透圧:urine and plasma osmolality',
+          choices: [
+            'It is synthesized in the posterior pituitary gland.',
+            'It stimulates thirst.',
+            'It increases salt and water reabsorption in the collecting tubules and ducts.',
+            'It has opposite effects on urine and plasma osmolality.',
+          ],
+        },
+        {
+          detailInfo: '9/13 反転授業症例1',
+          questionImg: [],
+          questionSentence:
+            '41歳の男性。38歳時に、Ⅱ型糖尿病と診断された。その後、薬物療法と、食事・運動療法を二年間行ったが、血糖コントロールが悪く、インスリン療法の開始を打診された。最近、頭痛が生じるようになってきた。また上肢に顔つきが変わったといわれ、自分でも下顎が突き出してきたように感じられる。また、昔はいていた靴がきつくなったという。家族には、いびきが目立つようになったといわれている。家族歴：糖尿病なし　身体所見：血圧135/85mmHg　血液生化学的検査：空腹時血糖180mg/dL(80~110が正常)、HbA1c7.2%(5.6%未満が正常)　(1)本症例の診断に重要な内分泌ホルモン検査を二つ挙げなさい。　(2)視野に見えない部分があるとのことで視野検査を行った。どのような所見が認められますか？　(3)本症例で最も疑われる診断名を一つあげよ。根拠となる身体所見・検査所見を挙げてください。　(4)本症例の外科的治療法と内果的治療法（ヒント：ホルモン療法）をあげよ。',
+          answerImg: [],
+          answer:
+            '(1)成長ホルモンGH・IGF-1、(2)両耳側半盲、(3)先端巨大症、(4)ソマトスタチン・インスリン投与',
+          commentary:
+            '下垂体腺腫によりGH過剰分泌が高血糖の原因（高インスリン作用）成長ホルモンが増えるとIGF-1（肝臓で産生）も増える。GHは日内変動（運動・睡眠により変動）があるため、日内変動がないIGF-1もセットで検査する。外側を見る神経は網膜内側→視索内側→視交叉内側を通過し、下垂体腺腫で圧迫されやすい。頭痛・下顎・足・いびき・血糖→GH過剰分泌（抗インスリン作用・体の変形）。※先端巨大症の75%が巨大舌を伴い、睡眠時無呼吸症候群を併発する。また、38%は頭痛も併発する。下垂体切除は鼻→蝶形骨洞→下垂体経由（経鼻的）手術する方法が開発されている。ソマトスタチン(GHIH)投与も治療に有効。',
+        },
+        // {
+        //   detailInfo: '9/13出席Forms',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   choices: ['', '', '', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
       ],
     },
     {
