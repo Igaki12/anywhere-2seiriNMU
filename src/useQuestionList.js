@@ -131,6 +131,7 @@ import clearanceExample from './img/answer/clearanceExample.png'
 import B20182 from './img/question/B20182.png'
 import lipidSynthesize from './img/answer/lipidSynthesize.png'
 import lipidAbsorption from './img/answer/lipidAbsorption.png'
+import insulinDM220914 from './img/question/insulinDM220914.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -487,8 +488,84 @@ export const useQuestionList = () => {
           commentary:
             '下垂体腺腫によりGH過剰分泌が高血糖の原因（高インスリン作用）成長ホルモンが増えるとIGF-1（肝臓で産生）も増える。GHは日内変動（運動・睡眠により変動）があるため、日内変動がないIGF-1もセットで検査する。外側を見る神経は網膜内側→視索内側→視交叉内側を通過し、下垂体腺腫で圧迫されやすい。頭痛・下顎・足・いびき・血糖→GH過剰分泌（抗インスリン作用・体の変形）。※先端巨大症の75%が巨大舌を伴い、睡眠時無呼吸症候群を併発する。また、38%は頭痛も併発する。下垂体切除は鼻→蝶形骨洞→下垂体経由（経鼻的）手術する方法が開発されている。ソマトスタチン(GHIH)投与も治療に有効。',
         },
+        {
+          detailInfo: '9/13出席Forms',
+          questionImg: [],
+          questionSentence:
+            'In the figure of the adrenal gland structure below, name the sites of production of Epinephrine (Adrenaline)',
+          choices: [
+            'Zona glomerulosa',
+            'The zone reticularis',
+            'Chromaffin cells',
+            'Beta cells of the islets of Langerhans',
+            'Zona fasciculata',
+          ],
+          answerImg: [],
+          answer: 'Chromaffin cells　（副腎髄質）',
+          commentary: '',
+        },
+        {
+          detailInfo: '9/14出席Forms',
+          questionImg: [],
+          questionSentence:
+            'A 55-year-old man has developed the syndrome of inappropriate antidiuretic hormone secretion (SIADH) due to carcinoma of the lung. Which physiological response would be expected?',
+          choices: [
+            'Increased plasma osmolality',
+            'Inappropriately low urine osmolality (relative to plasma osmolality)',
+            'Increased thirst',
+            'Decreased secretion of ADH from the pituitary gland',
+          ],
+          answerImg: [],
+          commentary:
+            'SIADHではADHの過剰分泌により水の再吸収が過剰になる。→血漿浸透圧が下がる、尿浸透圧が上がる、（ADH自体は渇きを誘発しないので）のどの渇きが増えるわけではない。正解は「下垂体からのADH分泌が（負のフィードバックにより）減る」。',
+          answer: 'Decreased secretion of ADH from the pituitary gland',
+        },
+        {
+          detailInfo: '9/14出席Forms',
+          questionImg: [],
+          questionSentence:
+            'Aldosterone secretion by the adrenal gland is stimulated by:',
+          choices: [
+            'Hypokalemia',
+            'high plasma Na+ concentration',
+            'Angiotensin II',
+            'Atrial natriuretic peptide',
+            'All of the above',
+          ],
+          answerImg: [],
+          answer: 'Angiotensin II',
+          commentary:
+            'Hypokalemia:低K血症。アルドステロンはNa吸収K分泌を促進するホルモン。レニン-アンギオテンシン-アルドステロン系はNa再吸収を進める事によって抗利尿作用を有する。',
+        },
+        {
+          detailInfo: '9/14出席Forms',
+          questionImg: [],
+          questionSentence:
+            'A patient presents with tachycardia and heat intolerance. You suspect Graves’ disease.Which of the following is NOT consistent with your diagnosis ?',
+          choices: [
+            'Increased total and free T₄',
+            'Suppressed plasma[TSH]',
+            'Exophthalmos(眼球突出)',
+            'Goiter',
+            'Decreased thyroid radioactive iodine uptake',
+          ],
+          answerImg: [],
+          answer: 'Decreased thyroid radioactive iodine uptake',
+          commentary:
+            'heat intolerance:暑さに弱い、Goiter:甲状腺腫、放射性ヨウ素取り込み量の減少Decreased radioactive iodine uptakeは起こらない（増加する）',
+        },
+        {
+          detailInfo: '9/14出席Forms',
+          questionImg: [insulinDM220914],
+          questionSentence:
+            'Based on the figure,which set of curves most likely reflects the responses in a healthy individual and in patients with type1 or type2 diabetes mellitus (DM)? 選択肢（左から Healthy -- Type1 DM -- Type2 DM）',
+          answerImg: [],
+          answer: 'Healthy→グラフ2番、Type1DM→3番、Type2→1番',
+          commentary:
+            '先天的なⅠ型糖尿病はそもそもインシュリン分泌が極端に少ない（3番）。後天的にインシュリン抵抗性が高くなったⅡ型糖尿病はインシュリンが効きにくいためインシュリンが分泌され続ける（1番）。正常ではインシュリン分泌により血糖値は下がるため、一定時間経過でインシュリン分泌は減る（2番）',
+        },
         // {
-        //   detailInfo: '9/13出席Forms',
+        //   detailInfo: '9/14出席Forms',
         //   questionImg: [],
         //   questionSentence: '',
         //   choices: ['', '', '', '', ''],

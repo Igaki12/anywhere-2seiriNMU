@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.42651e3a.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.d2c2891b.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -123,6 +123,7 @@
     "static/media/ecg33.png": "/anywhere-2seiriNMU/static/media/ecg33.48267d0378b4365aa7fa.png",
     "static/media/A201913.png": "/anywhere-2seiriNMU/static/media/A201913.76d61deb5770c31c74e9.png",
     "static/media/A201912.png": "/anywhere-2seiriNMU/static/media/A201912.65405ab03a639def7bb4.png",
+    "static/media/insulinDM220914.png": "/anywhere-2seiriNMU/static/media/insulinDM220914.abcfc5d719563006c3f6.png",
     "static/media/ecg16.png": "/anywhere-2seiriNMU/static/media/ecg16.c2dfedea96476d650637.png",
     "static/media/A201911.png": "/anywhere-2seiriNMU/static/media/A201911.8e379e8b47d2e16c0886.png",
     "static/media/ecg8.png": "/anywhere-2seiriNMU/static/media/ecg8.89fff2bf1aa4dd3b5063.png",
@@ -134,10 +135,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.42651e3a.js.map": "/anywhere-2seiriNMU/static/js/main.42651e3a.js.map"
+    "main.d2c2891b.js.map": "/anywhere-2seiriNMU/static/js/main.d2c2891b.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.42651e3a.js"
+    "static/js/main.d2c2891b.js"
   ]
 }
