@@ -564,6 +564,39 @@ export const useQuestionList = () => {
           commentary:
             '先天的なⅠ型糖尿病はそもそもインシュリン分泌が極端に少ない（3番）。後天的にインシュリン抵抗性が高くなったⅡ型糖尿病はインシュリンが効きにくいためインシュリンが分泌され続ける（1番）。正常ではインシュリン分泌により血糖値は下がるため、一定時間経過でインシュリン分泌は減る（2番）',
         },
+        {
+          detailInfo: '9/14出席Forms',
+          questionImg: [],
+          questionSentence:
+            'The function of which of the following is increased by an elevated parathyroid hormone concentration?',
+          choices: [
+            'Osteoclasts',
+            'Hepatic formation of 25-hydroxycholecalciferol(25OH-Vitamin D)',
+            'Phosphate reabsorptive pathways in the renal tubules',
+            'All the above',
+          ],
+          answerImg: [],
+          answer: 'Osteoclasts(破骨細胞)',
+          commentary:
+            'パラトルモンは破骨細胞活性化することにより血中Ca濃度↑。肝臓でのビタミンDの水酸化はホルモンによらず一定で起こる（そのため検査では最も正確に診断できる）。また、パラトルモンは腎臓でのリン酸再吸収を抑制する。',
+        },
+        {
+          detailInfo: '9/14出席Forms',
+          questionImg: [],
+          questionSentence:
+            'As menstruation(月経) ends, estrogen levels in the blood rise rapidly. What is the source of the estrogen?',
+          choices: [
+            'Corpus luteum(黄体)',
+            'Developing follicles',
+            'Endometrium(子宮内膜)',
+            'Stromal cells of the ovaries(卵巣の間質細胞)',
+            'Anterior pituitary gland',
+          ],
+          answerImg: [],
+          answer: 'Developing follicle(顆粒層細胞)',
+          commentary:
+            '黄体からは基本的にプロゲステロンが分泌される。プロゲステロンはエストロゲンを抑制するため、月経末期に黄体が退縮するとエストロゲン分泌は促進される。',
+        },
         // {
         //   detailInfo: '9/14出席Forms',
         //   questionImg: [],
