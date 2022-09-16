@@ -44,17 +44,41 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
         right={'5'}
         alignItems={'end'}
       >
-        <Button
-          color={'gray.600'}
-          variant="outline"
-          borderRadius={'lg'}
-          bgColor={'white'}
-          h="45px"
-          w={'45px'}
-          onClick={onOpen}
-        >
-          <SettingsIcon w={'25px'} h="25px" />
-        </Button>
+        {history[history.length - 1].remainingQuestionList.length > 0 ? (
+          <Button
+            // color={'gray.600'}
+            borderColor={'white'}
+            borderWidth="2px"
+            variant="solid"
+            borderRadius={'lg'}
+            // bgColor={'white'}
+            h="45px"
+            w={'45px'}
+            onClick={onOpen}
+            colorScheme="blackAlpha"
+            boxShadow="dark-lg"
+          >
+            <SettingsIcon w={'25px'} h="25px" color={'white'} />
+          </Button>
+        ) : (
+          <Button
+            color={'white'}
+            opacity="0.9"
+            borderColor={'white'}
+            borderWidth="2px"
+            variant="solid"
+            borderRadius={'lg'}
+            h="45px"
+            w={'45px'}
+            onClick={onOpen}
+            // bgColor="red"
+            background="linear-gradient(#e66465, green);"
+            // colorScheme="blackAlpha"
+            boxShadow="dark-lg"
+          >
+            <SettingsIcon w={'25px'} h="25px" color={'white'} />
+          </Button>
+        )}
       </Stack>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
@@ -93,14 +117,18 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
                 color="teal"
                 trackColor="gray.200"
                 value={
-                  (100 * (history[history.length - 1].questionNum - isAnsweredPoint)) /
+                  (100 *
+                    (history[history.length - 1].questionNum -
+                      isAnsweredPoint)) /
                   (history[history.length - 1].questionNum +
                     history[history.length - 1].remainingQuestionList.length)
                 }
               >
                 <CircularProgressLabel>
                   {Math.floor(
-                    (100 * (history[history.length - 1].questionNum - isAnsweredPoint)) /
+                    (100 *
+                      (history[history.length - 1].questionNum -
+                        isAnsweredPoint)) /
                       (history[history.length - 1].questionNum +
                         history[history.length - 1].remainingQuestionList
                           .length),
@@ -141,16 +169,19 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
         alignItems={'end'}
       >
         <Button
-          colorScheme="teal"
+          // colorScheme="teal"
+          bgColor={'teal'}
+          opacity="0.6"
           variant="solid"
           borderRadius={'full'}
           borderWidth="2px"
-          borderColor="white"
+          // borderColor="white"
           h="50px"
           w={'50px'}
           onClick={scrollToTheBottom}
+          boxShadow="dark-lg"
         >
-          <ChevronDownIcon w={'40px'} h="40px" />
+          <ChevronDownIcon w={'40px'} h="40px" color="white" />
         </Button>
       </Stack>
     </>

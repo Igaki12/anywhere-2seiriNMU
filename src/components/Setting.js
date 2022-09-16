@@ -260,6 +260,7 @@ export const Setting = ({
             </List>
             <Divider orientation="horizontal" mt={3} mb="1" />
             <Text>アップデート履歴</Text>
+            <Text fontSize={'sm'}>09-16_Ver1.3-ボタンを透明に</Text>
             <Text fontSize={'sm'}>
               09-08_Ver1.2-タブレット向けにデザイン調節
             </Text>
