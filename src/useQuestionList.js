@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 // import u from './img/question/スクリーンショット 2022-06-24 .png'
+
 import cardiacNerves from './img/answer/cardiacNerves.png'
 import synthesizeCatecholamine from './img/answer/synthesizeCatecholamine.png'
 import C2020m from './img/question/C2020m.png'
@@ -597,8 +598,58 @@ export const useQuestionList = () => {
           commentary:
             '黄体からは基本的にプロゲステロンが分泌される。プロゲステロンはエストロゲンを抑制するため、月経末期に黄体が退縮するとエストロゲン分泌は促進される。',
         },
+        {
+          detailInfo: '9/16出席Forms',
+          questionImg: [],
+          questionSentence: 'WHich change tends to increase GFR?',
+          choices: [
+            'Increased afferent arteriolar resistance',
+            'Decreased efferent arteriolar resistance',
+            'Increased glomerular capillary filtration coefficient',
+            'Increased Bowman’s capsule hydrostatic pressure',
+            'Decreased glomerular capillary hydrostatic pressure',
+          ],
+          answerImg: [],
+          answer: 'Increased glomerular capillary filtration coefficient',
+          commentary:
+            'afferent arteriole:輸入細動脈、efferent arteriole:輸出細動脈、coefficient:係数。ボウマン嚢の静水圧が高くなると、濾過量GFRは下がる...誤り。',
+        },
+        {
+          detailInfo: '9/16出席Forms',
+          questionImg: [],
+          questionSentence:
+            'A decrease in sodium (Na⁺) concentration in the distal tubule:',
+          choices: [
+            'promotes renin release from the juxtaglomerular cells',
+            'inhibits renin secretion from the macula densa',
+            'decreases constriction of teh efferent arteriole.',
+            'imcreases renin recretion from the macula densa',
+            'promotes ATP release from the juxtaglomerular cells',
+          ],
+          answerImg: [glomerularFiltration],
+          answer: 'promotes renin release from the juxtaglomerular cells',
+          commentary:
+            '緻密班macula densaはNa⁺濃度（Cl⁻濃度）を検知するだけで、レニンは輸入細動脈顆粒細胞juxtaglomerular cellsから分泌される',
+        },
+        {
+          detailInfo: '9/16出席Forms',
+          questionImg: [],
+          questionSentence:
+            'Use the following blood values to determine the acid^base disorder',
+          choices: [
+            'Metabolic alkalosis',
+            'Metabolic acidosis from acid gain',
+            'Respiratory acidosis',
+            'Metabolic acidosis from diarrhea',
+            'Respiratory alkalosis',
+          ],
+          answerImg: [anionGap],
+          answer: 'Metabolic acidosis from acid gain',
+          commentary:
+            'pHが7.4未満なのでacidosis。代謝性アシドーシスならHCO3低下。AG = [Na] - [Cl] - [HCO3] = 22（正常値より高い）',
+        },
         // {
-        //   detailInfo: '9/14出席Forms',
+        //   detailInfo: '9/16出席Forms',
         //   questionImg: [],
         //   questionSentence: '',
         //   choices: ['', '', '', '', ''],
