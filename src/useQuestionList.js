@@ -1,7 +1,9 @@
 import { useState } from 'react'
 
 // import u from './img/question/スクリーンショット 2022-06-24 .png'
-
+import TXA2PGI2 from './img/answer/TXA2PGI2.png'
+import secondMessengerIP3 from './img/answer/secondMessengerIP3.png'
+import RBundleBranchBlock from './img/answer/RBundleBranchBlock.png'
 import cardiacNerves from './img/answer/cardiacNerves.png'
 import synthesizeCatecholamine from './img/answer/synthesizeCatecholamine.png'
 import C2020m from './img/question/C2020m.png'
