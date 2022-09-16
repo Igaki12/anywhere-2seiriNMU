@@ -44,7 +44,8 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
         right={'5'}
         alignItems={'end'}
       >
-        {history[history.length - 1].remainingQuestionList.length > 0 ? (
+        {history[history.length - 1].remainingQuestionList.length > 0 ||
+        history[history.length - 1].isAnswered === false ? (
           <Button
             // color={'gray.600'}
             borderColor={'white'}
@@ -175,7 +176,7 @@ export const ControlPanel = ({ showSettingDetail, showHistory }) => {
           variant="solid"
           borderRadius={'full'}
           borderWidth="2px"
-          // borderColor="white"
+          borderColor="white"
           h="50px"
           w={'50px'}
           onClick={scrollToTheBottom}
