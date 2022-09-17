@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 
 // import u from './img/question/スクリーンショット 2022-06-24 .png'
 import TXA2PGI2 from './img/answer/TXA2PGI2.png'

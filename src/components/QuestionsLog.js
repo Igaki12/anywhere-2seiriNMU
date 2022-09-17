@@ -13,6 +13,7 @@ import {
   // useDisclosure,
   Collapse,
   Tooltip,
+  Skeleton,
 } from '@chakra-ui/react'
 import { ArrowDownIcon, RepeatIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { ResultBar } from './ResultBar'
@@ -110,6 +111,7 @@ export const QuestionsLog = ({
                         src={image}
                         alt="写真読み込みエラー"
                         key={index + imageNum + 'QuestionImage'}
+                        fallback={<Skeleton height="60px" />}
                       />
                     ))}
                   <Box p="6">
@@ -167,7 +169,11 @@ export const QuestionsLog = ({
                   key={index + 'AnswerBox'}
                 >
                   {question.answerImg.map((image) => (
-                    <Image src={image} alt="写真読み込みエラー" />
+                    <Image
+                      src={image}
+                      alt="写真読み込みエラー"
+                      fallback={<Skeleton height="60px" />}
+                    />
                   ))}
 
                   <Box p="6" pb={0}>
@@ -255,8 +261,9 @@ export const QuestionsLog = ({
               (image, imageNum) => (
                 <Image
                   src={image}
-                  alt="ERROR:この文章が見えた時は作成者に報告してください"
+                  alt="画像読み込みエラー"
                   key={imageNum + 'QuestionImage'}
+                  fallback={<Skeleton height="60px" />}
                 />
               ),
             )}
@@ -361,7 +368,11 @@ export const QuestionsLog = ({
               >
                 {history[history.length - 1].askingQuestion.answerImg.map(
                   (image) => (
-                    <Image src={image} alt="写真読み込みエラー" />
+                    <Image
+                      src={image}
+                      alt="写真読み込みエラー"
+                      fallback={<Skeleton height="60px" />}
+                    />
                   ),
                 )}
 
