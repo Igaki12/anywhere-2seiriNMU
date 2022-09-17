@@ -111,7 +111,7 @@ export const QuestionsLog = ({
                         src={image}
                         alt="写真読み込みエラー"
                         key={index + imageNum + 'QuestionImage'}
-                        fallback={<Skeleton height="200px" />}
+                        fallback={<Skeleton height={image.height} />}
                       />
                     ))}
                   <Box p="6">
@@ -172,7 +172,7 @@ export const QuestionsLog = ({
                     <Image
                       src={image}
                       alt="写真読み込みエラー"
-                      fallback={<Skeleton height="200px" />}
+                      fallback={<Skeleton height={image.height} />}
                     />
                   ))}
 
@@ -263,7 +263,7 @@ export const QuestionsLog = ({
                   src={image}
                   alt="画像読み込みエラー"
                   key={imageNum + 'QuestionImage'}
-                  fallback={<Skeleton height="200px" />}
+                  fallback={<Skeleton height={image.height} />}
                 />
               ),
             )}
@@ -371,7 +371,7 @@ export const QuestionsLog = ({
                     <Image
                       src={image}
                       alt="写真読み込みエラー"
-                      fallback={<Skeleton height="200px" />}
+                      fallback={<Skeleton height={image.height} />}
                     />
                   ),
                 )}
