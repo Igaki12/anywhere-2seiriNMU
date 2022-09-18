@@ -111,7 +111,9 @@ export const QuestionsLog = ({
                         src={image}
                         alt="写真読み込みエラー"
                         key={index + imageNum + 'QuestionImage'}
-                        fallback={<Skeleton height="60px" />}
+                        fallback={<Skeleton height="100px" />}
+                        ml="auto"
+                        mr={'auto'}
                       />
                     ))}
                   <Box p="6">
@@ -162,21 +164,25 @@ export const QuestionsLog = ({
                 <Box
                   maxW="2xl"
                   mb={'100px'}
-                  borderWidth="1px"
+                  borderWidth="2px"
+                  borderColor={'red.100'}
                   borderRadius="lg"
                   overflow="hidden"
                   bg={'red.100'}
                   key={index + 'AnswerBox'}
                 >
-                  {question.answerImg.map((image) => (
-                    <Image
-                      src={image}
-                      alt="写真読み込みエラー"
-                      fallback={<Skeleton height="60px" />}
-                    />
-                  ))}
+                  <Box w={'100%'} bgColor="white" m={0} p="0">
+                    {question.answerImg.map((image) => (
+                      <Image
+                        src={image}
+                        alt="写真読み込みエラー"
+                        fallback={<Skeleton height="100px" />}
+                        m="auto"
+                      />
+                    ))}
+                  </Box>
 
-                  <Box p="6" pb={0}>
+                  <Box p="4" pb={0}>
                     <Box display="flex" alignItems="baseline">
                       <Badge variant="solid" colorScheme="red">
                         解答
@@ -263,7 +269,7 @@ export const QuestionsLog = ({
                   src={image}
                   alt="画像読み込みエラー"
                   key={imageNum + 'QuestionImage'}
-                  fallback={<Skeleton height="60px" />}
+                  fallback={<Skeleton height="100px" />}
                 />
               ),
             )}
@@ -360,21 +366,24 @@ export const QuestionsLog = ({
             {history[history.length - 1].isAnswered ? (
               <Box
                 maxW="2xl"
-                borderWidth="1px"
+                borderWidth="2px"
+                borderColor={'red.100'}
                 borderRadius="lg"
                 overflow="hidden"
                 bg={'red.100'}
                 // className="DownSlideIn"
               >
-                {history[history.length - 1].askingQuestion.answerImg.map(
-                  (image) => (
-                    <Image
-                      src={image}
-                      alt="写真読み込みエラー"
-                      fallback={<Skeleton height="60px" />}
-                    />
-                  ),
-                )}
+                <Box w={'100%'} bgColor="white" m={0} p="0">
+                  {history[history.length - 1].askingQuestion.answerImg.map(
+                    (image) => (
+                      <Image
+                        src={image}
+                        alt="写真読み込みエラー"
+                        fallback={<Skeleton height="100px" />}
+                      />
+                    ),
+                  )}
+                </Box>
 
                 <Box p="6" pb={0}>
                   <Box display="flex" alignItems="baseline">
