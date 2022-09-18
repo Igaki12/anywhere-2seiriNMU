@@ -270,6 +270,8 @@ export const QuestionsLog = ({
                   alt="画像読み込みエラー"
                   key={imageNum + 'QuestionImage'}
                   fallback={<Skeleton height="100px" />}
+                  mr="0"
+                  ml="0"
                 />
               ),
             )}
