@@ -116,8 +116,8 @@ export const SearchWord = ({
           placeholder="キーワードを設定しさらに絞り込む"
           ref={inputEl}
           onKeyDown={(e) => {
-            if(e.key === "Enter"){
-              console.log("Enter Key down")
+            if (e.key === 'Enter') {
+              console.log('Enter Key down')
               addWordFilterTag()
               setPredictionText()
               checkSelection()
@@ -197,6 +197,7 @@ export const SearchWord = ({
                     duration: 9000,
                     isClosable: true,
                   })
+                  setPredictionText(`TAG: ${word} was deleted.`)
                   checkSelection()
                   // saveSetting(settingDetail)
                 }}
