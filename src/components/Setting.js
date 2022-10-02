@@ -25,6 +25,7 @@ import {
   useDisclosure,
   Flex,
   Spacer,
+  Skeleton,
 } from '@chakra-ui/react'
 import {
   CheckCircleIcon,
@@ -38,6 +39,7 @@ import { useState } from 'react'
 // import jsCookie from 'js-cookie'
 import titleImg from '../img/titleImg.png'
 export const Setting = ({
+  toast,
   questionList,
   loadData,
   history,
@@ -156,6 +158,7 @@ export const Setting = ({
           p="1"
           mb={-14}
           borderRadius="lg"
+          fallback={<Skeleton height={'100px'} />}
         />
         <Flex ml={4} mr="4">
           {checkMsg === '条件を満たした質問が存在しません' ? (
@@ -340,6 +343,7 @@ export const Setting = ({
             direction={['column']}
             bg="blackAlpha.100"
             p={2}
+            pl="4"
             mb="5"
           >
             {questionList.map((group, index) => (
@@ -358,15 +362,16 @@ export const Setting = ({
             ))}
           </Stack>
         </CheckboxGroup>
-        <SearchWord
-          showSettingDetail={showSettingDetail}
-          addWordFilter={addWordFilter}
-          deleteWordFilter={deleteWordFilter}
-          questionList={questionList}
-          checkSelection={checkSelection}
-          // saveSetting={saveSetting}
-        />
       </Box>
+      <SearchWord
+        toast={toast}
+        showSettingDetail={showSettingDetail}
+        addWordFilter={addWordFilter}
+        deleteWordFilter={deleteWordFilter}
+        questionList={questionList}
+        checkSelection={checkSelection}
+        // saveSetting={saveSetting}
+      />
       <Divider orientation="horizontal" maxW={'lg'} />
       <Text fontSize="xs" textColor={'blackAlpha.500'} ml="4">
         ©2022- IgaTatApps

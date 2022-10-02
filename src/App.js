@@ -1,5 +1,5 @@
 import './App.css'
-import { Box, Heading, Badge, Flex, Text } from '@chakra-ui/react'
+import { Box, Heading, Badge, Flex, Text,useToast } from '@chakra-ui/react'
 import { Setting } from './components/Setting'
 import { QuestionsLog } from './components/QuestionsLog'
 import { ControlPanel } from './components/ControlPanel'
@@ -11,6 +11,7 @@ import { useTechnicalTerm } from './useTechnicalTerm'
 // import jsCookie from 'js-cookie'
 
 function App() {
+  const toast = useToast()
   const { showQuestionList } = useQuestionList()
   const questionList = showQuestionList()
   const { showTechnicalTerm } = useTechnicalTerm()
@@ -93,6 +94,7 @@ function App() {
       ) : (
         <Box maxW={'lg'} mr="auto" ml={'auto'}>
           <Setting
+          toast={toast}
             questionList={questionList}
             loadData={loadData}
             history={history}
@@ -120,6 +122,7 @@ function App() {
           /> */}
             <QuestionsLog
               // questionList={questionList}
+              toast={toast}
               loadData={loadData}
               showHistory={showHistory}
               nextQuestion={nextQuestion}
