@@ -1,5 +1,5 @@
 import './App.css'
-import { Box, Heading, Badge, Flex, Text,useToast } from '@chakra-ui/react'
+import { Box, Heading, Badge, Flex, Text, useToast } from '@chakra-ui/react'
 import { Setting } from './components/Setting'
 import { QuestionsLog } from './components/QuestionsLog'
 import { ControlPanel } from './components/ControlPanel'
@@ -82,7 +82,7 @@ function App() {
           colorScheme="teal"
           variant={'outline'}
         >
-          Ver.1.3
+          Ver.1.4
         </Badge>
         <Badge m={1} mt="0" borderRadius="full" px="2" colorScheme="teal">
           第2生理学
@@ -94,7 +94,7 @@ function App() {
       ) : (
         <Box maxW={'lg'} mr="auto" ml={'auto'}>
           <Setting
-          toast={toast}
+            toast={toast}
             questionList={questionList}
             loadData={loadData}
             history={history}

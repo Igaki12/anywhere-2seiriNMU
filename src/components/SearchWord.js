@@ -115,6 +115,14 @@ export const SearchWord = ({
           type="text"
           placeholder="キーワードを設定しさらに絞り込む"
           ref={inputEl}
+          onKeyDown={(e) => {
+            if(e.key === "Enter"){
+              console.log("Enter Key down")
+              addWordFilterTag()
+              setPredictionText()
+              checkSelection()
+            }
+          }}
           onChange={() => {
             setPredictionText(inputEl.current.value)
           }}
