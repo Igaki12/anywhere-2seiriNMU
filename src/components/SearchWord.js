@@ -30,10 +30,100 @@ export const SearchWord = ({
   const settingDetail = showSettingDetail()
   const inputEl = useRef(null)
   const addWordFilterTag = () => {
-    if (inputEl.current.value === '') return
-    // ここに検索予測が０なら中止するコードを追加
-    addWordFilter(inputEl.current.value)
-    inputEl.current.value = ''
+    if (
+      inputEl.current &&
+      inputEl.current.value &&
+      inputEl.current.value.length > 0 &&
+      questionList.reduce((prevGroup, group) => {
+        return (
+          prevGroup +
+          group.groupContents.reduce((prev, question) => {
+            if (
+              question.detailInfo &&
+              question.detailInfo.indexOf(inputEl.current.value) > -1
+            )
+              return prev + 1
+            else if (
+              question.questionSentence &&
+              question.questionSentence.indexOf(inputEl.current.value) > -1
+            )
+              return prev + 1
+            else if (
+              question.answer &&
+              question.answer.indexOf(inputEl.current.value) > -1
+            )
+              return prev + 1
+            else if (
+              question.commentary &&
+              question.commentary.indexOf(inputEl.current.value) > -1
+            )
+              return prev + 1
+            else if (
+              question.choices &&
+              question.choices.every(
+                (choice) => choice.indexOf(inputEl.current.value) === -1,
+              ) === false
+            )
+              return prev + 1
+            else {
+              return prev
+            }
+          }, 0)
+        )
+      }, 0) > 0
+    ) {
+      addWordFilter(inputEl.current.value)
+      toast({
+        title: `絞り込みキーワード【${inputEl.current.value}】が追加されました`,
+        description: `場所:${questionList.reduce((prevGroup, group) => {
+          return (
+            prevGroup +
+            group.groupContents.reduce((prev, question) => {
+              if (prev && prev.indexOf(group.groupTag) === -1) {
+                return prev
+              }
+              if (
+                question.detailInfo &&
+                question.detailInfo.indexOf(inputEl.current.value) > -1
+              )
+                return prev + group.groupTag + '　'
+              else if (
+                question.questionSentence &&
+                question.questionSentence.indexOf(inputEl.current.value) > -1
+              )
+                return prev + group.groupTag + '　'
+              else if (
+                question.answer &&
+                question.answer.indexOf(inputEl.current.value) > -1
+              )
+                return prev + group.groupTag + '　'
+              else if (
+                question.commentary &&
+                question.commentary.indexOf(inputEl.current.value) > -1
+              )
+                return prev + group.groupTag + '　'
+              else if (
+                question.choices &&
+                question.choices.every(
+                  (choice) => choice.indexOf(inputEl.current.value) === -1,
+                ) === false
+              )
+                return prev + group.groupTag + '　'
+              else {
+                return prev
+              }
+            }, '')
+          )
+        }, '')}`,
+        status: 'success',
+        position: 'top',
+        duration: 15000,
+        isClosable: true,
+      })
+      inputEl.current.value = ''
+    } else {
+      return
+    }
   }
   return (
     <>
