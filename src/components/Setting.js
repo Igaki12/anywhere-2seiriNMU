@@ -55,7 +55,7 @@ export const Setting = ({
   deleteWordFilter,
   updateAllSettings,
   loadHistory,
-  loadedSetting,
+  technicalTerm,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const settingDetail = showSettingDetail()
@@ -371,7 +371,7 @@ export const Setting = ({
         deleteWordFilter={deleteWordFilter}
         questionList={questionList}
         checkSelection={checkSelection}
-        // saveSetting={saveSetting}
+        technicalTerm={technicalTerm}
       />
       <Divider orientation="horizontal" maxW={'lg'} />
       <Text fontSize="xs" textColor={'blackAlpha.500'} ml="4">

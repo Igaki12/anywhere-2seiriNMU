@@ -110,6 +110,7 @@ function App() {
             deleteWordFilter={deleteWordFilter}
             updateAllSettings={updateAllSettings}
             loadHistory={loadHistory}
+            technicalTerm={technicalTerm}
           />
         </Box>
       )}

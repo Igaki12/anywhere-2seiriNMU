@@ -13,8 +13,11 @@ import {
   WrapItem,
   Spacer,
   VisuallyHidden,
+  Box,
+  Button,
+  Collapse,
 } from '@chakra-ui/react'
-import { SearchIcon } from '@chakra-ui/icons'
+import { ChevronDownIcon, SearchIcon } from '@chakra-ui/icons'
 import { useRef, useState } from 'react'
 
 export const SearchWord = ({
@@ -24,8 +27,22 @@ export const SearchWord = ({
   showSettingDetail,
   questionList,
   checkSelection,
+  technicalTerm,
 }) => {
   const [predictionText, setPredictionText] = useState()
+  const [keywordCollapse, setKeywordCollapse] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ])
   // const [predictionNum, setPredictionNum] = useState(0)
   const settingDetail = showSettingDetail()
   const inputEl = useRef(null)
@@ -79,36 +96,36 @@ export const SearchWord = ({
           return (
             prevGroup +
             group.groupContents.reduce((prev, question) => {
-              if (prev && prev.indexOf(group.groupTag) === -1) {
+              if (prev && prev.indexOf(group.groupTag) > -1) {
                 return prev
               }
               if (
                 question.detailInfo &&
                 question.detailInfo.indexOf(inputEl.current.value) > -1
               )
-                return prev + group.groupTag + '　'
+                return prev + '　' + group.groupTag
               else if (
                 question.questionSentence &&
                 question.questionSentence.indexOf(inputEl.current.value) > -1
               )
-                return prev + group.groupTag + '　'
+                return prev + '　' + group.groupTag
               else if (
                 question.answer &&
                 question.answer.indexOf(inputEl.current.value) > -1
               )
-                return prev + group.groupTag + '　'
+                return prev + '　' + group.groupTag
               else if (
                 question.commentary &&
                 question.commentary.indexOf(inputEl.current.value) > -1
               )
-                return prev + group.groupTag + '　'
+                return prev + '　' + group.groupTag
               else if (
                 question.choices &&
                 question.choices.every(
                   (choice) => choice.indexOf(inputEl.current.value) === -1,
                 ) === false
               )
-                return prev + group.groupTag + '　'
+                return prev + '　' + group.groupTag
               else {
                 return prev
               }
@@ -116,7 +133,7 @@ export const SearchWord = ({
           )
         }, '')}`,
         status: 'success',
-        position: 'top',
+        position: 'top-right',
         duration: 15000,
         isClosable: true,
       })
@@ -283,7 +300,7 @@ export const SearchWord = ({
                   toast({
                     title: `【${word}】タグが消去されました`,
                     status: 'success',
-                    position: 'top',
+                    position: 'top-right',
                     duration: 9000,
                     isClosable: true,
                   })
@@ -296,6 +313,127 @@ export const SearchWord = ({
           </WrapItem>
         ))}
       </Wrap>
+      {technicalTerm && technicalTerm.length > 0 ? (
+        <>
+          <Box
+            w={'100%'}
+            borderRadius="sm"
+            bgColor="blackAlpha.700"
+            color="white"
+            fontSize="lg"
+            fontWeight="bold"
+            textAlign="center"
+            mt="2"
+            pt="1"
+          >
+            頻出キーワードを確認　
+            <ChevronDownIcon boxSize="1.5em" />
+          </Box>
+          <Wrap justify={'center'} pt="2" pb="8">
+            {technicalTerm
+              .reduce((prevTerm, term) => {
+                let newTag = {
+                  term: term.term[0],
+                  terms: term.term,
+                  explanation: term.explanation,
+                  isOpen: false,
+                  count: questionList.reduce((prevGroup, group) => {
+                    return (
+                      prevGroup +
+                      term.term.reduce((prev, currentTerm) => {
+                        if (prev > 0) {
+                          return 1
+                        } else {
+                          return group.groupContents.reduce(
+                            (prevQuestion, question) => {
+                              if (
+                                question.detailInfo &&
+                                question.detailInfo.indexOf(currentTerm) > -1
+                              )
+                                return prevQuestion + 1
+                              else if (
+                                question.questionSentence &&
+                                question.questionSentence.indexOf(currentTerm) >
+                                  -1
+                              )
+                                return prevQuestion + 1
+                              else if (
+                                question.answer &&
+                                question.answer.indexOf(currentTerm) > -1
+                              )
+                                return prevQuestion + 1
+                              else if (
+                                question.commentary &&
+                                question.commentary.indexOf(currentTerm) > -1
+                              )
+                                return prevQuestion + 1
+                              else if (
+                                question.choices &&
+                                question.choices.every(
+                                  (choice) =>
+                                    choice.indexOf(currentTerm) === -1,
+                                ) === false
+                              )
+                                return prevQuestion + 1
+                              else {
+                                return prevQuestion
+                              }
+                            },
+                            0,
+                          )
+                        }
+                      }, 0)
+                    )
+                  }, 0),
+                }
+                let newTagArray = [...prevTerm, newTag].sort(
+                  (a, b) => b.count - a.count,
+                )
+                if (newTagArray.length > 10) {
+                  console.log(newTagArray)
+                  return newTagArray.splice(0, 10)
+                } else {
+                  return newTagArray
+                }
+              }, [])
+              .map((tag, tagIndex) => {
+                return (
+                  <WrapItem>
+                    <Button
+                      size={'md'}
+                      key={tagIndex + 'searchTag2'}
+                      borderRadius="full"
+                      variant="outline"
+                      colorScheme={'blue'}
+                      onClick={() => {
+                        toast({
+                          title: `${tag.terms.join(' / ')}`,
+                          description: `${tag.explanation}`,
+                          status: 'info',
+                          // containerStyle: {
+                          //   maxWidth: 'sm',
+                          // },
+                          variant: 'left-accent',
+                          duration: 30000,
+                          isClosable: true,
+                          position: 'top-right',
+                        })
+                      }}
+                    >
+                      {/* <SearchIcon mr="1" /> */}
+                      {tag.term}
+                      {' ('}
+                      {tag.count}
+                      {')'}
+                    </Button>
+                  </WrapItem>
+                )
+              })}
+          </Wrap>
+        </>
+      ) : (
+        <></>
+      )}
     </>
   )
 }
