@@ -263,6 +263,7 @@ export const Setting = ({
             </List>
             <Divider orientation="horizontal" mt={3} mb="1" />
             <Text>アップデート履歴</Text>
+            <Text fontSize={'sm'}>10-03_Ver1.5-頻出キーワード確認を追加</Text>
             <Text fontSize={'sm'}>10-02_Ver1.4-キーワード検索を便利に</Text>
             <Text fontSize={'sm'}>09-16_Ver1.3-ボタンを透明に</Text>
             <Text fontSize={'sm'}>

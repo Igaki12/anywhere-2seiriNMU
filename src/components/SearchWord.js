@@ -340,33 +340,34 @@ export const SearchWord = ({
                   count: questionList.reduce((prevGroup, group) => {
                     return (
                       prevGroup +
-                      term.term.reduce((prev, currentTerm) => {
-                        if (prev > 0) {
-                          return 1
-                        } else {
-                          return group.groupContents.reduce(
-                            (prevQuestion, question) => {
+                      group.groupContents.reduce((prevQuestion, question) => {
+                        return (
+                          prevQuestion +
+                          term.term.reduce((prev, currentTerm) => {
+                            if (prev > 0) {
+                              return 1
+                            } else {
                               if (
                                 question.detailInfo &&
                                 question.detailInfo.indexOf(currentTerm) > -1
                               )
-                                return prevQuestion + 1
+                                return 1
                               else if (
                                 question.questionSentence &&
                                 question.questionSentence.indexOf(currentTerm) >
                                   -1
                               )
-                                return prevQuestion + 1
+                                return 1
                               else if (
                                 question.answer &&
                                 question.answer.indexOf(currentTerm) > -1
                               )
-                                return prevQuestion + 1
+                                return 1
                               else if (
                                 question.commentary &&
                                 question.commentary.indexOf(currentTerm) > -1
                               )
-                                return prevQuestion + 1
+                                return 1
                               else if (
                                 question.choices &&
                                 question.choices.every(
@@ -374,14 +375,13 @@ export const SearchWord = ({
                                     choice.indexOf(currentTerm) === -1,
                                 ) === false
                               )
-                                return prevQuestion + 1
+                                return 1
                               else {
-                                return prevQuestion
+                                return 0
                               }
-                            },
-                            0,
-                          )
-                        }
+                            }
+                          }, 0)
+                        )
                       }, 0)
                     )
                   }, 0),
