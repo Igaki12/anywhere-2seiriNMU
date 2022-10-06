@@ -1,6 +1,5 @@
 import {
   Input,
-  IconButton,
   Flex,
   Tag,
   TagLabel,
@@ -12,10 +11,8 @@ import {
   Wrap,
   WrapItem,
   Spacer,
-  VisuallyHidden,
   Box,
   Button,
-  Collapse,
 } from '@chakra-ui/react'
 import { ChevronDownIcon, SearchIcon } from '@chakra-ui/icons'
 import { useRef, useState } from 'react'
@@ -30,19 +27,6 @@ export const SearchWord = ({
   technicalTerm,
 }) => {
   const [predictionText, setPredictionText] = useState()
-  const [keywordCollapse, setKeywordCollapse] = useState([
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ])
   // const [predictionNum, setPredictionNum] = useState(0)
   const settingDetail = showSettingDetail()
   const inputEl = useRef(null)
@@ -389,9 +373,9 @@ export const SearchWord = ({
                 let newTagArray = [...prevTerm, newTag].sort(
                   (a, b) => b.count - a.count,
                 )
-                if (newTagArray.length > 10) {
+                if (newTagArray.length > 15) {
                   console.log(newTagArray)
-                  return newTagArray.splice(0, 10)
+                  return newTagArray.splice(0, 15)
                 } else {
                   return newTagArray
                 }
