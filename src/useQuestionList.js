@@ -1086,6 +1086,440 @@ export const useQuestionList = () => {
       ],
     },
     {
+      groupTag: '2022中間(短答)',
+      groupContents: [
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'ヘムはFe²⁺を含むポルフィリン環からなる',
+            'ヘム1つにつき、1つの酸素分子が結合する',
+            'ヘモグロビンは4つのサブユニットで構成され、各サブユニットに1つのヘムが存在する。',
+          ],
+          answerImg: [haemoglobin],
+          answer: 'すべて正しい',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '0.9%ぶどう糖溶液の浸透圧は、血漿浸透圧と等しい',
+            '2%食塩水1Lを血管内へ投与すると、細胞外液の増加・細胞内液の減少をきたす',
+            '純水1Lを血管内へ投与すると、細胞外液の増加・細胞内液の減少をきたす',
+          ],
+          answerImg: [dehydration],
+          answer:
+            '2%食塩水1Lを血管内へ投与すると、細胞外液の増加・細胞内液の減少をきたす',
+          commentary:
+            '浸透圧と等しいのは5%ブドウ糖溶液。純水を投与すると全体の浸透圧が下がる→細胞内液も増加する。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '樹状細胞の主たる役割は、炎症部位での壊死組織の除去である',
+            '細胞侵害性T細胞への抗原提示は、主にマクロファージにより行われる',
+            'ヘルパーT細胞は、CD4抗原が陽性である',
+          ],
+          answerImg: [CD4],
+          answer: 'ヘルパーT細胞は、CD4抗原が陽性である',
+          commentary:
+            '壊死組織を除去するのは主にマクロファージ。細胞障害性T細胞への抗原提示をするのは主に感染細胞。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'AIDS患者では、CD8陽性細胞が減少する',
+            '胸腺には、CD4とCD8がともに陽性の細胞が存在する',
+            'CD4はMHCクラスⅠ分子と結合する',
+          ],
+          answerImg: [CD4],
+          answer: '胸腺には、CD4とCD8がともに陽性の細胞が存在する',
+          commentary:
+            'AIDS患者ではCD4陽性細胞（ヘルパーT）が減少する。MHCクラス1分子と結合するのはCD8、クラスⅡ分子と結合するのがCD4。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'アスピリンは、血小板凝集を促進する',
+            'トロンボキサンA2は、血管拡張作用を有す',
+            'ワーファリンは、凝固因子Ⅱ、Ⅶ、Ⅸ、Ⅹのγ-カルボキシル化を促進する',
+          ],
+          answerImg: [TXA2PGI2],
+          answer: 'すべて誤り',
+          commentary:
+            'アスピリンは、血小板凝集を抑制する。トロンボキサンA2は、血管収縮作用を有す。ワーファリンは、凝固因子Ⅱ・Ⅶ・Ⅸ・Ⅹのγ-カルボキシル化（修飾）を抑制することで凝固を防ぐ。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'Crush症候群では、低カリウム血症をきたす。',
+            '低アルブミン血症では、結晶膠原浸透圧が上昇する',
+            '血液のpHの正常値は、7.2±0.05である',
+          ],
+          answerImg: [],
+          answer: 'すべて誤り',
+          commentary:
+            'Crush症候群では細胞破壊により高カリウム血症をきたす。低アルブミン血症では、血漿膠原浸透圧が低下する。血液のpHの正常値は、7.4±0.05である。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '再生不良性貧血では、血小板は減少しない',
+            '鉄欠乏性貧血では、正球性低色素性貧血をきたす',
+            '出血性貧血では、末梢血中の網状赤血球数が低下する',
+          ],
+          answerImg: [],
+          answer: 'すべて誤り',
+          commentary:
+            '再生不良性貧血では、血小板は減少する。鉄欠乏性貧血では、小球性低色素性貧血をきたす。出血性貧血では、末梢血中の網状赤血球数が上昇する',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '悪性貧血では、赤血球が小型化する',
+            'HbFは、HbAよりも酸素結合能が高い',
+            '間接ビリルビンは、血中でアルブミンと結合している',
+          ],
+          answerImg: [],
+          answer:
+            'HbFは、HbAよりも酸素結合能が高い / 間接ビリルビンは、血中でアルブミンと結合している',
+          commentary: '悪性貧血では、赤血球が大型化する。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'Superoxide dismutase(SOD)は、酵素からsuperoxideが生成される反応を触媒する',
+            '抗体のFc領域は、抗原を認識する機能を担う。',
+            'IgMは、IgGよりも補体活性化能が高い。',
+          ],
+          answerImg: [superoxide],
+          answer: 'IgMは、IgGより補体活性化能が高い',
+          commentary:
+            'SODはSuperoxideをH₂O₂に変える反応の触媒。抗体のFa・Fb領域が抗原を認識する。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '抗体の多様性は、遺伝子再構成により獲得される',
+            'G-CSFの主たる機能は、マクロファージの増殖促進である',
+            '胎児期には、肝臓と脾臓で造血を認める',
+          ],
+          answerImg: [hematopoiesis],
+          answer:
+            '抗体の多様性は、遺伝子再構成により獲得される。 / 胎児期には、肝臓と脾臓で造血を認める',
+          commentary: 'G-CSF:Glanurocyte(→好中球) Stimulate Factor',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'プルキンエ線維がペースメーカーとなった場合、正常時に比べて心拍数は増加する',
+            '心電図でⅠ誘導を記録するとき、左腕は陰極になる',
+            '心電図でⅡ誘導を記録するとき、右腕は陽極になる',
+          ],
+          answerImg: [coronalPlane],
+          answer: 'すべて誤り',
+          commentary:
+            'プルキンエ線維のペースは正常より遅い（30/min）。心電図でⅠ誘導を記録するとき、左腕は陽極（右腕が陰極）になり、Ⅱ誘導を記録するとき、右腕は陰極（左脚が陽極）になる。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '等容性弛緩期の終わりには、僧帽弁が閉鎖する',
+            '等容性収縮期の終わりには、大動脈弁が開放する',
+            'Ⅱ音は、駆出期の開始時に聴取される',
+          ],
+          answerImg: [],
+          answer: '等容性収縮期の終わりには、大動脈弁が開放する',
+          commentary:
+            '→心房収縮期→等容性収縮期→（動脈弁開く）→駆出期→（動脈弁閉じる）→等容性弛緩期→（房室弁開く）→充満期→（房室弁閉じる）→。Ⅱ音は、駆出期のおわりに聴取される。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '大動脈弁は、肺動脈弁の前方に位置する。',
+            'ニトログリセリンは、前負荷を軽減するが、後負荷へは影響しない',
+            '心筋梗塞には、ニトログリセリンが著効する',
+          ],
+          answerImg: [],
+          answer: 'すべて誤り',
+          commentary:
+            '大動脈弁は、肺動脈弁の後方に位置する。ニトログリセリンは前負荷と後負荷を軽減する（血管抵抗を下げることで駆出しやすくする）。狭心症にはニトログリセリンが著効するが、心筋梗塞に対しては効果はない',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '下半身と右上半身のリンパ管は胸管へ合流する',
+            '洞房結節の脱分極は、P波として計測される',
+            '房室結節は、田原の結節とも呼ばれる',
+          ],
+          answerImg: [cardiacPotential],
+          answer: '洞房結節/AV nodeは、田原の結節とも呼ばれる',
+          commentary:
+            '胸管へ合流するのは下半身と左上半身。洞房結節では伝達速度が遅いため脱分極は計測されない。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'L-DOPAは、チロシンから合成される',
+            'アドレナリンは、ノルアドレナリンから合成される',
+            'ドーパミンは、パーキンソン病の治療薬として用いられる',
+          ],
+          answerImg: [synthesizeCatecholamine],
+          answer:
+            'L-DOPAは、チロシンから合成される / アドレナリンは、ノルアドレナリンから合成される',
+          commentary:
+            'ドーパミンは血液脳関門BBBを通過できないため、パーキンソン病ではL-DOPAが用いられる',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'α1アドレナリン受容体が刺激されると、末梢血管が弛緩して血圧が低下する',
+            'β1アドレナリン受容体が刺激されると、心拍出量が増加する',
+            'β2アドレナリン受容体が刺激されると、気管支平滑筋が収縮する',
+          ],
+          answerImg: [sympatheticNerve],
+          answer: 'β1アドレナリン受容体が刺激されると、心拍出量が増加する',
+          commentary:
+            'α1アドレナリン受容体が刺激されると末梢血管は収縮する。β2アドレナリン受容体が刺激されると気管支平滑筋は弛緩する。',
+        },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence: '',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+      ],
+    },
+    {
       groupTag: '2020中間(記述以外)',
       groupContents: [
         {
