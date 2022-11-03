@@ -1511,11 +1511,88 @@ export const useQuestionList = () => {
           commentary:
             '肺胞壁の毛細血管は肺実質ではなく間質。外肋間筋が収縮するのは吸気時。健常者の動脈血のCO₂濃度は約40mmHgである。',
         },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'ミオグロビンは、ヘモグロビンよりも酸素親和度性が高い',
+            '2,3-DPGは、ヘモグロビンの酸素解離曲線を右方へ移動させる',
+            '静脈血には、動脈血に比べて、より多くの二酸化炭素が溶解する',
+          ],
+          answerImg: [CDDC],
+          answer: 'すべて正しい',
+          commentary:
+            '2,3-DPGは解糖系の中間産物から生成される→代謝が活発なところでは酸素を手放す傾向。このようにして酸素濃度が下がった血液には二酸化炭素が溶けやすい。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '頚動脈小体は、二酸化炭素分圧よりも酸素分圧の方を鋭敏に感知する',
+            '呼吸状態を感知する中枢化学受容器は、延髄の背側に存在する',
+            '正常時は、中枢化学受容器よりも頚動脈小体の方が、呼吸調節への寄与が大きい',
+          ],
+          answerImg: [autonomicNerve],
+          answer:
+            '頚動脈小体は、二酸化炭素分圧よりも酸素分圧の方を鋭敏に感知する',
+          commentary:
+            '呼吸状態を感知する中枢化学受容器は、延髄の腹側に存在。正常時は頚動脈小体の方が呼吸調節への寄与が大きい。延髄腹側の中枢化学受容器は、二酸化炭素分圧を主に感知している。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '胃がんにおいて、進行がんとは粘膜層を超えて粘膜下層に到達したものをいう。',
+            '消化管の振子運動は食道から直腸までの消化管全域でみられる',
+            '腸管の輪状平滑筋層と縦走平滑筋層の間に存在しているアウエルバッハ神経叢は、主に消化管運動を調節している。',
+          ],
+          answerImg: [gastricCancer],
+          answer:
+            '腸管の輪状平滑筋層と縦走平滑筋層の間に存在しているアウエルバッハ神経叢は、主に消化管運動を調節している。',
+          commentary:
+            'アウエルバッハ神経叢は輪状平滑筋層と縦走平滑筋層に線維を伸ばす。粘膜下層までの胃がんは早期がんで、消化管の振子運動は胃から直腸まででみられる',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '胃の主細胞から分泌される粘液は、胃酸から上皮細胞を守るバリアとして働く。',
+            '膵液中の消化酵素はpH8~9で活性が最大となる',
+            'ヒスタミンH₂受容体拮抗薬は、ECL細胞上のH₂受容体を遮断することで、胃酸分泌を抑制する',
+          ],
+          answerImg: [parietalCell],
+          answer: '膵液中の消化酵素はpH8~9で活性が最大となる',
+          commentary:
+            '膵液にはHCO₃⁻が多く含まれ胃酸を中和する。胃の粘液は副細胞から分泌される。ヒスタミンに対するH₂受容体は、壁細胞上に存在する',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '十二指腸のK細胞から分泌されるコレシストキニンは、胆嚢を収縮させて胆汁を分泌させる',
+            '全消化管壁のH細胞から分泌される血管作動性腸ポリペプチドVIPは胃酸分泌を促進する',
+            'S細胞から分泌されるセクレチンは、HCO₃⁻に富んだ膵液を分泌させ、胃酸の中和を行う',
+          ],
+          answerImg: [digestiveSecretion],
+          answer:
+            'S細胞から分泌されるセクレチンは、HCO₃⁻に富んだ膵液を分泌させ、胃酸の中和を行う',
+          commentary:
+            'コレシストキニンは十二指腸を通る食物に反応して十二指腸のI細胞から分泌され、胆汁だけでなく酵素に富んだ膵液も分泌させる。血管作動性腸ポリペプチドVIPは胃酸分泌を抑制する。セクレチンは主に胃酸に反応して分泌が促進され、膵液のHCO₃⁻分泌を促進させる。',
+        },
         // {
         //   detailInfo: '',
         //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
         //   choices: ['', '', ''],
         //   answerImg: [],
         //   answer: '',
@@ -1524,8 +1601,7 @@ export const useQuestionList = () => {
         // {
         //   detailInfo: '',
         //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
         //   choices: ['', '', ''],
         //   answerImg: [],
         //   answer: '',
@@ -1534,8 +1610,7 @@ export const useQuestionList = () => {
         // {
         //   detailInfo: '',
         //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
         //   choices: ['', '', ''],
         //   answerImg: [],
         //   answer: '',
@@ -1544,18 +1619,43 @@ export const useQuestionList = () => {
         // {
         //   detailInfo: '',
         //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
         //   choices: ['', '', ''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
-
         // {
         //   detailInfo: '',
         //   questionImg: [],
-        //   questionSentence: '',
+        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+        //   choices: ['', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
         //   choices: ['', '', ''],
         //   answerImg: [],
         //   answer: '',
