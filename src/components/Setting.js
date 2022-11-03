@@ -376,7 +376,7 @@ export const Setting = ({
       />
       <Divider orientation="horizontal" maxW={'lg'} />
       <Text fontSize="xs" textColor={'blackAlpha.500'} ml="4">
-        ©2022- IgaTatApps
+        Supported by Y.Kobayashi ©2022- IgaTatApps
       </Text>
     </>
   )
