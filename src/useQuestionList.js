@@ -1086,7 +1086,7 @@ export const useQuestionList = () => {
       ],
     },
     {
-      groupTag: '2022中間(短答)',
+      groupTag: '2022中間(記述以外)',
       groupContents: [
         {
           detailInfo: '',
@@ -1329,126 +1329,188 @@ export const useQuestionList = () => {
           commentary:
             'α1アドレナリン受容体が刺激されると末梢血管は収縮する。β2アドレナリン受容体が刺激されると気管支平滑筋は弛緩する。',
         },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '洞房結節では、心室筋に比べて、内向き整流性K⁺チャネルの発現量が少ない',
+            '心室筋へのCa²⁺の流入は、主にT型Ca²⁺チャネルの開口に依存する',
+            '心室筋の静止電位のことを、ペースメーカー電位と呼ぶ',
+          ],
+          answerImg: [actionPotential],
+          answer:
+            '洞房結節では、心室筋に比べて、内向き整流性K⁺チャネルの発現量が少ない',
+          commentary:
+            '心室筋へのCa²⁺流入は主にL型(Long-lasting)Ca²⁺チャネル。洞房結節の静止電位をペースメーカーとよび、自動能にかかわる。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '心室筋では、cAMPを介してAキナーゼが活性化される',
+            '心室筋で活性化されたAキナーゼは、電位依存性Ca²⁺チャネルをリン酸化する',
+            '心室筋で活性化されたAキナーゼは、トロポニンIをリン酸化する',
+          ],
+          answerImg: [vasorelaxation],
+          answer: 'すべて正しい',
+          commentary: 'Aキナーゼは別名cAMP依存型プロテインキナーゼ。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '左冠動脈では、収縮期より弛緩期に血流量が増える',
+            'アデノシンは冠動脈血流を増加させる',
+            '心室筋の虚血は、心外膜側に比べて心内膜側の方で生じやすい。',
+          ],
+          answerImg: [],
+          answer: 'すべて正しい',
+          commentary:
+            '冠動脈は収縮期に圧迫されるため、弛緩期の方が流量がおおい。アデノシンは運動時などに増え、冠動脈血流を増加させる。心臓の構造上外側より内側のほうが圧迫を受けやすく、虚血しやすい。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '乱流は、大動脈よりも細動脈の方で生じやすい',
+            'プロスタサイクリンは血管収縮作用を有す',
+            'ニトログリセリンは、細胞内のcGMPの増加を介して血管を拡張させる',
+          ],
+          answerImg: [vasorelaxation],
+          answer:
+            'ニトログリセリンは、細胞内のcGMPの増加を介して血管を拡張させる',
+          commentary:
+            '乱流と層流の違い。プロスタサイクリン(PGI₂)はアラキドン酸から合成され血管拡張作用を有す。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'ANPは心房圧の上昇時に分泌される',
+            'ANPは腎臓からのナトリウム排泄を阻害する',
+            'ANPは、尿量を低下させる作用を有す。',
+          ],
+          answerImg: [ANP],
+          answer: 'ANPは、心房圧の上昇時に分泌される',
+          commentary:
+            'ANPは心房圧を低減させるため、腎臓からのNa⁺排出を促進→尿量を増加させる作用を持つ',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'アンギオテンシン変換酵素阻害薬を投与している患者では、血漿レニン濃度が低下する',
+            'バソプレシンの分泌が低下すると、尿量が増加する',
+            '肝類洞内皮細胞は物質の透過性が高く、アルブミンも通過できる',
+          ],
+          answerImg: [kidneyFloodControl],
+          answer:
+            'バソプレシン(ADH)の分泌が低下すると尿量が増加する / 肝類洞内皮細胞は物質の透過性が高く、アルブミンも通過できる',
+          commentary:
+            'アンギオテンシン変換酵素ACEを阻害するとアンギオテンシンⅡが生成されなくなり、負のフィードバックがなくなって血漿レニン濃度は亢進する。肝臓は代謝の臓器。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '動脈硬化症では、脈波の伝達速度が低下する',
+            '動脈硬化症では、動脈のコンプライアンスが低下する',
+            '末梢血管が収縮すると、最低血圧よりも最高血圧が優位に上昇する',
+          ],
+          answerImg: [vessel],
+          answer: '動脈硬化症では、動脈のコンプライアンス（柔軟性）が低下する',
+          commentary:
+            '動脈硬化症では、脈波の伝達速度が速くなる。末梢血管抵抗が拍出時負荷（後負荷/最低血圧）を決める。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '腎糸球体の毛細血管は、有窓型である',
+            '小腸粘膜の毛細血管は、連続型である',
+            '骨髄の毛細血管は、不連続型（洞様）である',
+          ],
+          answerImg: [glomeruli],
+          answer:
+            '腎糸球体の毛細血管は、有窓型である / 骨髄の毛細血管は、不連続型（洞様）である',
+          commentary: '小腸粘膜の毛細血管は有窓型。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '換気血流比は、肺底部よりも肺尖部のほうが低い',
+            '肺底部では、呼吸時に血流が途絶する',
+            '低酸素性肺血管収縮は、換気血流比不均衡の調節に関与する',
+          ],
+          answerImg: [ventilationPerfusionRatio],
+          answer: '低酸素性肺血管収縮は、換気血流比不均衡の調節に関与する',
+          commentary:
+            '肺の毛細血管は低酸素に陥ると収縮する。血流量は肺底部の方が多いが、肺底部は自重で圧迫されて空気が途絶しやすく、換気効率はそれほど良くない。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            'Caput Medusaeは、門脈圧亢進症の特徴的な所見である',
+            '門脈圧亢進症を放置すると、吐血をきたす危険性が高まる',
+            '二酸化炭素分圧の上昇は、脳血管の拡張を促進する',
+          ],
+          answerImg: [portalHypertension],
+          answer: 'すべて正しい',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '肺サーファクタントが欠乏すると、肺胞表面張力の増加と肺コンプライアンスの減少を招く',
+            'Hering-Breuer反射の求心性終末は、横隔膜に存在する',
+            'Cheyne-Stokes呼吸は、糖尿病性ケトアシドーシスの特徴的所見である',
+          ],
+          answerImg: [respiratoryReflex],
+          answer:
+            'サーファクタントが欠乏すると、肺胞表面張力の増加と肺コンプライアンス(拡張しやすさ)の減少を招く',
+          commentary:
+            'Hering-Breuer反射の求心性終末は、気管支に存在する。糖尿病性ケトアシドーシスではKussmaul(クスマウル)呼吸がみられる。Cheyne-Strokes呼吸は心不全',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
+          choices: [
+            '肺胞壁の毛細血管は、肺実質の構成要素である',
+            '呼吸時には、外肋間筋が収縮する',
+            '健常者の動脈血の二酸化炭素分圧は、約50mmHgである',
+          ],
+          answerImg: [gasPressure],
+          answer: 'すべて誤り',
+          commentary:
+            '肺胞壁の毛細血管は肺実質ではなく間質。外肋間筋が収縮するのは吸気時。健常者の動脈血のCO₂濃度は約40mmHgである。',
+        },
         // {
         //   detailInfo: '',
         //   questionImg: [],
