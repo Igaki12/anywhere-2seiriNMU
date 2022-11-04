@@ -1,6 +1,9 @@
 ﻿import { useState } from 'react'
 
 // import u from './img/question/スクリーンショット 2022-06-24 .png'
+import laplace from './img/answer/laplace.png'
+import glucose from './img/answer/glucose.png'
+import opsonization from './img/answer/opsonization.png'
 import TXA2PGI2 from './img/answer/TXA2PGI2.png'
 import secondMessengerIP3 from './img/answer/secondMessengerIP3.png'
 import RBundleBranchBlock from './img/answer/RBundleBranchBlock.png'
@@ -1666,33 +1669,217 @@ export const useQuestionList = () => {
           commentary:
             '体温調節中枢は視床下部に存在するが、冷ニューロンは冷温を感知し、温ニューロンは高温を感知する。深部体温は睡眠中に最も低くなる。血中メラトニン値には日内変動があるが、睡眠中に最も高い値を示す。',
         },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence: '正しい選択肢を選べ（複数選択可/すべて誤りの場合もある）',
-        //   choices: ['', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'ヘパリンは（　）を活性化することで血液凝固を阻害する',
+          answerImg: [coagulation],
+          answer: 'アンチトロンビンⅢ',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '侵入微生物に免疫グロブリンや補体が結合して、免疫細胞に容易に認識されるようにすることを（　）とよぶ。',
+          answerImg: [opsonization],
+          answer: 'オプソニン作用',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '寄生虫感染症では血液中の（　）球の増加を認めることが多い',
+          answerImg: [],
+          answer: '好酸球',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '（　）は、赤血球から放出されたヘモグロビンを運搬する血漿タンパクである',
+          answerImg: [],
+          answer: 'ハプトグロビン',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '（　）因子は、血小板とコラーゲンを架橋する',
+          answerImg: [vonWillebrand],
+          answer: 'フォン・ウィルブランド因子',
+          commentary: 'コラーゲン側の因子',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '（　）は、フィブリノゲンをフィブリンへ変換する',
+          answerImg: [coagulation],
+          answer: 'トロンビン',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '直接ビリルビンは、肝臓での（　）抱合により生成される',
+          answerImg: [bilirubin],
+          answer: 'グルクロン酸',
+          commentary: '直接ビリルビン=抱合型ビリルビン。水溶性。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '鎌状赤血球症は（　）の多発地域に多い',
+          answerImg: [],
+          answer: 'マラリア',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '心筋細胞の再興奮に基づいて起こる不整脈発生メカニズムを（　）という。',
+          answerImg: [reentry],
+          answer: 'リエントリ',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '不整脈により心拍出量の急激な減少をきたし、それに伴う脳血流量減少によりめまい・意識消失・痙攣などの一過性の脳虚血症状を引き起こした病態を（　）症候群という。',
+          answerImg: [],
+          answer: 'Adams-Stroke症候群',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '心室筋の筋小胞体の膜には（　）受容体があり、Ca²⁺-induced Ca²⁺ releaseに関与する',
+          answerImg: [],
+          answer: 'リアノジン',
+          commentary:
+            'CICP：T細管の電位依存性Ca²⁺チャネルからCa²⁺が放出されることで、三つ組を構成する筋小胞体からCa²⁺が放出される現象。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'Frank-Starlingの心臓の法則にもとづくと、左心室の前負荷が高まると（　）が増加する',
+          answerImg: [],
+          answer: '心拍出量',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'ある患者の酸素消費量が260mL/minであり、肺静脈酸素濃度が180mL/L、肺動脈酸素濃度が160mL/Lであった時、心拍出量は（　）L/minである。',
+          answerImg: [],
+          answer: '13',
+          commentary:
+            '肺を通過することで酸素が血液1Lあたり20mL供給された。一方で肺で酸素は1分間に260mL消費された。→血液は1分間で13L動いた',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '腎臓は（　）を活性化することで、体内のカルシウム量の維持に寄与する',
+          answerImg: [],
+          answer: 'ビタミンD',
+          commentary: '腎臓では1位が水酸化される',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '（　）は、phosphatidylinositol 4,5-bisphosphate(PIP₂)を、diacylglycerol(DG)とinositol trisphosphate(IP₃)に分解する酵素である',
+          answerImg: [vasoconstriction],
+          answer: 'PLC(ホスホリパーゼC)',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'DGは、（　）を活性化する。（　）内に適切な酵素名を記入せよ。',
+          answerImg: [vasoconstriction],
+          answer: 'PKC（Cキナーゼ）',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '血管平滑筋を収縮させる活性を有す物質をすべて選べ。（　）',
+          answerImg: [vasoconstriction],
+          choices: [
+            'angiotensinII',
+            'bradykinin',
+            'BNP',
+            'adrenomedulin',
+            'noradrenaline',
+          ],
+          answer: 'angiotensinII、noradrenaline',
+          commentary: '他の選択肢はすべて血管平滑筋を弛緩させる。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '肺胞換気量は、1回換気量から（　）を引いた値である',
+          answerImg: [],
+          answer: '死腔量',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'ラプラスの法則によれば、肺胞の内圧と肺胞の（　）は、逆相関する。',
+          answerImg: [laplace],
+          answer: '半径',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '膵臓のD細胞から分泌される（　）は、ガストリン・セクレチン・インスリン・グルカゴンの分泌を抑制する。（　）内に適切なホルモンの名称を記載せよ。',
+          answerImg: [],
+          answer: 'ソマトスタチン',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '肝臓でビタミンAを貯蔵する細胞は、（　）細胞である',
+          answerImg: [],
+          answer: '星/肝星/伊東細胞',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '単糖類のフルクトースは、基底膜上の輸担体（　）によって、小腸粘膜上皮細胞から血管へと輸送される。',
+          answerImg: [glucose],
+          answer: 'GLUT2',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'H.pyloriはウレアーゼを分泌し、（ a ）から（ b ）を産生することで、胃酸を中和できる。aとbに適切な物質名を記載せよ。',
+          answerImg: [],
+          answer: 'a.尿素　b.アンモニア',
+          commentary: '尿素回路の逆',
+        },
         // {
         //   detailInfo: '',
         //   questionImg: [],
@@ -1702,6 +1889,92 @@ export const useQuestionList = () => {
         //   answer: '',
         //   commentary: '',
         // },
+      ],
+    },
+    {
+      groupTag: '2022中間記述',
+      groupContents: [
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '強心配糖体が心筋収縮力を上昇させる機序を述べよ',
+          answerImg: [cardiacIonChannel],
+          answer:
+            '強心配糖体はNa⁺/K⁺ ATPaseの活動を阻害し、細胞内Na⁺濃度を高めることでNa⁺Ca²⁺対向輸送体(NCX)の活動を抑制する。これによって細胞内Ca²⁺の排出が抑制され、細胞内Ca²⁺濃度が上昇し心筋収縮力が上昇する。',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '左心不全の患者が、夜間に急に呼吸困難を訴えた。原因として考えられることを述べよ。',
+          answerImg: [],
+          answer: '左心不全で肺から心臓への血流が滞ったこと。',
+          commentary: '肺にうっ血/肺水腫',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '大動脈弁が閉鎖しても血流が途絶しないのはなぜか。',
+          answerImg: [vessel],
+          answer:
+            '収縮期の血流が弾性に富む大動脈を拡張させて蓄えられ、大動脈弁が閉鎖された後にこの血液が流れることで、大動脈弁が閉鎖しても血流や血圧を維持することができる。',
+          commentary:
+            'ポンプ作用。これを問う問題は、確認した範囲では毎年出題されている',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '1万人に1人の発症率の常染色体劣性遺伝病について、人口に占めるキャリア（保因者）の頻度を、計算過程とともに記せ。',
+          answerImg: [calculateCareer],
+          answer: '50人に1人',
+          commentary:
+            '異常遺伝子aを引く確率が100人に1人、これが父親or母親から来る確率はその二倍。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '胃切除後は脂肪の消化が困難になる。この理由について、簡潔に説明せよ。',
+          answerImg: [lipidAbsorption],
+          answer:
+            '脂肪は胃で攪拌され、脂肪小滴になることで膵リパーゼが作用し消化できるから。',
+          commentary:
+            '脂肪は難溶性である一方で、脂肪分解酵素はタンパク質で水溶性。そのままでは分解は困難',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '肝硬変の症例においては、高たんぱく食で肝性脳症が悪化する。この理由について、簡潔に説明せよ。',
+          answerImg: [],
+          answer:
+            'タンパク質の分解で生じるアンモニアが肝性脳症を悪化させるから。',
+          commentary:
+            '健常者ではアンモニアは肝臓の尿素回路で代謝される。タンパク質のNはほとんどが尿素の形で排出される。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '対向流熱交換系による体温調節について、簡潔に説明せよ。',
+          answerImg: [],
+          answer:
+            '皮膚の深層では、静脈が動脈と逆方向に並走しており、動脈が体表で冷やされた静脈を効率よく温めることで体熱の損失を最小限にとどめている。',
+          commentary:
+            '対向流にすることで、深部に近い温かい動脈からも、体表に近い比較的冷たい動脈からも、熱を静脈へ移すことができる。',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '胆道系の通過障害が原因である黄疸において、血中間接ビリルビン値、血中直接ビリルビン値、尿中ビリルビン値、尿中ウロビリノーゲン値、便の色がどのように変化するか、理由とともに説明せよ',
+          answerImg: [bilirubin],
+          answer:
+            '胆道閉塞による黄疸では、グルクロン酸抱合は問題なく行われるがビリルビンが腸内細菌でウロビリノーゲンへ変換されないため、便は灰白色で尿中ウロビリノーゲン値は下がる。一方ビリルビンは逆流して血管へ流れこむため、血中直接ビリルビン値は上がり、血中間接ビリルビン値も少し上がる。',
+          commentary: '',
+        },
         // {
         //   detailInfo: '',
         //   questionImg: [],

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2seiriNMU/static/js/main.86712001.js",
+    "main.js": "/anywhere-2seiriNMU/static/js/main.31202ff8.js",
     "static/media/ecg36.png": "/anywhere-2seiriNMU/static/media/ecg36.a495736c0134417ccb3e.png",
     "static/media/ecg28.png": "/anywhere-2seiriNMU/static/media/ecg28.2c6ebc9adea9b47f5a42.png",
     "static/media/ecg32.png": "/anywhere-2seiriNMU/static/media/ecg32.f222c7a7232ee5777a0c.png",
@@ -17,6 +17,7 @@
     "static/media/titleImg.png": "/anywhere-2seiriNMU/static/media/titleImg.f97b1afc288809b23ff0.png",
     "static/media/supraventricularTachycardia.png": "/anywhere-2seiriNMU/static/media/supraventricularTachycardia.f80aac2d16c4385abcd7.png",
     "static/media/digestiveSecretion.png": "/anywhere-2seiriNMU/static/media/digestiveSecretion.602d8936de610e3140e7.png",
+    "static/media/laplace.png": "/anywhere-2seiriNMU/static/media/laplace.09a2a71a9d64f79c24f2.png",
     "static/media/atrialFlutter.png": "/anywhere-2seiriNMU/static/media/atrialFlutter.52bae38d9bce1cf7aefd.png",
     "static/media/secondMessengerIP3.png": "/anywhere-2seiriNMU/static/media/secondMessengerIP3.36b1df74724a0dd1529a.png",
     "static/media/bilirubin.png": "/anywhere-2seiriNMU/static/media/bilirubin.63d6b3d818633e33a118.png",
@@ -62,6 +63,7 @@
     "static/media/carbonicAnhydrase.png": "/anywhere-2seiriNMU/static/media/carbonicAnhydrase.b84110eeaaa739c43368.png",
     "static/media/ecg20.png": "/anywhere-2seiriNMU/static/media/ecg20.25e8a5a16538fd44bb16.png",
     "static/media/ecg5.png": "/anywhere-2seiriNMU/static/media/ecg5.1603ed9f65502ecbb804.png",
+    "static/media/glucose.png": "/anywhere-2seiriNMU/static/media/glucose.fed52b050d5c5a6259e8.png",
     "static/media/lipidSynthesize.png": "/anywhere-2seiriNMU/static/media/lipidSynthesize.9b667b0713be34c68cf2.png",
     "static/media/ventricularTachycardia.png": "/anywhere-2seiriNMU/static/media/ventricularTachycardia.d1b14a1dcceb120d060a.png",
     "static/media/CardiacPotential.png": "/anywhere-2seiriNMU/static/media/CardiacPotential.d3241b33a78e0226bd5f.png",
@@ -107,6 +109,7 @@
     "static/media/aldosterone.png": "/anywhere-2seiriNMU/static/media/aldosterone.f3e23d8182c0bbd682c3.png",
     "static/media/ecg23.png": "/anywhere-2seiriNMU/static/media/ecg23.7c30b049ca1ad3c0e60a.png",
     "static/media/collectingTubuleReabsorption.png": "/anywhere-2seiriNMU/static/media/collectingTubuleReabsorption.1b6bd7d582ab92055322.png",
+    "static/media/opsonization.png": "/anywhere-2seiriNMU/static/media/opsonization.c580d288fe104adcb342.png",
     "static/media/CD4.png": "/anywhere-2seiriNMU/static/media/CD4.bdb59fd2a2c2e7f31ee3.png",
     "static/media/ecg40.png": "/anywhere-2seiriNMU/static/media/ecg40.b626ee9f303dc23cc627.png",
     "static/media/B20182.png": "/anywhere-2seiriNMU/static/media/B20182.c884043091b3621ed019.png",
@@ -137,10 +140,10 @@
     "static/media/avBlock1.png": "/anywhere-2seiriNMU/static/media/avBlock1.e1d7f56b3b3075bbb97a.png",
     "index.html": "/anywhere-2seiriNMU/index.html",
     "main.2255ca1a.css.map": "/anywhere-2seiriNMU/static/css/main.2255ca1a.css.map",
-    "main.86712001.js.map": "/anywhere-2seiriNMU/static/js/main.86712001.js.map"
+    "main.31202ff8.js.map": "/anywhere-2seiriNMU/static/js/main.31202ff8.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.86712001.js"
+    "static/js/main.31202ff8.js"
   ]
 }

@@ -6,7 +6,7 @@ export const useSetting = () => {
     isSet: false,
     mode: 'training',
     questionOrder: 'ascend',
-    questionRange: ['心電図'],
+    questionRange: ['2022中間(記述以外)', '2022中間記述'],
     wordFilter: [],
   })
   const showSettingDetail = () => {
